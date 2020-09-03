@@ -3,5 +3,10 @@
         "id": "warzone_far_future",
         "name": "Warzone Far Future",
         "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/"
+    },
+    "platoons_ww2": {
+        "id": "platoons_ww2",
+        "name": "Platoons: World War Two",
+        "url": "https://raw.githubusercontent.com/wargame-engine/platoons/master/"
     }
 }
