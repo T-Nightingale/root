@@ -1,14 +1,14 @@
 {
     "warzone_far_future": {
         "id": "warzone_far_future",
-        "name": "Warzone Far Future",
+        "name": "Warzone Far Future (Work In Progress)",
         "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
         "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
         "color": "#7761ab"
     },
     "platoons_ww2": {
         "id": "platoons_ww2",
-        "name": "Platoons: World War Two (Work In Progress)",
+        "name": "Platoons: World War Two V2 (Concept Phase)",
         "url": "https://raw.githubusercontent.com/wargame-engine/platoons/master/",
         "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
         "color": "#6c541e"
