@@ -4,6 +4,7 @@
         "sci_fi": {"name": "Sci-fi"},
         "fantasy": {"name": "Fantasy"}
     },
+    games: {
     "grim_darkness": {
         "id": "grim_darkness",
         "category": "sci_fi",
@@ -28,4 +29,5 @@
         "description": "Skirmish battles in a Fantasy world.",
         "color": "#9aab89"
     }
+  }
 }
