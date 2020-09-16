@@ -4,7 +4,7 @@
         "sci_fi": {"name": "Sci-fi"},
         "fantasy": {"name": "Fantasy"}
     },
-    games: {
+    "games": {
     "grim_darkness": {
         "id": "grim_darkness",
         "category": "sci_fi",
