@@ -21,6 +21,14 @@
         "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
         "color": "#6c541e"
     },
+    "ancients": {
+        "id": "ancients",
+        "category": "historical",
+        "name": "Ancients (Concept Phase)",
+        "url": "https://raw.githubusercontent.com/wargame-engine/wbh/master/",
+        "description": "Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.",
+        "color": "#6c541e"
+    },
     "third_age": {
         "id": "third_age",
         "category": "fantasy",
