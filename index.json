@@ -1,41 +1,204 @@
 {
-    "categories": {
-        "historical": {"name": "Historical"},
-        "sci_fi": {"name": "Sci-fi"},
-        "fantasy": {"name": "Fantasy"}
-    },
+    "categories": {"historical": {"name": "Historical"}, "sci_fi": {"name": "Sci-fi"}, "fantasy": {"name": "Fantasy"}},
     "games": {
-    "grim_darkness": {
-        "id": "grim_darkness",
-        "category": "sci_fi",
-        "name": "Grim Darkness (Work In Progress)",
-        "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
-        "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
-        "color": "#7761ab"
+        "grim_darkness": {
+            "id": "grim_darkness",
+            "category": "sci_fi",
+            "name": "Grim Darkness (Work In Progress)",
+            "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
+            "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
+            "color": "#7761ab"
+        },
+        "world_war_two": {
+            "id": "world_war_two",
+            "category": "historical",
+            "name": "World War Two (Concept Phase)",
+            "url": "https://raw.githubusercontent.com/wargame-engine/platoons/master/",
+            "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
+            "color": "#6c541e"
+        },
+        "ancients": {
+            "id": "ancients",
+            "category": "historical",
+            "name": "Ancients (Concept Phase)",
+            "url": "https://raw.githubusercontent.com/wargame-engine/wbh/master/",
+            "description": "Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.",
+            "color": "#D32929"
+        },
+        "third_age": {
+            "id": "third_age",
+            "category": "fantasy",
+            "name": "The Third Age (Work In Progress)",
+            "url": "https://raw.githubusercontent.com/wargame-engine/wbf/master/",
+            "description": "Skirmish battles in a Fantasy world.",
+            "color": "#9aab89"
+        }
     },
-    "world_war_two": {
-        "id": "world_war_two",
-        "category": "historical",
-        "name": "World War Two (Concept Phase)",
-        "url": "https://raw.githubusercontent.com/wargame-engine/platoons/master/",
-        "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
-        "color": "#6c541e"
+    "rules": {
+        "impact": {
+            "name": "Impact",
+            "inputs": ["x"],
+            "description": "When this model successfully charges an enemy unit, make X Strength tests. For each success, the enemy takes 1 hit with no AP.",
+            "points": ["model.movement", {"divide": 12}, {"add": ["model.fight", {"subtract": "constants.baseStats.fight"}]}, {"multiply": "rule.x"}, {"multiply": 0.5}]
+        },
+        "phalanx": {
+            "name": "Phalanx",
+            "inputs": ["x"],
+            "description": "You may make X free attacks with this weapon when a unit moves into your engagement range.",
+            "points": [{"add": ["model.fight", {"subtract": "constants.baseStats.fight"}]}, {"add": ["weapon.ap", {"multiply": "constants.apCost"}]}, {"multiply": "rule.x"}, {"multiply": 0.5}]
+        },
+        "assault": {
+            "name": "Assault",
+            "description": "Models with this weapon may make a free shoot action after moving at -1 Accuracy. They may not shoot again this round.",
+            "points": ["weapon.attacks"]
+        },
+        "blast": {
+            "name": "Blast",
+            "inputs": ["x"],
+            "description": "Multiply hits from this weapon by X.",
+            "points": [
+                "weapon.ap",
+                {"multiply": "constants.apCost"},
+                {"add": "weapon.rangeCost"},
+                {"add": ["weapon.damage", {"multiply": "constants.damageCost"}]},
+                {"multiply": "weapon.attacks"},
+                {"multiply": "rule.x"}
+            ]
+        },
+        "flame": {"name": "Flame", "description": "This weapon ignores cover bonuses.", "points": ["weapon.attacks", {"multiply": 2}]},
+        "ammo": {"name": "Ammo", "inputs": ["x"], "description": "This weapon may only be fired X times per game.", "points": ["rule.x", {"multiply": -0.25}]},
+        "fear": {"name": "Fear", "description": "Enemy units within 6\" get -1 courage.", "points": ["model.wounds", {"multiply": 2}]},
+        "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": ["model.wounds", {"multiply": 3}]},
+        "deployable": {
+            "name": "Deployable",
+            "description": "This model can be set up at any time during its containing units activation. If its containing unit moves out of coherency the model is destroyed."
+        },
+        "ambush": {
+            "name": "Ambush",
+            "description": "This unit may be set aside in reserves before the match begins if all models have ambush. At the beginning of any round after the first you may place the unit anywhere on the table over 9” away from enemy units. If both players have units with Ambush they must roll-off to see who deploys first, and then alternate in placing them.",
+            "points": ["model.wounds", {"multiply": 3}]
+        },
+        "scout": {"name": "Scout", "description": "When this arrives on the field, it may make a free 6\" move.", "points": ["model.wounds"]},
+        "outflank": {
+            "name": "Outflank",
+            "description": "This unit may be set aside in reserves before the match begins if all models have outflank. At the beginning of any round after the first you may place the unit within 5\" of a table edge over 9” away from enemy units. If both players have units with Outflank they must roll-off to see who deploys first, and then alternate in placing them.",
+            "points": ["model.wounds", {"multiply": 2}]
+        },
+        "regeneration": {
+            "name": "Resilient",
+            "inputs": ["x"],
+            "description": "Roll a die when this model loses a wound. On a value of X or less that wound is not lost.",
+            "points": ["rule.x", {"multiply": "model.wounds"}]
+        },
+        "reach": {
+            "name": "Reach",
+            "inputs": ["x"],
+            "description": "This weapon may engage and fight models up to X\" away. Enemy models must still move into base contact unless they also have reach.",
+            "points": ["rule.x"]
+        },
+        "lucky": {"name": "Lucky", "inputs": ["x"], "description": "This model may re-roll X Resist tests per attack.", "points": ["model.defense"]},
+        "stealth": {
+            "name": "Stealth",
+            "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".",
+            "points": ["model.wounds", {"multiply": 3}]
+        },
+        "poison": {
+            "name": "Poison",
+            "inputs": ["x"],
+            "description": "Successful hit rolls of 1 or 2 with this weapon cause X hits instead of 1.",
+            "points": ["rule.x", {"multiply": "weapon.attacks"}, {"multiply": "weapon.ap"}, {"multiply": "constants.apCost"}, {"multiply": "weapon.rangeCost"}, {"multiply": 0.2}]
+        },
+        "vulnerable_side_rear": {
+            "name": "Vulnerable",
+            "description": "This unit loses 1 Resist when hit in its side arc or 2 Resist when hit in the Rear arc.",
+            "points": [2, {"multiply": "model.wounds"}, {"multiply": -0.5}]
+        },
+        "vulnerable_rear": {
+            "name": "Vulnerable Rear",
+            "description": "This unit loses 1 Resist when hit in its Rear arc.",
+            "points": [2, {"multiply": "model.wounds"}, {"multiply": -0.25}]
+        },
+        "furious": {
+            "name": "Furious",
+            "description": "When this model charges, hit rolls of 1 or 2 generate an additional attack.",
+            "effects": [{"type": "bonusAttack", "value": 1, "frequency": 2, "weaponType": "fight"}]
+        },
+        "relentless": {
+            "name": "Relentless",
+            "description": "When this model shoots, each successful hit roll of 1 or 2 generates an additional shot with that weapon.",
+            "effects": [{"type": "bonusAttack", "value": 1, "frequency": 2, "weaponType": "shoot"}]
+        },
+        "magic": {
+            "name": "Magic",
+            "inputs": ["x"],
+            "description": "This unit may cast X Powers at any point during its movement. To cast, roll a D10 and if the result is equal to or less than the power's cast value it is successful. A unit may only successfully cast each power once per turn. Any other Magic unit within 24\" may attempt to dispel the Magic power. Roll a D10. If the value is lower than the rolled value for the test, the power is stopped. If the spell is not stopped, no further attempts may be made to stop the same power. If this model is locked in Melee, it may only target units in the combat. This ability may not be used against enemy units in melee with friendly units.",
+            "points": [15, {"multiply": "rule.x"}]
+        },
+        "dispel": {"name": "Ward", "inputs": ["x"], "description": "This unit within 24\" may attempt to dispel Magic powers. Roll a D10. If the value is lower than the rolled value for the test, the power is stopped. If the spell is not stopped, no further attempts may be made to stop the same power.", "points": [8, {"multiply": "rule.x"}]},
+        "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and low obstacles when moving.", "points": ["model.wounds", {"multiply": 2}]},
+        "agile": {"name": "Agile", "description": "This unit may ignore low obstacles when moving.", "points": ["model.wounds"]},
+        "walker": {"name": "Walker", "description": "This unit may ignore low obstacles when moving.", "points": ["model.wounds"]},
+        "repair": {
+            "name": "Repair",
+            "inputs": ["x"],
+            "description": "Once per turn, if within 2” of a Vehicle, roll one die. On a 5 or less the vehicle may regain X wounds.",
+            "points": ["rule.x", {"multiply": 5}]
+        },
+        "fearless": {
+            "name": "Fearless",
+            "description": "This unit requires an extra suppression to take break tests.",
+            "points": [1, {"multiply": ["model.wounds", {"subtract": 1}]}]
+        },
+        "resist": {"name": "Protect", "inputs": ["x"], "description": "This unit gets +X to its Resist rolls.", "points": ["rule.x", {"multiply": 2}]},
+        "open_topped": {
+            "name": "Open-Topped",
+            "inputs": ["x"],
+            "description": "Units inside this transport may take a single fire action when activated. Up to X models total may fire their weapons.",
+            "points": ["rule.x"]
+        },
+        "teleport": {
+            "name": "Teleport",
+            "description": "When this model activates, it may first teleport up to X inches in any direction ignoring models any terrain.",
+            "inputs": ["x"],
+            "points": [1, {"add": "rule.x"}]
+        },
+        "transport": {
+            "name": "Transport",
+            "description": "This model may carry X Infantry models inside of it on the battlefeild. Models with greater than 1 wound take up 2 transport spaces.",
+            "inputs": ["x"],
+            "points": ["rule.x"]
+        },
+        "sniper": {
+            "name": "Sniper",
+            "description": "This weapon may ignore the Long Range penalty. You may choose which model is hit and these hits may not be reassigned to other friendly units.",
+            "points": [2]
+        },
+        "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": [2, {"multiply": "model.wounds"}]},
+        "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 have +2 AP.", "points": ["weapon.attacks", {"multiply": 4}, {"multiply": 0.2}]},
+        "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy."},
+        "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Flyer special rule.", "points": ["weapon.attacks", {"multiply": 3}]},
+        "titanic": {"name": "Titanic", "description": "When this unit is activated it may only perform one action and benefit from abilties which trigger when the unit is activated once. It may then be activated a second time to perform its second action."},
+        "leader": {
+            "name": "Leader",
+            "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit. Friendly Infantry units within 6\" may use this unit's Courage value when taking Courage tests."
+        },
+        "hero": {
+            "name": "Hero",
+            "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit."
+        },
+        "cumbersome": {"name": "Cumbersome", "description": "This model hits with this weapon at -1 Strength when fighting in engagement range.", "points": ["weapon.attacks", {"multiply": -1}]}
     },
-    "ancients": {
-        "id": "ancients",
-        "category": "historical",
-        "name": "Ancients (Concept Phase)",
-        "url": "https://raw.githubusercontent.com/wargame-engine/wbh/master/",
-        "description": "Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.",
-        "color": "#D32929"
-    },
-    "third_age": {
-        "id": "third_age",
-        "category": "fantasy",
-        "name": "The Third Age (Work In Progress)",
-        "url": "https://raw.githubusercontent.com/wargame-engine/wbf/master/",
-        "description": "Skirmish battles in a Fantasy world.",
-        "color": "#9aab89"
+    "weapons": {
+        "unarmed": {"name": "Unarmed", "attacks": 1, "short": "Melee"},
+        "sword": {"name": "Sword", "attacks": 1, "short": "Melee", "ap": 1},
+        "spear": {"name": "Spear", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "reach", "x": 2}]},
+        "pike": { "name": "Pike", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["cumbersome", {"id": "reach", "x": 4}]},
+        "crossbow": {"name": "Crossbow", "attacks": 1, "short": 12, "medium": 24, "ap": 2},
+        "bow": {"name": "Bow", "attacks": 1, "short": 12, "medium": 24, "ap": 1},
+        "longbow": {"name": "Long Bow", "attacks": 1, "short": 15, "medium": 30, "ap": 1, "rules": ["indirect"]},
+        "lance": {"name": "Lance", "attacks": 1, "short": "Melee", "rules": [{"id": "impact", "x": 1}], "ap": 2},
+        "impact": {"name": "Impact", "attacks": 1, "short": "Melee"},
+        "longsword": {"name": "Longsword", "attacks": 1, "short": "Melee", "ap": 1, "damage": 2},
+        "wizard_staff": {"name": "Wizard Staff", "attacks": 1, "short": "Melee", "ap": 1, "damage": 2}
     }
-  }
 }
