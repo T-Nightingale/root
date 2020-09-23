@@ -13,6 +13,7 @@
             "id": "world_war_two",
             "category": "historical",
             "name": "World War Two (Concept Phase)",
+            "image": "https://raw.githubusercontent.com/wargame-engine/root/master/ww2.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/platoons/master/",
             "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
             "color": "#6c541e"
