@@ -67,7 +67,12 @@
             ]
         },
         "flame": {"name": "Flame", "description": "This weapon ignores cover bonuses.", "points": ["weapon.attacks", {"multiply": 2}]},
-        "ammo": {"name": "Ammo", "inputs": ["x"], "description": "This weapon may only be fired X times per game.", "points": ["rule.x", {"multiply": -0.25}]},
+        "ammo": {
+            "name": "Ammo", "inputs": ["x"],
+            "description": "This weapon may only be fired X times per game.",
+            "pointNotes": "Always apply this rule last or your numbers will be off.",
+            "points": [1, {"subtract": [0.25, {"multiply": "rule.x"}]}, {"multiply": -1}, {"multiply": "weapon.points"}]
+        },
         "fear": {"name": "Fear", "description": "Enemy units within 6\" get -1 courage.", "points": ["model.wounds", {"multiply": 2}]},
         "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": ["model.wounds", {"multiply": 3}]},
         "deployable": {
@@ -174,7 +179,7 @@
             "description": "This weapon may ignore the Long Range penalty. You may choose which model is hit and these hits may not be reassigned to other friendly units.",
             "points": [2]
         },
-        "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": [2, {"multiply": "model.wounds"}]},
+        "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": [1, {"multiply": "model.wounds"}]},
         "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 have +2 AP.", "points": ["weapon.attacks", {"multiply": 4}, {"multiply": 0.2}]},
         "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy."},
         "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Flyer special rule.", "points": ["weapon.attacks", {"multiply": 3}]},
