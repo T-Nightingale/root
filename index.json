@@ -13,7 +13,7 @@
         "world_war_two": {
             "id": "world_war_two",
             "category": "historical",
-            "name": "World War Two (Concept Phase)",
+            "name": "World War Two (Work In Progress)",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/ww2.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/platoons/master/",
             "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
@@ -152,6 +152,12 @@
             "description": "Once per turn, if within 2” of a Vehicle, roll one die. On a 5 or less the vehicle may regain X wounds.",
             "points": ["rule.x", {"multiply": 5}]
         },
+        "critical": {
+            "name": "Critical",
+            "inputs": ["x"],
+            "description": "When this unit reaches X or less wounds, roll a D10 and consult the following. Damaged (1-3): The unit permenantly suffers -1 Accuracy and -1 Strength. Slowed (4-6): Permenantly halve its Movement characteristic. Panic (7-9): Take 2 additional strain and immediately take a break test. Destroyed (10): It instantly destroyed.",
+            "points": ["rule.x", {"subtract": "model.defense"}]
+        },
         "fearless": {
             "name": "Fearless",
             "description": "This unit requires an extra suppression to take break tests.",
@@ -186,9 +192,10 @@
         "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy."},
         "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Flyer special rule.", "points": ["weapon.attacks", {"multiply": 3}]},
         "titanic": {"name": "Titanic", "description": "When this unit is activated it may only perform one action and benefit from abilties which trigger when the unit is activated once. It may then be activated a second time to perform its second action."},
+        "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons."},
         "leader": {
             "name": "Leader",
-            "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit. Friendly Infantry units within 6\" may use this unit's Courage value when taking Courage tests."
+            "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit. Friendly Infantry units within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit."
         },
         "hero": {
             "name": "Hero",
@@ -197,7 +204,7 @@
         "cumbersome": {"name": "Cumbersome", "description": "This model hits with this weapon at -1 Strength when fighting in engagement range.", "points": ["weapon.attacks", {"multiply": -1}]}
     },
     "weapons": {
-        "unarmed": {"name": "Unarmed", "attacks": 1, "short": "Melee"},
+        "unarmed": {"name": "Unarmed (Melee)", "attacks": 1, "short": "Melee"},
         "sword": {"name": "Sword", "attacks": 1, "short": "Melee", "ap": 1},
         "spear": {"name": "Spear", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "reach", "x": 2}]},
         "pike": { "name": "Pike", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["cumbersome", {"id": "reach", "x": 4}]},
