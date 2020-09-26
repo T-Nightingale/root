@@ -117,12 +117,12 @@
             "points": ["rule.x", {"multiply": "weapon.attacks"}, {"multiply": "weapon.ap"}, {"multiply": "constants.apCost"}, {"multiply": "weapon.rangeCost"}, {"multiply": 0.2}]
         },
         "vulnerable_side_rear": {
-            "name": "Vulnerable",
+            "name": "Vulnerable (Side, Rear)",
             "description": "This unit loses 1 Resist when hit in its side arc or 2 Resist when hit in the Rear arc.",
             "points": [2, {"multiply": "model.wounds"}, {"multiply": -0.5}]
         },
         "vulnerable_rear": {
-            "name": "Vulnerable Rear",
+            "name": "Vulnerable (Rear)",
             "description": "This unit loses 1 Resist when hit in its Rear arc.",
             "points": [2, {"multiply": "model.wounds"}, {"multiply": -0.25}]
         },
