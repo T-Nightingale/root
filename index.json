@@ -176,12 +176,12 @@
         },
         "damage_table_vehicle": {
             "name": "Damage Table(Vehicle)",
-            "description": "When this model fails a Save, roll a D10 adding the amount the Save was failed by and refer to the following. Damaged (2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. Slowed (4-5): Permenantly halve its Movement characteristic. Panic (6-7): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. Destroyed (8-9): It instantly destroyed. Explosion(10+): The unit explodes and all units within 6\" take 3 hits with AP2.",
+            "description": "When this model fails a Save, roll a D10 adding the amount the Save was failed by and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Panic(6-7): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(8-9): It instantly destroyed. \n * Explosion(10+): The unit explodes and all units within 6\" take 3 hits with AP2.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "damage_table_monster": {
             "name": "Damage Table(Monster)",
-            "description": "When this model fails a Save, roll a D10 adding the amount the Save was failed by and refer to the following. Damaged (2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. Slowed (4-5): Permenantly halve its Movement characteristic. Panic (6-7): Take 2 additional strain and immediately take a break test. Destroyed (8+): It instantly destroyed.",
+            "description": "When this model fails a Save, roll a D10 adding the amount the Save was failed by and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Panic(6-7): Take 2 additional strain and immediately take a break test. \n * Destroyed(8+): It instantly destroyed.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "fearless": {"name": "Fearless", "description": "This unit requires an extra suppression to take break tests.", "points": [1, {"multiply": ["model.wounds", {"subtract": 1}]}]},
