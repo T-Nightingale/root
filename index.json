@@ -64,9 +64,7 @@
             "points": [
                 "rule.x",
                 {"subtract": 1},
-                {"subtract": ["weapon.range", {"divide": 6}]},
                 {"multiply": "weapon.points"}
-                
             ]
         },
         "flame": {"name": "Flame", "description": "This weapon ignores cover bonuses.", "points": ["weapon.attacks", {"multiply": 2}]},
@@ -201,7 +199,7 @@
         },
         "transport": {
             "name": "Transport",
-            "description": "This model may carry X Infantry models inside of it on the battlefeild. Models with greater than 1 wound take up 2 transport spaces.",
+            "description": "This model may carry X Infantry models or one Artillery model inside of it.",
             "inputs": ["x"],
             "points": ["rule.x"]
         },
