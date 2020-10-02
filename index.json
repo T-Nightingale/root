@@ -59,7 +59,7 @@
         "blast": {
             "name": "Blast",
             "inputs": ["x"],
-            "description": "Multiply hits from this weapon by X.",
+            "description": "Multiply hits from this weapon by X. A unit may not take more hits than the number of models in the unit.",
             "notes": "Don't pay more than once for range with blast weapons.",
             "points": [
                 "rule.x",
