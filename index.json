@@ -19,6 +19,14 @@
             "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
             "color": "#6c541e"
         },
+        "gunpowder": {
+            "id": "gunpowder",
+            "category": "historical",
+            "name": "Gunpowder (Concept Phase)",
+            "url": "https://raw.githubusercontent.com/wargame-engine/gunpowder/master/",
+            "description": "17th and 18th Century battles with Gunpowder with a focus on skirmish-sized engagements.",
+            "color": "#2f3c54"
+        },
         "ancients": {
             "id": "ancients",
             "category": "historical",
