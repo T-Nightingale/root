@@ -95,7 +95,7 @@
         "deadly": {
             "name": "Deadly",
             "inputs": ["x"],
-            "description": "Units with Damage Table(X) roll add X to their rolls for the Damage Table.",
+            "description": "Units with Damage Table(X) roll add X to their rolls for the Damage Table. Units with Tough(X) lose X wounds.",
             "points": ["rule.x", {"multiply": 2}, {"multiply": "weapon.attacks"}]
         },
         "regeneration": {
@@ -172,22 +172,22 @@
             "description": "Once per turn, if within 2” of a Vehicle, roll one die. On a 5 or less the vehicle may regain X wounds.",
             "points": ["rule.x", {"multiply": 5}]
         },
+        "damage_table_monster": {
+            "name": "Damage Table(Monster)",
+            "description": "When this model would be killed, roll a D10 adding the amount the Save was failed by and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Panic(6-7): Take 2 additional strain and immediately take a break test. \n * Destroyed(8+): It instantly destroyed.",
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
+        },
         "damage_table_vehicle": {
             "name": "Damage Table(Vehicle)",
-            "description": "When this model fails a Save, roll a D10 adding the amount the Save was failed by and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Fire(6-7): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(8-9): It instantly destroyed. \n * Explosion(10+): The unit explodes and all units within 6\" take 3 hits with AP2.",
+            "description": "When this model would be killed, roll a D10 adding the amount the Save was failed by and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Fire(6-7): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(8-9): It instantly destroyed. \n * Explosion(10+): The unit explodes and all units within 6\" take 3 hits with AP2.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "damage_table_aircraft": {
             "name": "Damage Table(Aircraft)",
-            "description": "When this model fails a Save, roll a D10 adding the amount the Save was failed by and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Fire(6-7): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(8-9): It instantly destroyed. \n * Explosion(10+): The unit explodes and all units within 6\" take 3 hits with AP2.",
+            "description": "When this model would be killed, roll a D10 adding the amount the Save was failed by and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Fire(6-7): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(8-9): It instantly destroyed. \n * Explosion(10+): The unit explodes and all units within 6\" take 3 hits with AP2.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "catches_fire": {"name": "Catches Fire", "description": "This unit suffers the \"Fire\" result on the Vehicle Damage table on rolls of (5-7) instead of (6-7).", "points": -5},
-        "damage_table_monster": {
-            "name": "Damage Table(Monster)",
-            "description": "When this model fails a Save, roll a D10 adding the amount the Save was failed by and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Panic(6-7): Take 2 additional strain and immediately take a break test. \n * Destroyed(8+): It instantly destroyed.",
-            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
-        },
         "fearless": {"name": "Fearless", "description": "This unit requires an extra suppression to take break tests.", "points": [1, {"multiply": ["model.wounds", {"subtract": 1}]}]},
         "resist": {"name": "Protect", "inputs": ["x"], "description": "This unit gets +X to its Resist rolls.", "points": ["rule.x", {"multiply": 2}]},
         "open_topped": {
