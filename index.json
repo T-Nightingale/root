@@ -4,7 +4,7 @@
         "grim_darkness": {
             "id": "grim_darkness",
             "category": "sci_fi",
-            "name": "Grim Darkness (Work In Progress)",
+            "name": "Grim Darkness",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
             "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
@@ -13,16 +13,24 @@
         "world_war_two": {
             "id": "world_war_two",
             "category": "historical",
-            "name": "World War Two (Work In Progress)",
+            "name": "World War Two",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/ww2.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/platoons/master/",
             "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
             "color": "#6c541e"
         },
+        "gunpowder": {
+            "id": "gunpowder",
+            "category": "historical",
+            "name": "Napoleonic Era (18th-19th Century)",
+            "url": "https://raw.githubusercontent.com/wargame-engine/gunpowder/master/",
+            "description": "18th and 19th Century battles with gunpowder focusing on skirmish-sized engagements.",
+            "color": "#2f3c54"
+        },
         "ancients": {
             "id": "ancients",
             "category": "historical",
-            "name": "Ancients (Concept Phase)",
+            "name": "Ancients",
             "url": "https://raw.githubusercontent.com/wargame-engine/wbh/master/",
             "description": "Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.",
             "color": "#9f0807"
@@ -30,10 +38,10 @@
         "third_age": {
             "id": "third_age",
             "category": "fantasy",
-            "name": "The Third Age (Work In Progress)",
+            "name": "The Third Age",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/wbf.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/wbf/master/",
-            "description": "Skirmish battles in a Fantasy world.",
+            "description": "Skirmish battles in a familiar fantasy world.",
             "color": "#9aab89"
         }
     },
