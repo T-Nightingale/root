@@ -22,9 +22,9 @@
         "gunpowder": {
             "id": "gunpowder",
             "category": "historical",
-            "name": "Gunpowder (Concept Phase)",
+            "name": "Napoleonic Era (18th-19th Century)",
             "url": "https://raw.githubusercontent.com/wargame-engine/gunpowder/master/",
-            "description": "17th and 18th Century battles with gunpowder focusing on skirmish-sized engagements.",
+            "description": "18th and 19th Century battles with gunpowder focusing on skirmish-sized engagements.",
             "color": "#2f3c54"
         },
         "ancients": {
