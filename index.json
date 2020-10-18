@@ -67,7 +67,7 @@
         "blast": {
             "name": "Blast",
             "inputs": ["x"],
-            "description": "Multiply hits from this weapon by X. A unit may not take more hits than the number of models in the unit.",
+            "description": "Multiply hits from this weapon by X. Hits from this weapon are split evenly between enemy units within 1\" of the target (odd hits go on the original target). A unit may not take more hits than the number of models in the unit.",
             "notes": "Don't pay more than once for range with blast weapons.",
             "points": [
                 "rule.x",
