@@ -84,7 +84,7 @@
             "points": [1, {"subtract": [0.25, {"multiply": "rule.x"}]}, {"multiply": -1}, {"multiply": "weapon.points"}]
         },
         "fear": {"name": "Fear", "description": "Enemy units within 6\" get -1 courage.", "points": ["model.wounds", {"multiply": 2}]},
-        "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": ["model.wounds", {"multiply": 3}]},
+        "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": 3},
         "deployable": {
             "name": "Deployable",
             "description": "This model can be set up at any time during its containing units activation. If its containing unit moves out of coherency the model is destroyed."
@@ -110,7 +110,7 @@
             "name": "Resilient",
             "inputs": ["x"],
             "description": "Roll a die when this model loses a wound. On a value of X or less that wound is not lost.",
-            "points": ["rule.x", {"multiply": "model.wounds"}]
+            "points": ["rule.x", {"multiply": 2}]
         },
         "reach": {
             "name": "Reach",
