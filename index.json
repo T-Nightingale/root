@@ -105,7 +105,7 @@
         "deadly": {
             "name": "Deadly",
             "inputs": ["x"],
-            "description": "Units with Damage Table(X) add X to their rolls for the Damage Table. Units with Tough(X) lose X wounds.",
+            "description": "Units with Damage Table(X) add X to their rolls for the Damage Table. Units with Wounds(X) lose X wounds.",
             "points": ["rule.x", {"multiply": 5}, {"multiply": "weapon.attacks"}]
         },
         "regeneration": {
@@ -121,10 +121,10 @@
             "points": ["rule.x"]
         },
         "lucky": {"name": "Lucky", "inputs": ["x"], "description": "This model may re-roll X Resist tests per attack.", "points": ["model.defense"]},
-        "tough": {
-            "name": "Tough",
+        "wounds": {
+            "name": "Wounds",
             "inputs": ["x"],
-            "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Tough, damage must be assigned to an already damaged model before being assigned to any other model.",
+            "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 5}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
         },
         "crew": {
