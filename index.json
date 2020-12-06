@@ -4,7 +4,7 @@
         "grim_darkness": {
             "id": "grim_darkness",
             "category": "sci_fi",
-            "version": 0.1,
+            "version": "0.1",
             "name": "Grim Darkness (Beta)",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
@@ -15,7 +15,7 @@
             "id": "world_war_two",
             "category": "historical",
             "name": "World War Two",
-            "version": 1.0,
+            "version": "1.0",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/ww2.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/platoons/master/",
             "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
@@ -154,12 +154,12 @@
         "furious": {
             "name": "Furious",
             "description": "When this model charges, hit rolls of 1 or 2 generate an additional attack.",
-            "effects": [{"type": "bonusAttack", "value": 1, "frequency": 2, "weaponType": "fight"}]
+            "points": 2
         },
         "relentless": {
             "name": "Relentless",
             "description": "When this model shoots, each successful hit roll of 1 or 2 generates an additional shot with that weapon.",
-            "effects": [{"type": "bonusAttack", "value": 1, "frequency": 2, "weaponType": "shoot"}]
+            "points": 2
         },
         "magic": {
             "name": "Magic",
@@ -179,7 +179,7 @@
         "repair": {
             "name": "Repair",
             "inputs": ["x"],
-            "description": "Once per turn, if within 2” of a Vehicle, roll one die. On a 5 or less the vehicle may regain X wounds.",
+            "description": "Once per turn, if within 2” of a Vehicle, roll one die. On a 5 or less the vehicle may remove one damage effect.",
             "points": ["rule.x", {"multiply": 5}]
         },
         "damage_table_monster": {
