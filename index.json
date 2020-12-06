@@ -4,6 +4,7 @@
         "grim_darkness": {
             "id": "grim_darkness",
             "category": "sci_fi",
+            "version": 0.1,
             "name": "Grim Darkness (Beta)",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
@@ -14,6 +15,7 @@
             "id": "world_war_two",
             "category": "historical",
             "name": "World War Two",
+            "version": 1.0,
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/ww2.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/platoons/master/",
             "description": "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
