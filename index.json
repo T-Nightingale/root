@@ -106,7 +106,7 @@
             "name": "Deadly",
             "inputs": ["x"],
             "description": "Units with Damage Table(X) add X to their rolls for the Damage Table. Units with Tough(X) lose X wounds.",
-            "points": ["rule.x", {"multiply": 2}, {"multiply": "weapon.attacks"}]
+            "points": ["rule.x", {"multiply": 5}, {"multiply": "weapon.attacks"}]
         },
         "regeneration": {
             "name": "Resilient",
