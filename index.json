@@ -105,7 +105,7 @@
         "deadly": {
             "name": "Deadly",
             "inputs": ["x"],
-            "description": "Units with Damage Table(X) add X to their rolls for the Damage Table. Units with Wounds(X) lose X wounds.",
+            "description": "Units with Damage Table(X) add X to their rolls for the Damage Table. Units with Wounds(X) lose X additional wounds.",
             "points": ["rule.x", {"multiply": 5}, {"multiply": "weapon.attacks"}]
         },
         "regeneration": {
