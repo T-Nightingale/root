@@ -47,6 +47,44 @@
             "color": "#9aab89"
         }
     },
+    "phases": {"pre_game": {"name": "Pre-Game"}, "bidding": {"name": "Bidding"}, "activation": {"name": "Activation"}},
+    "strategies": {
+        "lucky": {
+            "phase": "activation",
+            "name": "Lucky (Core)",
+            "flavor": "It seems luck has gone our way. Or maybe it's something more...",
+            "description": "Re-roll a single skill test die. It may not be re-rolled again.",
+            "cost": 1
+        },
+        "legendary_support": {
+            "phase": "pre_game",
+            "name": "Legendary Support (Core)",
+            "flavor": "A battle involving several legends is a story to be told.",
+            "description": "You may include one additional legend in your roster.",
+            "cost": 1
+        },
+        "incredible_courage": {
+            "phase": "activation",
+            "name": "Incredible Courage (Core)",
+            "flavor": "Even in the darkest of times, moments of great courage can occur.",
+            "description": "Once per battle, choose a unit that is about to take a Courage test. That unit gains +2 Courage until the end of its activation.",
+            "cost": 2
+        },
+        "battlefield_reserves": {
+            "phase": "pre_game",
+            "name": "Outflanking Reserves (Core)",
+            "flavor": "Sometimes assets are most useful finding an alternate route around the enemy.",
+            "description": "Up to half of any force's units, one point for each may be placed in outflanking reserves instead of deployed on the field. At the beginning of any round after the first, units may be set up within 6\" of a table edge that is not in the enemy deployment zone, and more than 12\" from any enemy units. If both players have reserves arriving on the same turn, roll off to see who places theirs first.",
+            "cost": "1/per"
+        },
+        "hidden_deployment": {
+            "phase": "pre_game",
+            "name": "Hidden Deployment (Core)",
+            "flavor": "Staying hidden and waiting for the right moment to strike can have a devastating effect.",
+            "description": "Any number of Infantry, Artillery or Fortification units, one point per pair may be placed in hidden deployment instead of deployed on the field. See the section for hidden units in the core rules for details on how hidden units work.",
+            "cost": "1/pair"
+        }
+    },
     "rules": {
         "impact": {
             "name": "Impact",
@@ -85,7 +123,7 @@
             "pointNotes": "Always apply this rule last or your numbers will be off.",
             "points": [1, {"subtract": [0.25, {"multiply": "rule.x"}]}, {"multiply": -1}, {"multiply": "weapon.points"}]
         },
-        "fear": {"name": "Fear", "description": "Enemy units within 6\" get -1 courage.", "points": ["model.wounds", {"multiply": 2}]},
+        "fear": {"name": "Fear", "description": "Enemy units within 6\" get -1 Courage.", "points": 2},
         "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": 3},
         "deployable": {
             "name": "Deployable",
@@ -94,7 +132,12 @@
         "ambush": {
             "name": "Ambush",
             "description": "This unit may be set aside in reserves before the match begins if all models have ambush. At the beginning of any round after the first you may place the unit anywhere on the table over 9” away from enemy units. If both players have units with Ambush they must roll-off to see who deploys first, and then alternate in placing them.",
-            "points": ["model.wounds", {"multiply": 3}]
+            "points": 3
+        },
+        "ambush_large": {
+            "name": "Ambush",
+            "description": "This unit may be set aside in reserves before the match begins if all models have ambush. At the beginning of any round after the first you may place the unit anywhere on the table over 9” away from enemy units. If both players have units with Ambush they must roll-off to see who deploys first, and then alternate in placing them.",
+            "points": 10
         },
         "scout": {"name": "Scout", "description": "When this model arrives on the field, it may make a free 6\" move.", "points": [1]},
         "outflank": {
@@ -108,7 +151,7 @@
             "description": "Units with Damage Table(X) add X to their rolls for the Damage Table. Units with Wounds(X) lose X additional wounds.",
             "points": ["rule.x", {"multiply": 5}, {"multiply": "weapon.attacks"}]
         },
-        "regeneration": {
+        "resilient": {
             "name": "Resilient",
             "inputs": ["x"],
             "description": "Roll a die when this model loses a wound. On a value of X or less that wound is not lost.",
@@ -120,7 +163,7 @@
             "description": "This weapon may engage and fight models up to X\" away. Enemy models must still move into base contact unless they also have reach.",
             "points": ["rule.x"]
         },
-        "lucky": {"name": "Lucky", "inputs": ["x"], "description": "This model may re-roll X Resist tests per attack.", "points": ["model.defense"]},
+        "tough": {"name": "Tough", "inputs": ["x"], "description": "This model may re-roll X Save tests per attack.", "points": ["model.defense", {"multiply": "rule.x"}]},
         "wounds": {
             "name": "Wounds",
             "inputs": ["x"],
@@ -133,7 +176,7 @@
             "description": "This model is crewed by X models (and is treated as having X models in its unit), each of which must be killed before the weapon is disabled. When the amount of crew is reduced to half or less, this weapon suffers -1 to hit. This unit takes up X additional transport space.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 5}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
         },
-        "stealth": {"name": "Stealth", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": ["model.wounds", {"multiply": 3}]},
+        "stealth": {"name": "Stealth", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 3},
         "poison": {
             "name": "Poison",
             "inputs": ["x"],
@@ -255,7 +298,7 @@
         "longbow": {"name": "Long Bow", "attacks": 1, "short": 15, "medium": 30, "ap": 1, "rules": ["indirect"]},
         "lance": {"name": "Lance", "attacks": 1, "short": "Melee", "rules": [{"id": "impact", "x": 1}], "ap": 2},
         "impact": {"name": "Impact", "attacks": 1, "short": "Melee"},
-        "longsword": {"name": "Longsword", "attacks": 1, "short": "Melee", "ap": 1, "damage": 2},
+        "longsword": {"name": "Longsword", "attacks": 1, "short": "Melee", "ap": 2},
         "wizard_staff": {"name": "Wizard Staff", "attacks": 1, "short": "Melee", "ap": 1, "damage": 2}
     }
 }
