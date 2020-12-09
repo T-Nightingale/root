@@ -90,7 +90,7 @@
             "name": "Impact",
             "inputs": ["x"],
             "description": "This model causes X hits with no AP when it successfully charges an enemy unit.",
-            "points": ["model.movement", {"divide": 12}, {"multiply": "rule.x"}]
+            "points": [2, {"multiply": "rule.x"}]
         },
         "phalanx": {
             "name": "Phalanx",
