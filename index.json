@@ -145,6 +145,10 @@
             "description": "This unit may be set aside in reserves before the match begins if all models have outflank. At the beginning of any round after the first you may place the unit within 5\" of a table edge over 9” away from enemy units. If both players have units with Outflank they must roll-off to see who deploys first, and then alternate in placing them.",
             "points": ["model.wounds", {"multiply": 2}]
         },
+        "bomb": {
+            "name": "Bomb",
+            "description": "This weapon may be used at any time during a unit's movement. It must still use a Shoot action to fire."
+        },
         "deadly": {
             "name": "Deadly",
             "inputs": ["x"],
