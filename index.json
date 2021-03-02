@@ -98,7 +98,7 @@
             "description": "You may make X free attacks with this weapon when a unit moves into your engagement range.",
             "points": [{"add": ["model.fight", {"subtract": "constants.baseStats.fight"}]}, {"add": ["weapon.ap", {"multiply": "constants.apCost"}]}, {"multiply": "rule.x"}, {"multiply": 0.5}]
         },
-        "exposed": {"name": "Exposed", "description": "This model may receive suppression even from weapons that it can't be damaged by.", "points": -10},
+        "exposed": {"name": "Exposed", "description": "This model may receive strain even from weapons that it can't be damaged by.", "points": -10},
         "assault": {
             "name": "Assault",
             "description": "Models with this weapon may make a free shoot action after moving at -1 Accuracy. They may not shoot again this round.",
@@ -245,7 +245,7 @@
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "catches_fire": {"name": "Catches Fire", "description": "This unit suffers the \"Fire\" result on the Vehicle Damage table on rolls of (5-7) instead of (6-7).", "points": -5},
-        "fearless": {"name": "Fearless", "description": "This unit requires an extra suppression to take break tests.", "points": [1, {"multiply": ["model.wounds", {"subtract": 1}]}]},
+        "fearless": {"name": "Fearless", "description": "This unit requires an extra strain to take break tests.", "points": [1, {"multiply": ["model.wounds", {"subtract": 1}]}]},
         "resist": {"name": "Protect", "inputs": ["x"], "description": "This unit gets +X to its Resist rolls.", "points": ["rule.x", {"multiply": 2}]},
         "open_topped": {
             "name": "Open-Topped",
