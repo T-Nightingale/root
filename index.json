@@ -29,14 +29,6 @@
             "description": "18th and 19th Century battles with gunpowder focusing on skirmish-sized engagements.",
             "color": "#2f3c54"
         },
-        "ancients": {
-            "id": "ancients",
-            "category": "historical",
-            "name": "Ancients (Beta)",
-            "url": "https://raw.githubusercontent.com/wargame-engine/wbh/master/",
-            "description": "Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.",
-            "color": "#9f0807"
-        },
         "third_age": {
             "id": "third_age",
             "category": "fantasy",
@@ -45,6 +37,16 @@
             "url": "https://raw.githubusercontent.com/wargame-engine/wbf/master/",
             "description": "Skirmish battles in a familiar fantasy world.",
             "color": "#9aab89"
+        }
+    },
+    "unfinished_games": {
+        "ancients": {
+            "id": "ancients",
+            "category": "historical",
+            "name": "Ancients (Beta)",
+            "url": "https://raw.githubusercontent.com/wargame-engine/wbh/master/",
+            "description": "Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.",
+            "color": "#9f0807"
         }
     },
     "phases": {"pre_game": {"name": "Pre-Game"}, "bidding": {"name": "Bidding"}, "activation": {"name": "Activation"}},
