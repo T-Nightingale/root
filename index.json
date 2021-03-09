@@ -222,6 +222,12 @@
             "description": "This unit within 24\" may attempt to dispel Magic powers. Roll a D10. If the value is lower than the rolled value for the test, the power is stopped. If the spell is not stopped, no further attempts may be made to stop the same power.",
             "points": [8, {"multiply": "rule.x"}]
         },
+        "defensive": {
+            "name": "Defensive",
+            "inputs": ["x"],
+            "description": "This model increases its Save by X.",
+            "points": [2, {"multiply": "rule.x"}]
+        },
         "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and low obstacles when moving.", "points": ["model.wounds", {"multiply": 2}]},
         "agile": {"name": "Agile", "description": "This unit may ignore low obstacles when moving.", "points": ["model.wounds"]},
         "walker": {"name": "Walker", "description": "This unit may ignore low obstacles when moving.", "points": ["model.wounds"]},
