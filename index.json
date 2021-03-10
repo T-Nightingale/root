@@ -145,7 +145,7 @@
         "outflank": {
             "name": "Outflank",
             "description": "This unit may be set aside in reserves before the match begins if all models have outflank. At the beginning of any round after the first you may place the unit within 5\" of a table edge over 9” away from enemy units. If both players have units with Outflank they must roll-off to see who deploys first, and then alternate in placing them.",
-            "points": ["model.wounds", {"multiply": 2}]
+            "points": 3
         },
         "bomb": {
             "name": "Bomb",
@@ -174,13 +174,13 @@
             "name": "Wounds",
             "inputs": ["x"],
             "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.",
-            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 5}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
         },
         "crew": {
             "name": "Crew",
             "inputs": ["x"],
             "description": "This model is crewed by X models (and is treated as having X models in its unit), each of which must be killed before the weapon is disabled. When the amount of crew is reduced to half or less, this weapon suffers -1 to hit. This unit takes up X additional transport space.",
-            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 5}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
         },
         "stealth": {"name": "Stealth", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 3},
         "poison": {
