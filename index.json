@@ -228,9 +228,9 @@
             "description": "This model increases its Save by X.",
             "points": [2, {"multiply": "rule.x"}]
         },
-        "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and low obstacles when moving.", "points": ["model.wounds", {"multiply": 2}]},
-        "agile": {"name": "Agile", "description": "This unit may ignore low obstacles when moving.", "points": ["model.wounds"]},
-        "walker": {"name": "Walker", "description": "This unit may ignore low obstacles when moving.", "points": ["model.wounds"]},
+        "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and low obstacles when moving.", "points": 2},
+        "agile": {"name": "Agile", "description": "This unit may ignore low obstacles when moving.", "points": 1},
+        "walker": {"name": "Walker", "description": "This unit may ignore low obstacles when moving.", "points": 5},
         "repair": {
             "name": "Repair",
             "inputs": ["x"],
@@ -253,7 +253,7 @@
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "catches_fire": {"name": "Catches Fire", "description": "This unit suffers the \"Fire\" result on the Vehicle Damage table on rolls of (5-7) instead of (6-7).", "points": -5},
-        "fearless": {"name": "Fearless", "description": "This unit requires an extra strain to take break tests.", "points": [1, {"multiply": ["model.wounds", {"subtract": 1}]}]},
+        "fearless": {"name": "Fearless", "description": "This unit requires an extra strain to take break tests.", "points": 1},
         "resist": {"name": "Protect", "inputs": ["x"], "description": "This unit gets +X to its Resist rolls.", "points": ["rule.x", {"multiply": 2}]},
         "open_topped": {
             "name": "Open-Topped",
@@ -288,7 +288,7 @@
             "description": "Enemy units suffer -1 Accuracy when shooting at this model. This model may ignore terrain and other models when moving. This model may only turn up to 90 degrees. When activated, it must first take a free move action its full movement distance in a straight line. If it ends its move off the table, place it back on any table edge. Its activation then ends.",
             "points": 20
         },
-        "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": [1, {"multiply": "model.wounds"}]},
+        "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": 1},
         "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 have +2 AP.", "points": ["weapon.attacks", {"multiply": 4}, {"multiply": 0.2}]},
         "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks"]},
         "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Aircraft special rule.", "points": ["weapon.attacks", {"multiply": 3}]},
