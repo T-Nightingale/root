@@ -220,7 +220,7 @@
             "name": "Strain",
             "inputs": ["x"],
             "description": "A unit hit by this weapon gains X additional Strain.",
-            "points": [1, {"multiply": "rule.x"}]
+            "points": ["weapon.attacks", {"multiply": "rule.x"}]
         },
         "dispel": {
             "name": "Ward",
