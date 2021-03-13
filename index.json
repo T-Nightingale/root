@@ -134,7 +134,7 @@
         "ambush": {
             "name": "Ambush",
             "description": "This unit may be set aside in reserves before the match begins if all models have ambush. At the beginning of any round after the first you may place the unit anywhere on the table over 9” away from enemy units. If both players have units with Ambush they must roll-off to see who deploys first, and then alternate in placing them.",
-            "points": 3
+            "points": ["model.movement", {"multiply": 0.5}]
         },
         "ambush_large": {
             "name": "Ambush",
