@@ -246,22 +246,22 @@
         "damage_table_titan": {
             "name": "Damage Table(Titanic)",
             "description": "When this model would be killed, roll a D10 adding the amount of critical damage it has suffered and refer to the following: \n Glance(2-3): The unit immediately takes 1 additional Strain. \n * Damaged(4-5): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(6-7): Permenantly halve its Movement characteristic. \n * Panic(8-9): Take 2 additional strain and immediately take a break test. \n * Destroyed(10-11+): It instantly destroyed. \n * Catastrophic(12+): The unit crashes down and all units within 6\" gain 3 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removevd, the effect of the table is removed.",
-            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 25}]
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 20}]
         },
         "damage_table_monster": {
             "name": "Damage Table(Monster)",
             "description": "When this model would be killed, roll a D10 adding the amount of critical damage it has suffered and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Panic(6-7): Take 2 additional strain and immediately take a break test. \n * Destroyed(8+): It instantly destroyed. \n * Fall(10+): The unit crashes down and all units within 6\" gain 2 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removevd, the effect of the table is removed.",
-            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 15}]
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "damage_table_vehicle": {
             "name": "Damage Table(Vehicle)",
             "description": "When this model would be killed, roll a D10 adding the amount of critical damage it has suffered and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Fire(6-7): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(8-9): It instantly destroyed. \n * Explosion(10+): The unit explodes and all units within 6\" gain 2 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removevd, the effect of the table is removed.",
-            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 15}]
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "damage_table_aircraft": {
             "name": "Damage Table(Aircraft)",
             "description": "When this model would be killed, roll a D10 adding the amount of critical damage it has suffered and refer to the following: \n * Damaged(2-3): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(4-5): Permenantly halve its Movement characteristic. \n * Fire(6-7): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(8-9): It instantly destroyed. \n * Crash(10+): The unit crashes into the ground and all units within 6\" gain 2 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removevd, the effect of the table is removed.",
-            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 15}]
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "catches_fire": {"name": "Catches Fire", "description": "This unit suffers the \"Fire\" result on the Vehicle Damage table on rolls of (5-7) instead of (6-7).", "points": -5},
         "fearless": {"name": "Fearless", "description": "This unit requires an extra strain to take break tests.", "points": 1},
