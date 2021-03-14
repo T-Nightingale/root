@@ -126,7 +126,7 @@
             "points": [1, {"subtract": [0.25, {"multiply": "rule.x"}]}, {"multiply": -1}, {"multiply": "weapon.points"}]
         },
         "fear": {"name": "Fear", "description": "Enemy units within 6\" get -1 Courage.", "points": 2},
-        "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": 3},
+        "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": ["model.movement", {"multiply": 0.5}]},
         "deployable": {
             "name": "Deployable",
             "description": "This model can be set up at any time during its containing units activation. If its containing unit moves out of coherency the model is destroyed."
@@ -234,7 +234,7 @@
             "description": "This model increases its Save by X.",
             "points": [2, {"multiply": "rule.x"}]
         },
-        "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and low obstacles when moving.", "points": 2},
+        "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and low obstacles when moving.", "points": ["model.movement", {"multiply": 0.25}]},
         "agile": {"name": "Agile", "description": "This unit may ignore low obstacles when moving.", "points": 1},
         "walker": {"name": "Walker", "description": "This unit may ignore low obstacles when moving.", "points": 5},
         "repair": {
