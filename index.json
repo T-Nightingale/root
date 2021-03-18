@@ -240,8 +240,8 @@
         "repair": {
             "name": "Repair",
             "inputs": ["x"],
-            "description": "Once per turn, if within 2” of a Vehicle, roll one die. On a 5 or less the vehicle may remove one damage effect.",
-            "points": ["rule.x", {"multiply": 5}]
+            "description": "At any point during this unit's activation, if within 3\" of a Vehicle, roll one die. On an X or less the vehicle may remove one critical damage.",
+            "points": ["rule.x", {"multiply": 2}]
         },
         "damage_table_titan": {
             "name": "Damage Table(Titanic)",
