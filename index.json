@@ -11,6 +11,15 @@
             "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
             "color": "#7761ab"
         },
+        "fantasy_realms": {
+            "id": "fantasy_realms",
+            "category": "fantasy",
+            "version": "0.1",
+            "name": "Fantasy Realms (Beta)",
+            "url": "https://raw.githubusercontent.com/wargame-engine/fantasy-realms/master/",
+            "description": "Fantasy battles in the realms with many unique and possibly familiar factions.",
+            "color": "#7761ab"
+        },
         "world_war_two": {
             "id": "world_war_two",
             "category": "historical",
