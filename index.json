@@ -64,7 +64,7 @@
             "phase": "activation",
             "name": "Lucky (Core)",
             "flavor": "It seems luck has gone our way. Or maybe it's something more...",
-            "description": "Re-roll a single skill test die. It may not be re-rolled again.",
+            "description": "Once per round, re-roll a single skill test die. It may not be re-rolled again.",
             "cost": 1
         },
         "legendary_support": {
