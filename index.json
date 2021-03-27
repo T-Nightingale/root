@@ -330,6 +330,11 @@
             "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit. Friendly Infantry units within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
             "points": 10
         },
+        "support": {
+            "name": "Support",
+            "description": "When a, friendly Infantry unit within 6\" activates, this unit may choose to activate and perform the same actions as that unit. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
+            "points": 5
+        },
         "hero": {"name": "Hero", "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit."},
         "cumbersome": {"name": "Cumbersome", "description": "This model hits with this weapon at -1 Strength when fighting in engagement range.", "points": ["weapon.attacks", {"multiply": -1}]}
     },
