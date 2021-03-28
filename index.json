@@ -307,7 +307,7 @@
         },
         "sniper": {
             "name": "Sniper",
-            "description": "This weapon may ignore the Long Range penalty. You may choose which model is hit and these hits may not be reassigned to other friendly units.",
+            "description": "This weapon may ignore the Long Range penalty. You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.",
             "points": [5]
         },
         "assassin": {
