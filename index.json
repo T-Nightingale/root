@@ -203,7 +203,7 @@
             "points": [
                 "rule.x",
                 {"subtract": 1},
-                {"multiply": "weapon.points"}
+                {"multiply": ["weapon.points", {"multiply": 0.5}]}
             ]
         },
         "armored_front": {
