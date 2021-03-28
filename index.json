@@ -310,6 +310,11 @@
             "description": "This weapon may ignore the Long Range penalty. You may choose which model is hit and these hits may not be reassigned to other friendly units.",
             "points": [5]
         },
+        "assassin": {
+            "name": "Assassin",
+            "description": "You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.",
+            "points": [5]
+        },
         "aircraft": {
             "name": "Aircraft",
             "description": "Enemy units suffer -1 Accuracy when shooting at this model. This model may ignore terrain and other models when moving. This model may only turn up to 90 degrees. When activated, it must first take a free move action its full movement distance in a straight line. If it ends its move off the table, place it back on any table edge. Its activation then ends.",
@@ -327,12 +332,12 @@
         "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons."},
         "leader": {
             "name": "Leader",
-            "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit. Friendly Infantry units within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
+            "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly Infantry units within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
             "points": 10
         },
         "support": {
             "name": "Support",
-            "description": "When a, friendly Infantry unit within 6\" activates, this unit may choose to activate and perform the same actions as that unit. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
+            "description": "When a, friendly Infantry unit within 6\" activates, may choose to activate for free if it has not activated and perform the same actions as that unit. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
             "points": 5
         },
         "hero": {"name": "Hero", "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit."},
