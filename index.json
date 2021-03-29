@@ -177,7 +177,7 @@
             "name": "Wounds",
             "inputs": ["x"],
             "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.",
-            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 5}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
         },
         "crew": {
             "name": "Crew",
