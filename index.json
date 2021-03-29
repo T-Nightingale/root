@@ -177,7 +177,7 @@
             "name": "Wounds",
             "inputs": ["x"],
             "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.",
-            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 5}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
         },
         "crew": {
             "name": "Crew",
@@ -194,6 +194,16 @@
                 "rule.x",
                 {"subtract": 1},
                 {"multiply": "weapon.points"}
+            ]
+        },
+        "critical": {
+            "name": "Critical",
+            "inputs": ["x"],
+            "description": "Models hit by this weapon add X to any Damage Table(X) rolls.",
+            "points": [
+                "rule.x",
+                {"multiply": "weapon.attacks"},
+                {"multiply": 5}
             ]
         },
         "deadly": {
@@ -262,22 +272,22 @@
         },
         "damage_table_titan": {
             "name": "Damage Table(Titanic)",
-            "description": "When this model would be killed, roll a D10 adding the amount of critical damage it has suffered and refer to the following: \n * Glance(1-2): The unit immediately takes 1 additional Strain. \n * Stunned(3-4): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement. \n * Panic(9-10): Take 2 additional strain and immediately take a break test. \n * Destroyed(11+): It is instantly destroyed. \n * Catastrophic(13+): The unit crashes down and all units within 6\" gain 3 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+            "description": "When this model would be killed, roll a D10 adding the amount it failed the save by and refer to the following: \n * Glance(2-5): No additional effect. \n * Stunned(6-7): The unit permenantly suffers -1 Courage. \n * Damaged(8-9): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(9-10): The unit permenantly halves its movement. \n * Panic(11-12): Take 2 additional strain and immediately take a break test. \n * Destroyed(13+): It is instantly destroyed. \n * Catastrophic(15+): The unit crashes down and all units within 6\" gain 3 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 20}]
         },
         "damage_table_monster": {
             "name": "Damage Table(Monster)",
-            "description": "When this model would be killed, roll a D10 adding the amount of critical damage it has suffered and refer to the following: \n * Stunned(1-2): The unit permenantly suffers -1 Courage. \n * Damaged(3-4): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(5-6): The unit permenantly halves its movement. \n * Panic(7-8): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(9+): It is instantly destroyed. \n * Fall(11+): The unit crashes down and all units within 6\" gain 2 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+            "description": "When this model would be killed, roll a D10 adding the amount it failed the save by and refer to the following: \n * Glance(2-3): No additional effect. \n * Stunned(4-5): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement. \n * Panic(9-10): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Fall(13+): The unit crashes down and all units within 6\" gain 2 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "damage_table_vehicle": {
             "name": "Damage Table(Vehicle)",
-            "description": "When this model would be killed, roll a D10 adding the amount of critical damage it has suffered and refer to the following: \n * Stunned(1-2): The unit permenantly suffers -1 Courage. \n * Damaged(3-4): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(5-6): The unit permenantly halves its movement. \n * Fire(7-8): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(9+): It is instantly destroyed. \n * Explosion(11+): The unit explodes and all units within 6\" gain 2 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+            "description": "When this model would be killed, roll a D10 adding the amount it failed the save by and refer to the following: \n * Glance(2-3): No additional effect.\n * Stunned(4-5): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement. \n * Fire(9-10): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Explosion(13+): The unit explodes and all units within 6\" gain 2 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "damage_table_aircraft": {
             "name": "Damage Table(Aircraft)",
-            "description": "When this model would be killed, roll a D10 adding the amount of critical damage it has suffered and refer to the following: \n * Stunned(1-2): The unit permenantly suffers -1 Courage. \n * Damaged(3-4): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(5-6): The unit permenantly halves its movement.. \n * Fire(7-8): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(9+): It is instantly destroyed. \n * Crash(11+): The unit crashes into the ground and all units within 6\" gain 2 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+            "description": "When this model would be killed, roll a D10 adding the amount it failed the save by and refer to the following: \n * Glance(2-3): No additional effect. \n * Stunned(4-5): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement.. \n * Fire(9-10): Take 2 additional strain and immediately take a break test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Crash(13+): The unit crashes into the ground and all units within 6\" gain 2 Strain. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
         },
         "catches_fire": {"name": "Catches Fire", "description": "This unit suffers the \"Fire\" result on the Vehicle Damage table on rolls of (4-5) instead of (5).", "points": -5},
@@ -322,7 +332,7 @@
         },
         "pistol": {"name": "Pistol", "description": "This weapon may be used instead of a model's other weapons even while engaged in close combat."},
         "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": 1},
-        "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 have +2 AP.", "points": ["weapon.attacks", {"multiply": 4}, {"multiply": 0.2}]},
+        "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 have +1 AP.", "points": ["weapon.attacks", {"multiply": 2}, {"multiply": 0.2}]},
         "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks"]},
         "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Aircraft special rule.", "points": ["weapon.attacks", {"multiply": 3}]},
         "titanic": {
