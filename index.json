@@ -339,7 +339,7 @@
             "name": "Titanic",
             "description": "When this unit is activated it may only perform one action and benefit from abilties which trigger when the unit is activated once. It may then be activated a second time to perform its second action."
         },
-        "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons."},
+        "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
         "leader": {
             "name": "Leader",
             "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly Infantry units within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
@@ -351,7 +351,18 @@
             "points": 5
         },
         "hero": {"name": "Hero", "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit."},
-        "cumbersome": {"name": "Cumbersome", "description": "This model hits with this weapon at -1 Strength when fighting in engagement range.", "points": ["weapon.attacks", {"multiply": -1}]}
+        "cumbersome": {"name": "Cumbersome", "description": "This model hits with this weapon at -1 Strength when fighting in engagement range.", "points": ["weapon.attacks", {"multiply": -1}]},
+        "terrain": {
+            "name": "Terrain",
+            "description": "This unit may be placed anywhere on the field during deployment, more than 24\" from any enemies units or deployment zones. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."
+        },
+        "impassable": {"name": "Impassable", "inputs": ["x"], "description": "This model may not be crossed by X unit types.", "points": 10},
+        "clearable": {"name": "Clearable(5)", "description": "Infantry units within 3\" of this model may take a Clear action to attempt to clear this obstacle. Roll a D10 and on a roll of 5 or less this obstacle is cleared."},
+        "garrison": {"name": "Garrison", "description": "Up to X models or a gun with X or less Crew may occupy this model in the same way models occupy a building.", "inputs": ["x"]},
+        "soft_cover_x": {"name": "Soft-Cover", "inputs": ["x"], "description": "This model provides soft cover to X models in it.", "points": ["rule.x", {"multiply": 2}]},
+        "soft_cover": {"name": "Soft-Cover", "description": "This model provides soft cover to models behind it.", "points": 10},
+        "hard_cover_x": {"name": "Hard-Cover", "inputs": ["x"], "description": "This model provides soft cover to X models in it.", "points": ["rule.x", {"multiply": 4}]},
+        "hard_cover": {"name": "Hard-Cover", "description": "This model provides hard cover to models behind it.", "points": 20}
     },
     "weapons": {
         "unarmed": {"name": "Unarmed (Melee)", "attacks": 1, "short": "Melee"},
