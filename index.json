@@ -217,13 +217,13 @@
             ]
         },
         "armored_front": {
-            "name": "Armored(Front)",
-            "description": "This unit gets +1 Save when hit in its front arc.",
+            "name": "Heavy Armor(Front)",
+            "description": "This model gets +1 Save when hit in its front arc.",
             "points": 5
         },
         "vulnerable_side_rear": {
             "name": "Vulnerable(Side, Rear)",
-            "description": "This unit gets -1 Save when hit in its Side arc or -2 Save when hit in its Rear arc.",
+            "description": "This model gets -1 Save when hit in its Side arc or -2 Save when hit in its Rear arc.",
             "points": -10
         },
         "vulnerable_rear": {"name": "Vulnerable(Rear)", "description": "This unit gets -1 Save when hit in its Rear arc.", "points": -5},
