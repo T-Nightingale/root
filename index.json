@@ -100,7 +100,7 @@
         "impact": {
             "name": "Impact",
             "inputs": ["x"],
-            "description": "This model causes X hits with no AP when it successfully charges an enemy unit.",
+            "description": "This model causes X Melee hits with no AP when it successfully charges an enemy unit.",
             "points": [2, {"multiply": "rule.x"}]
         },
         "phalanx": {
@@ -261,9 +261,9 @@
             "description": "This model increases its Save by X.",
             "points": [2, {"multiply": "rule.x"}]
         },
-        "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and low obstacles when moving.", "points": 1},
-        "agile": {"name": "Agile", "description": "This unit may ignore low obstacles when moving.", "points": 1},
-        "walker": {"name": "Walker", "description": "This unit may ignore low obstacles when moving.", "points": 5},
+        "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 1},
+        "agile": {"name": "Agile", "description": "This unit may ignore low obstacles of 1\" or less in height when moving.", "points": 1},
+        "walker": {"name": "Walker", "description": "This unit may ignore low obstacles of 1\" or less in height when moving.", "points": 5},
         "repair": {
             "name": "Repair",
             "inputs": ["x"],
