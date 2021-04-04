@@ -5,7 +5,7 @@
             "id": "grim_darkness",
             "category": "sci_fi",
             "version": "0.1",
-            "name": "Grim Darkness (Beta)",
+            "name": "Grim Darkness",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
             "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
