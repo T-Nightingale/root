@@ -342,7 +342,7 @@
         "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
         "leader": {
             "name": "Leader",
-            "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly Infantry units within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
+            "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly Infantry units within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit unless that unit is a Leader attacking in Melee.",
             "points": 10
         },
         "support": {
