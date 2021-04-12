@@ -1,8 +1,10 @@
 {
+    "gameTypes": {"battle": {"name": "Battle"}, "skirmish": {"name": "Skirmish"}},
     "categories": {"historical": {"name": "Historical"}, "sci_fi": {"name": "Sci-fi"}, "fantasy": {"name": "Fantasy"}},
     "games": {
         "grim_darkness": {
             "id": "grim_darkness",
+            "gameType": "battle",
             "category": "sci_fi",
             "version": "0.1",
             "name": "Grim Darkness",
@@ -14,6 +16,7 @@
         "fantasy_realms": {
             "id": "fantasy_realms",
             "category": "fantasy",
+            "gameType": "battle",
             "version": "0.1",
             "name": "Fantasy Realms (Beta)",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg",
@@ -24,6 +27,7 @@
         "world_war_two": {
             "id": "world_war_two",
             "category": "historical",
+            "gameType": "battle",
             "name": "World War Two",
             "version": "1.0",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/ww2.jpg",
@@ -34,6 +38,7 @@
         "gunpowder": {
             "id": "gunpowder",
             "category": "historical",
+            "gameType": "battle",
             "name": "Napoleonic Era (18th-19th Century) (Beta)",
             "url": "https://raw.githubusercontent.com/wargame-engine/gunpowder/master/",
             "description": "18th and 19th Century battles with gunpowder focusing on skirmish-sized engagements.",
