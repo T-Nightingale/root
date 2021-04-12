@@ -103,6 +103,10 @@
         }
     },
     "rules": {
+        "guardian": {
+            "name": "Guardian",
+            "description": "Hits must be assigned to this model or another model in this unit with Guardian before other models."
+        },
         "impact": {
             "name": "Impact",
             "inputs": ["x"],
