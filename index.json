@@ -98,7 +98,7 @@
             "phase": "pre_game",
             "name": "Hidden Deployment (Core)",
             "flavor": "Staying hidden and waiting for the right moment to strike can have a devastating effect.",
-            "description": "Any number of Infantry, Artillery or Fortification units, one point per pair may be placed in hidden deployment instead of deployed on the field. See the section for hidden units in the core rules for details on how hidden units work.",
+            "description": "Any number of _Infantry_, _Artillery_ or _Fortification_ units, one point per pair may be placed in hidden deployment instead of deployed on the field. See the section for hidden units in the core rules for details on how hidden units work.",
             "cost": "1/pair"
         }
     },
@@ -321,7 +321,7 @@
         },
         "transport": {
             "name": "Transport",
-            "description": "This model may carry X Infantry models or one Artillery model inside of it.",
+            "description": "This model may carry X _Infantry_ models inside of it.",
             "inputs": ["x"],
             "points": ["rule.x"]
         },
@@ -368,17 +368,23 @@
         },
         "support": {
             "name": "Support",
-            "description": "When a, friendly Infantry unit within 6\" activates, may choose to activate for free if it has not activated and perform the same actions as that unit. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
+            "description": "When a, friendly _Infantry_ unit within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
             "points": 5
         },
-        "hero": {"name": "Hero", "description": "When this unit is activated, friendly Infantry units within 6\" may choose to activate and perform the same actions as this unit."},
+        "support_x": {
+            "name": "Support",
+            "inputs": ["x"],
+            "description": "When a friendly unit of X type within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of X type.",
+            "points": 5
+        },
+        "hero": {"name": "Hero", "description": "When this unit is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."},
         "cumbersome": {"name": "Cumbersome", "description": "This model hits with this weapon at -1 Strength when fighting in engagement range.", "points": ["weapon.attacks", {"multiply": -1}]},
         "terrain": {
             "name": "Terrain",
             "description": "This unit may be placed anywhere on the field during deployment, more than 24\" from any enemies units or deployment zones. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."
         },
         "impassable": {"name": "Impassable", "inputs": ["x"], "description": "This model may not be crossed by X unit types.", "points": 10},
-        "clearable": {"name": "Clearable(5)", "description": "Infantry units within 3\" of this model may take a Clear action to attempt to clear this obstacle. Roll a D10 and on a roll of 5 or less this obstacle is cleared."},
+        "clearable": {"name": "Clearable(5)", "description": "_Infantry_ units within 3\" of this model may take a Clear action to attempt to clear this obstacle. Roll a D10 and on a roll of 5 or less this obstacle is cleared."},
         "garrison": {"name": "Garrison", "description": "Up to X models or a gun with X or less Crew may occupy this model in the same way models occupy a building.", "inputs": ["x"]},
         "soft_cover_x": {"name": "Soft-Cover", "inputs": ["x"], "description": "This model provides soft cover to X models in it.", "points": ["rule.x", {"multiply": 2}]},
         "soft_cover": {"name": "Soft-Cover", "description": "This model provides soft cover to models behind it.", "points": 10},
