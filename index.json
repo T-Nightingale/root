@@ -13,6 +13,16 @@
             "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
             "color": "#7761ab"
         },
+        "space_wars": {
+            "id": "space_wars",
+            "category": "sci_fi",
+            "gameType": "battle",
+            "name": "Space Wars (Beta)",
+            "image": "https://raw.githubusercontent.com/wargame-engine/root/master/spacewars.jpg",
+            "url": "https://raw.githubusercontent.com/wargame-engine/space-wars/main/",
+            "description": "Sci-fi battles in a galaxy a significant distance away.",
+            "color": "#2f3c54"
+        },
         "fantasy_realms": {
             "id": "fantasy_realms",
             "category": "fantasy",
