@@ -50,6 +50,7 @@
             "category": "historical",
             "gameType": "battle",
             "name": "Napoleonic Era (18th-19th Century) (Beta)",
+            "image": "https://raw.githubusercontent.com/wargame-engine/root/master/gunpowder.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/gunpowder/master/",
             "description": "18th and 19th Century battles with gunpowder focusing on skirmish-sized engagements.",
             "color": "#2f3c54"
@@ -343,12 +344,12 @@
         "sniper": {
             "name": "Sniper",
             "description": "This weapon may ignore the Long Range penalty. You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.",
-            "points": [5]
+            "points": 5
         },
         "assassin": {
             "name": "Assassin",
             "description": "You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.",
-            "points": [5]
+            "points": 5
         },
         "aircraft": {
             "name": "Aircraft",
