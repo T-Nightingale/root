@@ -34,6 +34,16 @@
             "description": "Fantasy battles in the realms with many unique and possibly familiar factions.",
             "color": "#7761ab"
         },
+        "ancients": {
+            "id": "ancients",
+            "gameType": "battle",
+            "category": "historical",
+            "version": "0.1",
+            "name": "Ancients (490BC to 1066 AD)",
+            "url": "https://raw.githubusercontent.com/wargame-engine/wbh/master/",
+            "description": "Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.",
+            "color": "#9f0807"
+        },
         "world_war_two": {
             "id": "world_war_two",
             "category": "historical",
@@ -57,14 +67,6 @@
         }
     },
     "unfinished_games": {
-        "ancients": {
-            "id": "ancients",
-            "category": "historical",
-            "name": "Ancients (Beta)",
-            "url": "https://raw.githubusercontent.com/wargame-engine/wbh/master/",
-            "description": "Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.",
-            "color": "#9f0807"
-        },
         "third_age": {
             "id": "third_age",
             "category": "fantasy",
