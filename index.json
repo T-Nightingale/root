@@ -6,7 +6,7 @@
             "id": "grim_darkness",
             "gameType": "battle",
             "category": "sci_fi",
-            "version": "0.1",
+            "version": "1.0",
             "name": "Grim Darkness",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
