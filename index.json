@@ -7,7 +7,7 @@
             "gameType": "battle",
             "category": "sci_fi",
             "version": "1.0",
-            "name": "Grim Darkness",
+            "name": "uWotM8 Darkness",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
             "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
@@ -200,6 +200,12 @@
             "name": "Wounds",
             "inputs": ["x"],
             "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.",
+            "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
+        },
+        "swarm": {
+            "name": "Swarm",
+            "inputs": ["x"],
+            "description": "This model is treated as having X models per base (for the purposes of abilities that interact with models) that it may lose before it is killed. If a unit contains multiple models with Swarm, damage must be assigned to an already damaged model before being assigned to any other model.",
             "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
         },
         "crew": {
