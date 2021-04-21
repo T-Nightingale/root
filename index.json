@@ -1,6 +1,7 @@
 {
     "gameTypes": {"battle": {"name": "Battle"}, "skirmish": {"name": "Skirmish"}},
     "categories": {"historical": {"name": "Historical"}, "sci_fi": {"name": "Sci-fi"}, "fantasy": {"name": "Fantasy"}},
+    "reportUrl": "https://github.com/wargame-engine/root/issues",
     "games": {
         "grim_darkness": {
             "id": "grim_darkness",
