@@ -341,7 +341,7 @@
         },
         "transport": {
             "name": "Transport",
-            "description": "This model may carry X _Infantry_ models inside of it. Units may spend a Move action to embark or disembark from this model. To disembark, measure a Move action originating from this model's edge. To embark, the unit must all get within 1\" of this model. If this model is destroyed while units are embarked, each model inside must take a single Save with no AP and then the unit takes 3 Shock.",
+            "description": "This model may carry X _Infantry_ models inside of it. Units may spend a Move action to embark or disembark from this model. To disembark, measure a Move action originating from this model's edge. To embark, the unit must all get within 1\" of this model. If this model is destroyed while units are embarked, each model inside must take a single Save with no AP and then the unit takes 3 Shock. If this unit makes two Move actions, units may not embark or disembark from this unit.",
             "inputs": ["x"],
             "points": ["rule.x"]
         },
