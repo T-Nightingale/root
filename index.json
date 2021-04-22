@@ -162,7 +162,7 @@
         "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": 2},
         "deployable": {
             "name": "Deployable",
-            "description": "This model can be set up at any time during its containing units activation. If its containing unit moves out of coherency the model is destroyed."
+            "description": "As an action, this model can be set up on the field. It may not be used to control or contest objectives and may not be targeted by abilities."
         },
         "ambush": {
             "name": "Ambush",
@@ -346,11 +346,6 @@
             "points": ["rule.x"]
         },
         "reload": {"name": "Reload", "description": "After firing, a unit must spend 1 action to reload this weapon before it can be fired again.", "points": ["weapon.attacks", {"multiply": -1}]},
-        "limited": {
-            "name": "Limited",
-            "description": "You may only include X of these units in your force.",
-            "inputs": ["x"]
-        },
         "sniper": {
             "name": "Sniper",
             "description": "This weapon may ignore the Long Range penalty. You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.",
