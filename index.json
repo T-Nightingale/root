@@ -425,7 +425,14 @@
         "soft_cover_x": {"name": "Soft-Cover", "inputs": ["x"], "description": "This model provides soft cover to X models in it.", "points": ["rule.x", {"multiply": 2}]},
         "soft_cover": {"name": "Soft-Cover", "description": "This model provides soft cover to models behind it.", "points": 10},
         "hard_cover_x": {"name": "Hard-Cover", "inputs": ["x"], "description": "This model provides soft cover to X models in it.", "points": ["rule.x", {"multiply": 4}]},
-        "hard_cover": {"name": "Hard-Cover", "description": "This model provides hard cover to models behind it.", "points": 20}
+        "hard_cover": {"name": "Hard-Cover", "description": "This model provides hard cover to models behind it.", "points": 20},
+        "mount_horse" : {
+            "name" : "Horse",
+            "hidden": true,
+            "description_short": "+2\" Movement",
+            "description" : "Increase this model's Movement by 2\".",
+            "points" : 2
+        }
     },
     "weapons": {
         "unarmed": {"name": "Unarmed (Melee)", "attacks": 1, "short": "Melee"},
