@@ -259,7 +259,7 @@
         "vulnerable_rear": {"name": "Vulnerable(Rear)", "description": "This unit gets -1 Save when hit in its Rear arc.", "points": -5},
         "furious": {
             "name": "Furious",
-            "description": "When this model charges, hit rolls of 1 or 2 generate an additional attack.",
+            "description": "When this model charges, hit rolls of 1 or 2 cause 2 hits instead of 1.",
             "points": 2
         },
         "relentless": {
