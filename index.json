@@ -396,6 +396,7 @@
             "description": "When this unit is activated, friendly units of X types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of X type within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly unit of X type unless that unit is also a Leader and attacking in Melee.",
             "points": 10
         },
+        "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 1}]},
         "leader_x": {
             "name": "Leader",
             "inputs": ["x"],
