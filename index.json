@@ -3,6 +3,17 @@
     "categories": {"historical": {"name": "Historical"}, "sci_fi": {"name": "Sci-fi"}, "fantasy": {"name": "Fantasy"}},
     "reportUrl": "https://github.com/wargame-engine/root/issues",
     "games": {
+        "grim_darkness_skirmish": {
+            "id": "grim_darkness_skirmish",
+            "gameType": "skirmish",
+            "category": "sci_fi",
+            "version": "0.1",
+            "name": "Grim Darkness Skirmish (Beta)",
+            "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
+            "url": "https://raw.githubusercontent.com/wargame-engine/grim-darkness-skirmish/master/",
+            "description": "Sci-fi skirmish battles in the far future with many unique and possibly familiar factions.",
+            "color": "#7761ab"
+        },
         "grim_darkness": {
             "id": "grim_darkness",
             "gameType": "battle",
