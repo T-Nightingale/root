@@ -139,6 +139,11 @@
             "description": "Models with this weapon may make a free shoot action after moving at -1 Accuracy. They may not shoot again this round.",
             "points": ["weapon.attacks"]
         },
+        "rapid_fire": {
+            "name": "Rapid Fire",
+            "description": "When shooting with this weapon, a model may choose to fire twice with it. If it does, halve both the Short and Long ranges of the weapon.",
+            "points": ["weapon.attacks"]
+        },
         "blast": {
             "name": "Blast",
             "inputs": ["x"],
