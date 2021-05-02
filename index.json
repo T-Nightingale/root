@@ -166,7 +166,7 @@
                 {"multiply": "weapon.points"}
             ]
         },
-        "flame": {"name": "Flame", "description": "This weapon ignores cover bonuses at Short range.", "points": ["weapon.attacks"]},
+        "flame": {"name": "Flame", "description": "This weapon ignores cover bonuses at Short range.", "points": ["weapon.attacks", {"multiply": 0.5}]},
         "ammo": {
             "name": "Ammo",
             "inputs": ["x"],
