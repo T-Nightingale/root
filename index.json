@@ -10,7 +10,7 @@
             "version": "1.0",
             "name": "Grim Darkness",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
-            "url": "https://raw.githubusercontent.com/wargame-engine/wzff/master/",
+            "url": "https://raw.githubusercontent.com/wargame-engine/grim-darkness/master/",
             "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
             "color": "#7761ab"
         },
