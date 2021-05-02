@@ -396,7 +396,7 @@
         "amphibious": {"name": "Amphibious", "description": "This unit may treat impassable water terrain as difficult terrain.", "points": 5},
         "scatter": {"name": "Scatter", "description": "When choosing a target for this weapon, choose a specific model in the unit. If this weapon misses, use D10 scattering to determine the landing point of the shot relative to that model. If it lands within 1\" of a different unit, that unit is hit instead.", "points": ["weapon.attacks"]},
         "salvo": {"name": "Salvo", "description": "This weapon always hits at -1 Accuracy. When scattering results from this weapon, it hits the closest unit within 3\" instead of just 1\".", "points": ["weapon.attacks"]},
-        "overheat": {"name": "Overheat", "description": "The firer must take 1 Save roll for each hit roll of 9+.", "points": ["weapon.attacks", {"multiply": -2}]},
+        "overheat": {"name": "Overheat", "description": "The firer must take 1 Save roll for each hit roll of 9+.", "points": ["weapon.attacks", {"multiply": -1}]},
         "pistol": {"name": "Pistol", "description": "This weapon may be used instead of a model's other weapons even while engaged in close combat."},
         "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": 1},
         "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 have +1 AP.", "points": ["weapon.attacks", {"multiply": 2}, {"multiply": 0.2}]},
