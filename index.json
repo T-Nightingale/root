@@ -109,7 +109,7 @@
             "phase": "activation",
             "name": "Incredible Courage (Core)",
             "flavor": "Even in the darkest of times, moments of great courage can occur.",
-            "description": "Once per battle, choose a unit that is about to take a Courage test. That unit gains +2 Courage until the end of its activation.",
+            "description": "Once per round, choose a unit that is about to take a Courage test. That unit gains +2 Courage until the end of its activation.",
             "cost": 2
         },
         "battlefield_reserves": {
