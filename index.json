@@ -98,13 +98,6 @@
             "description": "Once per round, re-roll a single skill test die. It may not be re-rolled again.",
             "cost": 1
         },
-        "legendary_support": {
-            "phase": "pre_game",
-            "name": "Legendary Support (Core)",
-            "flavor": "A battle involving several legends is a story to be told.",
-            "description": "You may include one additional legend in your roster.",
-            "cost": 1
-        },
         "incredible_courage": {
             "phase": "activation",
             "name": "Incredible Courage (Core)",
