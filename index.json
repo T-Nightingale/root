@@ -35,6 +35,17 @@
             "description": "Sci-fi battles in a galaxy a significant distance away. A battle between the Dark Side and the Light Side to control the galaxy.",
             "color": "#2f3c54"
         },
+        "fantasy_realms_skirmish": {
+            "id": "fantasy_realms_skirmish",
+            "category": "fantasy",
+            "gameType": "skirmish",
+            "version": "0.1",
+            "name": "Fantasy Realms Skirmish (Beta)",
+            "image": "https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg",
+            "url": "https://raw.githubusercontent.com/wargame-engine/fantasy-realms-skirmish/master/",
+            "description": "Fantasy skirmish battles in the realms with many unique and possibly familiar factions.",
+            "color": "#7761ab"
+        },
         "fantasy_realms": {
             "id": "fantasy_realms",
             "category": "fantasy",
