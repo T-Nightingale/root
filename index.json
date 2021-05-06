@@ -159,6 +159,7 @@
                 {"multiply": "weapon.points"}
             ]
         },
+        "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with a Damage Table(x).", "points": ["weapon.attacks", {"multiply": 2}]},
         "flame": {"name": "Flame", "description": "This weapon ignores cover bonuses at Short range.", "points": ["weapon.attacks", {"multiply": 0.5}]},
         "ammo": {
             "name": "Ammo",
