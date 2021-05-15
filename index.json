@@ -1,1 +1,1120 @@
-{"gameTypes":{"battle":{"name":"Battle"},"skirmish":{"name":"Skirmish"}},"categories":{"historical":{"name":"Historical"},"sci_fi":{"name":"Sci-fi"},"fantasy":{"name":"Fantasy"}},"reportUrl":"https://github.com/wargame-engine/root/issues","games":{"grim_darkness_skirmish":{"id":"grim_darkness_skirmish","gameType":"skirmish","category":"sci_fi","version":"0.1","name":"Grim Darkness Skirmish (Beta)","image":"https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg","url":"https://raw.githubusercontent.com/wargame-engine/grim-darkness-skirmish/master/","description":"Sci-fi skirmish battles in the far future with many unique and possibly familiar factions.","color":"#7761ab"},"grim_darkness":{"id":"grim_darkness","gameType":"battle","category":"sci_fi","version":"1.0","name":"Grim Darkness","image":"https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg","url":"https://raw.githubusercontent.com/wargame-engine/grim-darkness/master/","description":"Sci-fi battles in the far future with many unique and possibly familiar factions.","color":"#7761ab"},"space_wars":{"id":"space_wars","category":"sci_fi","gameType":"battle","name":"Space Wars (Beta)","image":"https://raw.githubusercontent.com/wargame-engine/root/master/spacewars3.jpg","url":"https://raw.githubusercontent.com/wargame-engine/space-wars/main/","description":"Sci-fi battles in a galaxy a significant distance away. A battle between the Dark Side and the Light Side to control the galaxy.","color":"#2f3c54"},"fantasy_realms_skirmish":{"id":"fantasy_realms_skirmish","category":"fantasy","gameType":"skirmish","version":"0.1","name":"Fantasy Realms Skirmish (Beta)","image":"https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg","url":"https://raw.githubusercontent.com/wargame-engine/fantasy-realms-skirmish/master/","description":"Fantasy skirmish battles in the realms with many unique and possibly familiar factions.","color":"#7761ab"},"fantasy_realms":{"id":"fantasy_realms","category":"fantasy","gameType":"battle","version":"1.0","name":"Fantasy Realms","image":"https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg","url":"https://raw.githubusercontent.com/wargame-engine/fantasy-realms/master/","description":"Fantasy battles in the realms with many unique and possibly familiar factions.","color":"#7761ab"},"ancients":{"id":"ancients","gameType":"battle","category":"historical","version":"0.1","name":"Ancients (490BC to 1066 AD)","url":"https://raw.githubusercontent.com/wargame-engine/wbh/master/","description":"Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.","color":"#9f0807"},"world_war_two":{"id":"world_war_two","category":"historical","gameType":"battle","name":"World War Two","version":"1.0","image":"https://raw.githubusercontent.com/wargame-engine/root/master/ww2.jpg","url":"https://raw.githubusercontent.com/wargame-engine/world-war-two/master/","description":"World War Two battles with some added twists and a focus on adding interesting rules and choices.","color":"#6c541e"},"gunpowder":{"id":"gunpowder","category":"historical","gameType":"battle","name":"Napoleonic Era (18th-19th Century) (Beta)","image":"https://raw.githubusercontent.com/wargame-engine/root/master/gunpowder.jpg","url":"https://raw.githubusercontent.com/wargame-engine/gunpowder/master/","description":"18th and 19th Century battles with gunpowder focusing on skirmish-sized engagements.","color":"#2f3c54"}},"unfinished_games":{"third_age":{"id":"third_age","category":"fantasy","name":"The Third Age (Beta)","image":"https://raw.githubusercontent.com/wargame-engine/root/master/wbf.jpg","url":"https://raw.githubusercontent.com/wargame-engine/wbf/master/","description":"Skirmish battles in a familiar fantasy world.","color":"#9aab89"}},"phases":{"pre_game":{"name":"Pre-Game"},"bidding":{"name":"Bidding"},"activation":{"name":"Activation"}},"strategies":{"lucky":{"phase":"activation","name":"Lucky (Core)","flavor":"It seems luck has gone our way. Or maybe it's something more...","description":"Once per round, re-roll a single skill test die. It may not be re-rolled again.","cost":1},"incredible_courage":{"phase":"activation","name":"Incredible Courage (Core)","flavor":"Even in the darkest of times, moments of great courage can occur.","description":"Once per round, choose a unit that is about to take a Courage test. That unit gains +2 Courage until the end of its activation.","cost":2},"battlefield_reserves":{"phase":"pre_game","name":"Outflanking Reserves (Core)","flavor":"Sometimes assets are most useful finding an alternate route around the enemy.","description":"Up to half of any force's units, one point for each may be placed in outflanking reserves instead of deployed on the field. Any round after the first, when this unit is activated, it may be set up within 6\" of a table edge that is not in the enemy deployment zone, and more than 12\" from any enemy units.","cost":"1/per"}},"hidden_strategies":{"hidden_deployment":{"phase":"pre_game","name":"Hidden Deployment (Core)","flavor":"Staying hidden and waiting for the right moment to strike can have a devastating effect.","description":"Any number of _Infantry_, _Artillery_ or _Fortification_ units, one point per pair may be placed in hidden deployment instead of deployed on the field. See the section for hidden units in the core rules for details on how hidden units work.","cost":"1/pair"}},"rules":{"guardian":{"name":"Guardian","description":"Hits must be assigned to this model or another model in this unit with Guardian before other models."},"impact":{"name":"Impact","inputs":["x"],"description":"This model causes X Melee hits with no AP when it successfully charges an enemy unit.","points":[2,{"multiply":"rule.x"}]},"phalanx":{"name":"Phalanx","inputs":["x"],"description":"You may make X free attacks with this weapon when a unit moves into your engagement range.","points":[{"add":["model.fight",{"subtract":"constants.baseStats.fight"}]},{"add":["weapon.ap",{"multiply":"constants.apCost"}]},{"multiply":"rule.x"},{"multiply":0.5}]},"exposed":{"name":"Exposed","description":"This model may receive shock even from weapons that it can't be damaged by.","points":-10},"assault":{"name":"Assault","description":"Models with this weapon may make a free shoot action after moving at -1 Accuracy. They may not shoot again this round.","points":["weapon.attacks"]},"rapid_fire":{"name":"Rapid Fire","description":"When shooting with this weapon, a model may choose to fire twice with it. If it does, halve both the Short and Long ranges of the weapon.","points":["weapon.attacks"]},"blast":{"name":"Blast","inputs":["x"],"description":"Multiply hits from this weapon by X. A unit may not take more hits than the number of models in the unit.","notes":"Don't pay more than once for range with blast weapons.","points":["rule.x",{"subtract":1},{"multiply":"weapon.points"}]},"emp":{"name":"EMP","description":"This weapon gains +2 AP against units with a Damage Table(x).","points":["weapon.attacks",{"multiply":2}]},"flame":{"name":"Flame","description":"This weapon ignores cover bonuses at Short range.","points":["weapon.attacks",{"multiply":0.5}]},"ammo":{"name":"Ammo","inputs":["x"],"description":"This weapon may only be fired X times per game.","pointNotes":"Always apply this rule last or your numbers will be off.","points":[1,{"subtract":[0.25,{"multiply":"rule.x"}]},{"multiply":-1},{"multiply":"weapon.points"}]},"fear":{"name":"Fear","description":"Enemy units within 6\" get -1 Courage.","points":2},"fly":{"name":"Fly","description":"This model may ignore terrain and other models without the Fly special rule when moving.","points":2},"deployable":{"name":"Deployable","description":"As an action, this model can be set up on the field. It may not be used to control or contest objectives and may not be targeted by abilities."},"ambush":{"name":"Ambush","description":"This unit may be set aside in reserves before the match begins if all models have ambush. Any round after the first, when this unit is activated while in reserves, you may choose a point on the battlefield 12\" away from any enemy units and take an Initiative check. If passed, place the unit at that location on the location. If failed, use D10 scattering to determine the landing location of the unit relative to the chosen point.","points":2},"ambush_large":{"name":"Ambush","description":"This unit may be set aside in reserves before the match begins if all models have ambush. Any round after the first, when this unit is activated while in reserves, you may choose a point on the battlefield 12\" away from any enemy units and take a Initiative check. If passed, place the unit at that location on the location. If failed, use D10 scattering to determine the landing location of the unit relative to the chosen point.","points":10},"scout":{"name":"Scout","description":"When this model arrives on the field, it may make a free 6\" move.","points":1},"outflank":{"name":"Outflank","description":"This unit may be set aside in reserves before the match begins if all models have outflank. Any round after the first, when this unit is activated you may place the unit within 6\" of a table edge over 12\" away from enemy units.","points":1},"bomb":{"name":"Bomb","description":"This weapon may be used at any time during a unit's movement. It must still use a Shoot action to fire."},"resilient":{"name":"Resilient","inputs":["x"],"description":"Roll a die when this model loses a wound. On a value of X or less that wound is not lost.","points":["rule.x",{"multiply":2}]},"reach":{"name":"Reach","inputs":["x"],"description":"This weapon may engage and fight models up to X\" away. Enemy models must still move into base contact unless they also have reach.","points":["weapon.attacks",{"multiply":"rule.x"}]},"tough":{"name":"Tough","inputs":["x"],"description":"This model may re-roll X Save tests per round.","points":["model.defense",{"multiply":"rule.x"},{"multiply":1}]},"wounds":{"name":"Wounds","inputs":["x"],"description":"This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.","points":["model.defense",{"subtract":"constants.baseStats.defense"},{"max":0},{"multiply":2},{"add":5},{"multiply":["rule.x",{"subtract":1}]}]},"swarm":{"name":"Swarm","inputs":["x"],"description":"This model is treated as having X models per base (for the purposes of abilities that interact with models) that it may lose before it is killed. If a unit contains multiple models with Swarm, damage must be assigned to an already damaged model before being assigned to any other model.","points":["model.defense",{"subtract":"constants.baseStats.defense"},{"max":0},{"multiply":2},{"add":5},{"multiply":["rule.x",{"subtract":1}]}]},"crew":{"name":"Crew","inputs":["x"],"description":"This model is crewed by X models (and is treated as having X models in its unit), each of which must be killed before the weapon is disabled. When the amount of crew is reduced to half or less, this weapon suffers -1 to hit. This unit takes up X additional transport space.","points":["model.defense",{"subtract":"constants.baseStats.defense"},{"multiply":2},{"add":5},{"multiply":["rule.x",{"subtract":1}]}]},"stealth":{"name":"Stealth","description":"Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".","points":2},"poison":{"name":"Poison","inputs":["x"],"description":"Models hit by this weapon suffer X hits instead of 1. Additional hits must be assigned to the same model.","points":["rule.x",{"subtract":1},{"multiply":"weapon.points"}]},"critical":{"name":"Critical","inputs":["x"],"description":"Models hit by this weapon add X to any Damage Table(X) rolls.","points":["rule.x",{"multiply":"weapon.attacks"},{"multiply":5}]},"deadly":{"name":"Deadly","inputs":["x"],"description":"Models hit by this weapon suffer X hits instead of 1. Additional hits must be assigned to the same model.","points":["rule.x",{"subtract":1},{"multiply":["weapon.points",{"multiply":0.5}]}]},"armored_front":{"name":"Heavy Armor(Front)","description":"This model gets +1 Save when hit in its front arc.","points":5},"vulnerable_side_rear":{"name":"Vulnerable(Side, Rear)","description":"This model gets -1 Save when hit in its Side arc or -2 Save when hit in its Rear arc.","points":-10},"vulnerable_rear":{"name":"Vulnerable(Rear)","description":"This unit gets -1 Save when hit in its Rear arc.","points":-5},"furious":{"name":"Furious","description":"When this model charges, Strength rolls of 1 or 2 cause 2 hits instead of 1.","points":2},"relentless":{"name":"Relentless","description":"When this model shoots, Accuracy rolls of 1 or 2 cause 2 hits instead of 1.","points":2},"power":{"name":"Power","inputs":["x"],"description":"This unit may cast X Powers at any point during its movement. To cast, roll a D10 and if the result is equal to or less than the power's cast value it is successful. A unit may only successfully cast each power once per turn. Any other Power unit within 24\" may attempt to dispel the Magic power. Roll a D10. If the value is lower than the rolled value for the test, the power is stopped. If the spell is not stopped, no further attempts may be made to stop the same power. If this model is locked in Melee, it may only target units in the combat. This ability may not be used against enemy units in melee with friendly units.","points":[15,{"multiply":"rule.x"}]},"shocking":{"name":"Shocking","inputs":["x"],"description":"A unit hit by this weapon gains X additional Shock.","points":["weapon.attacks",{"multiply":"rule.x"}]},"dispel":{"name":"Ward","inputs":["x"],"description":"This unit within 24\" may attempt to dispel Magic powers. Roll a D10. If the value is lower than the rolled value for the test, the power is stopped. If the spell is not stopped, no further attempts may be made to stop the same power.","points":[8,{"multiply":"rule.x"}]},"defensive":{"name":"Defensive","inputs":["x"],"description":"This model increases its Save by X.","points":[2,{"multiply":"rule.x"}]},"hover":{"name":"Hover","description":"This unit may ignore difficult terrain and obstacles of height 2\" or less when moving.","points":1},"agile":{"name":"Agile","description":"This unit may ignore low obstacles of 1\" or less in height when moving.","points":1},"walker":{"name":"Walker","description":"This unit may ignore low obstacles of 1\" or less in height when moving.","points":5},"repair":{"name":"Repair","inputs":["x"],"description":"At any point during this unit's activation, if within 3\" of a _Vehicle_ unit, roll one die. On an X or less the vehicle may remove one critical damage.","points":["rule.x",{"multiply":2}]},"damage_table_titan":{"name":"Damage Table(Titanic)","description":"When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-4): Take one additional shock. \n * Stunned(5-6): The unit permenantly suffers -1 Courage. \n * Damaged(7-8): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(9-10): The unit permenantly halves its movement. \n * Panic(11-12): Take 2 additional shock and immediately take a Courage test. \n * Destroyed(13+): It is instantly destroyed. \n * Catastrophic(15+): The unit crashes down and all units within 6\" gain 3 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.","points":["model.defense",{"subtract":"constants.baseStats.defense"},{"multiply":20}]},"damage_table_monster":{"name":"Damage Table(Monster)","description":"When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-2): Take one additional shock. \n * Stunned(3-4): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement. \n * Panic(9-10): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Fall(13+): The unit crashes down and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.","points":["model.defense",{"subtract":"constants.baseStats.defense"},{"multiply":10}]},"damage_table_vehicle":{"name":"Damage Table(Vehicle)","description":"When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-2): Take one additional shock. \n * Stunned(3-4): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement. \n * Fire(9-10): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Explosion(13+): The unit explodes and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.","points":["model.defense",{"subtract":"constants.baseStats.defense"},{"multiply":10}]},"damage_table_chariot":{"name":"Damage Table(Chariot)","description":"When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-2): Take one additional shock. \n * Stunned(3-4): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement. \n * Panic(9-10): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Crash(13+): The unit explodes and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.","points":["model.defense",{"subtract":"constants.baseStats.defense"},{"multiply":10}]},"damage_table_aircraft":{"name":"Damage Table(Aircraft)","description":"When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-2): Take one additional shock. \n * Stunned(3-4): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement.. \n * Fire(9-10): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Crash(13+): The unit crashes into the ground and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.","points":["model.defense",{"subtract":"constants.baseStats.defense"},{"multiply":10}]},"catches_fire":{"name":"Catches Fire","description":"This unit suffers the \"Fire\" result on the Vehicle Damage table on rolls of (4-5) instead of (5).","points":-5},"fearless":{"name":"Fearless","description":"This unit requires an extra shock to take break tests.","points":1},"resist":{"name":"Protect","inputs":["x"],"description":"This unit gets +X to its Resist rolls.","points":["rule.x",{"multiply":2}]},"open_topped":{"name":"Open-Topped","inputs":["x"],"description":"Units inside this transport may take a single fire action when activated. Up to X models total may fire their weapons.","points":["rule.x"]},"teleport":{"name":"Teleport","description":"Once per activation, this model may ignore models and any terrain when making a Move action.","points":1},"transport":{"name":"Transport","description":"This model may carry X _Infantry_ models inside of it. Units may spend a Move action to embark or disembark from this model. To disembark, measure a Move action originating from this model's edge. To embark, the unit must all get within 1\" of this model. If this model is destroyed while units are embarked, each model inside must take a single Save with no AP and then the unit takes 3 Shock. If this unit makes two Move actions, units may not embark or disembark from this unit.","inputs":["x"],"points":["rule.x"]},"reload":{"name":"Reload","description":"After firing, a unit must spend 1 action to reload this weapon before it can be fired again.","points":["weapon.attacks",{"multiply":-1}]},"sniper":{"name":"Sniper","description":"This weapon may ignore the Long Range penalty. You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.","points":5},"assassin":{"name":"Assassin","description":"You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.","points":5},"aircraft":{"name":"Aircraft","description":"Enemy units suffer -1 Accuracy when shooting at this model. This model may ignore terrain and other models when moving. This model may only turn up to 90 degrees. When activated, it must first take a free move action its full movement distance in a straight line. If it ends its move off the table, place it back on any table edge. Its activation then ends. Enemy models may not engage this unit in Melee unless they have the Fly rule. This model may not control objectives.","points":20},"team":{"name":"Team","inputs":["x"],"description":"This weapon requires X models to operate effectively. It suffers -1 Accuracy for each model under this number.","points":["rule.x",{"subtract":1},{"multiply":-1}]},"smoke":{"name":"Smoke","description":"Choose a location on the battlefield within range of this weapon and if a hit is successful, place a 3\" diameter smoke marker at the target location. If the weapon fires multiple shots and more than one lands on target, place any additional smoke markers in contact with the edge of the first hit. Smoke markers block line of sight and models inside or partially obscured by smoke markers gain the benefit of Soft Cover. At the end of the round, roll a D10 for each smoke marker. On a 5 or less the smoke marker is removed.","points":[-1]},"side_skirts":{"name":"Side Skirts","description":"This model gains +1 to its Save when hit in its side arcs from weapons with AP 4 or less.","points":5},"fanatical":{"name":"Fanatical","description":"This unit is treated as having +2 Courage for all break tests and does not gain shock from close combat.","points":2},"gun_shield":{"name":"Gun Shield","description":"This model gains +1 to its Save when hit in its front arc.","points":5},"homing":{"name":"Homing","description":"This weapon hits at Accuracy +1.","points":["weapon.attacks"]},"stun":{"name":"Stun","description":"Instead of inflicting damage, if this weapon hits its target, that unit gets -1 Strength and -1 Accuracy for its next attack."},"amphibious":{"name":"Amphibious","description":"This unit may treat impassable water terrain as difficult terrain.","points":5},"scatter":{"name":"Scatter","description":"When choosing a target for this weapon, choose a specific model in the unit. If this weapon misses, use D10 scattering to determine the landing point of the shot relative to that model. If it lands within 1\" of a different unit, that unit is hit instead.","points":["weapon.attacks"]},"salvo":{"name":"Salvo","description":"This weapon always hits at -1 Accuracy. When scattering results from this weapon, it hits the closest unit within 3\" instead of just 1\".","points":["weapon.attacks"]},"overheat":{"name":"Overheat","description":"The firer must take 1 Save roll for each hit roll of 9+.","points":["weapon.attacks",{"multiply":-1}]},"pistol":{"name":"Pistol","description":"This weapon may be used instead of a model's other weapons even while engaged in close combat."},"strider":{"name":"Strider","description":"This model can cross difficult and dangerous terrain without penalty.","points":1},"rending":{"name":"Rending","description":"Hit rolls of 1 or 2 have +1 AP.","points":["weapon.attacks",0.2]},"indirect":{"name":"Indirect","description":"This weapon may target units out of line of sight at -1 Accuracy.","points":["weapon.attacks"]},"anti_air":{"name":"Anti-air","description":"This weapon gets +1 to hit units with the Aircraft special rule.","points":["weapon.attacks",{"multiply":3}]},"titanic":{"name":"Titanic","description":"When this unit is activated it may only perform one action and benefit from abilties which trigger when the unit is activated once. It may then be activated a second time to perform its second action."},"grenade":{"name":"Grenade","description":"One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},"leader":{"name":"Leader(Infantry)","description":"When this unit is activated, friendly units of X types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of X type within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly unit of X type unless that unit is also a Leader and attacking in Melee.","points":10},"lance":{"name":"Lance","description":"This weapon gets +1 AP when used during a Charge.","points":["weapon.attacks",{"multiply":1}]},"leader_x":{"name":"Leader","inputs":["x"],"description":"When this unit is activated, friendly units of X types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of X type within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly unit of X type unless that unit is also a Leader and attacking in Melee.","points":10},"support":{"name":"Support","description":"When a, friendly _Infantry_ unit within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.","points":5},"support_x":{"name":"Support","inputs":["x"],"description":"When a friendly unit of X type within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of X type.","points":5},"hero":{"name":"Hero","description":"When this unit is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."},"cumbersome":{"name":"Cumbersome","description":"Attacks with this weapon are made at -1 Strength.","points":["weapon.attacks",{"multiply":-1}]},"unreliable":{"name":"Unreliable","description":"Attacks with this weapon are made at -1 Accuracy.","points":["weapon.attacks",{"multiply":-1}]},"terrain":{"name":"Terrain","description":"This unit may be placed anywhere on the field during deployment, more than 24\" from any enemies units or deployment zones. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."},"impassable":{"name":"Impassable","inputs":["x"],"description":"This model may not be crossed by X unit types.","points":10},"clearable":{"name":"Clearable(5)","description":"_Infantry_ units within 3\" of this model may take a Clear action to attempt to clear this obstacle. Roll a D10 and on a roll of 5 or less this obstacle is cleared."},"garrison":{"name":"Garrison","description":"Up to X models or a gun with X or less Crew may occupy this model in the same way models occupy a building.","inputs":["x"]},"soft_cover_x":{"name":"Soft-Cover","inputs":["x"],"description":"This model provides soft cover to X models in it.","points":["rule.x",{"multiply":2}]},"soft_cover":{"name":"Soft-Cover","description":"This model provides soft cover to models behind it.","points":10},"hard_cover_x":{"name":"Hard-Cover","inputs":["x"],"description":"This model provides soft cover to X models in it.","points":["rule.x",{"multiply":4}]},"hard_cover":{"name":"Hard-Cover","description":"This model provides hard cover to models behind it.","points":20},"mount_horse":{"name":"Horse","hidden":true,"description_short":"+2\" Movement","description":"Increase this model's Movement by 2\".","points":2},"skirmishers":{"name":"Skirmishers","description":"This unit has +1 Save when hit by a shooting attack, +1 to initiative tests when sprinting and has a 3“ coherency instead of a 2“ coherency if all models in it have this rule.","points":2},"musician":{"name":"Musician","description":"This unit may re-roll a single failed Initiative test when sprinting.","points":5},"banner":{"name":"Banner","description":"This unit may re-roll a single failed Courage test when removing Shock.","points":5},"champion":{"name":"Champion","description":"This unit may re-roll a single failed Accuracy or Strength test when attacking.","points":5}},"weapons":{"unarmed":{"name":"Unarmed (Melee)","attacks":1,"short":"Melee"},"sword":{"name":"Sword","attacks":1,"short":"Melee","ap":1},"spear":{"name":"Spear","attacks":1,"short":"Melee","ap":1,"rules":[{"id":"reach","x":2}]},"pike":{"name":"Pike","attacks":1,"short":"Melee","ap":1,"rules":["cumbersome",{"id":"reach","x":4}]},"crossbow":{"name":"Crossbow","attacks":1,"short":12,"medium":24,"ap":2},"bow":{"name":"Bow","attacks":1,"short":12,"medium":24,"ap":1},"longbow":{"name":"Long Bow","attacks":1,"short":15,"medium":30,"ap":1,"rules":["indirect"]},"lance":{"name":"Lance","attacks":1,"short":"Melee","rules":[{"id":"impact","x":1}],"ap":2},"impact":{"name":"Impact","attacks":1,"short":"Melee"},"longsword":{"name":"Longsword","attacks":1,"short":"Melee","ap":2},"wizard_staff":{"name":"Wizard Staff","attacks":1,"short":"Melee","ap":1,"damage":2}}}
+{
+  "gameTypes" : {
+    "battle" : {
+      "name" : "Battle"
+    },
+    "skirmish" : {
+      "name" : "Skirmish"
+    }
+  },
+  "categories" : {
+    "historical" : {
+      "name" : "Historical"
+    },
+    "sci_fi" : {
+      "name" : "Sci-fi"
+    },
+    "fantasy" : {
+      "name" : "Fantasy"
+    }
+  },
+  "reportUrl" : "https://github.com/wargame-engine/root/issues",
+  "games" : {
+    "grim_darkness_skirmish" : {
+      "id" : "grim_darkness_skirmish",
+      "gameType" : "skirmish",
+      "category" : "sci_fi",
+      "version" : "0.1",
+      "name" : "Grim Darkness Skirmish (Beta)",
+      "image" : "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
+      "url" : "https://raw.githubusercontent.com/wargame-engine/grim-darkness-skirmish/master/",
+      "description" : "Sci-fi skirmish battles in the far future with many unique and possibly familiar factions.",
+      "color" : "#7761ab"
+    },
+    "grim_darkness" : {
+      "id" : "grim_darkness",
+      "gameType" : "battle",
+      "category" : "sci_fi",
+      "version" : "1.0",
+      "name" : "Grim Darkness",
+      "image" : "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
+      "url" : "https://raw.githubusercontent.com/wargame-engine/grim-darkness/master/",
+      "description" : "Sci-fi battles in the far future with many unique and possibly familiar factions.",
+      "color" : "#7761ab"
+    },
+    "space_wars" : {
+      "id" : "space_wars",
+      "category" : "sci_fi",
+      "gameType" : "battle",
+      "name" : "Space Wars (Beta)",
+      "image" : "https://raw.githubusercontent.com/wargame-engine/root/master/spacewars3.jpg",
+      "url" : "https://raw.githubusercontent.com/wargame-engine/space-wars/main/",
+      "description" : "Sci-fi battles in a galaxy a significant distance away. A battle between the Dark Side and the Light Side to control the galaxy.",
+      "color" : "#2f3c54"
+    },
+    "fantasy_realms_skirmish" : {
+      "id" : "fantasy_realms_skirmish",
+      "category" : "fantasy",
+      "gameType" : "skirmish",
+      "version" : "0.1",
+      "name" : "Fantasy Realms Skirmish (Beta)",
+      "image" : "https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg",
+      "url" : "https://raw.githubusercontent.com/wargame-engine/fantasy-realms-skirmish/master/",
+      "description" : "Fantasy skirmish battles in the realms with many unique and possibly familiar factions.",
+      "color" : "#7761ab"
+    },
+    "fantasy_realms" : {
+      "id" : "fantasy_realms",
+      "category" : "fantasy",
+      "gameType" : "battle",
+      "version" : "1.0",
+      "name" : "Fantasy Realms",
+      "image" : "https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg",
+      "url" : "https://raw.githubusercontent.com/wargame-engine/fantasy-realms/master/",
+      "description" : "Fantasy battles in the realms with many unique and possibly familiar factions.",
+      "color" : "#7761ab"
+    },
+    "ancients" : {
+      "id" : "ancients",
+      "gameType" : "battle",
+      "category" : "historical",
+      "version" : "0.1",
+      "name" : "Ancients (490BC to 1066 AD)",
+      "url" : "https://raw.githubusercontent.com/wargame-engine/wbh/master/",
+      "description" : "Ancients skirmish battles with some added twists and a focus on adding interesting rules and choices.",
+      "color" : "#9f0807"
+    },
+    "world_war_two" : {
+      "id" : "world_war_two",
+      "category" : "historical",
+      "gameType" : "battle",
+      "name" : "World War Two",
+      "version" : "1.0",
+      "image" : "https://raw.githubusercontent.com/wargame-engine/root/master/ww2.jpg",
+      "url" : "https://raw.githubusercontent.com/wargame-engine/world-war-two/master/",
+      "description" : "World War Two battles with some added twists and a focus on adding interesting rules and choices.",
+      "color" : "#6c541e"
+    },
+    "gunpowder" : {
+      "id" : "gunpowder",
+      "category" : "historical",
+      "gameType" : "battle",
+      "name" : "Napoleonic Era (18th-19th Century) (Beta)",
+      "image" : "https://raw.githubusercontent.com/wargame-engine/root/master/gunpowder.jpg",
+      "url" : "https://raw.githubusercontent.com/wargame-engine/gunpowder/master/",
+      "description" : "18th and 19th Century battles with gunpowder focusing on skirmish-sized engagements.",
+      "color" : "#2f3c54"
+    }
+  },
+  "unfinished_games" : {
+    "third_age" : {
+      "id" : "third_age",
+      "category" : "fantasy",
+      "name" : "The Third Age (Beta)",
+      "image" : "https://raw.githubusercontent.com/wargame-engine/root/master/wbf.jpg",
+      "url" : "https://raw.githubusercontent.com/wargame-engine/wbf/master/",
+      "description" : "Skirmish battles in a familiar fantasy world.",
+      "color" : "#9aab89"
+    }
+  },
+  "phases" : {
+    "pre_game" : {
+      "name" : "Pre-Game"
+    },
+    "bidding" : {
+      "name" : "Bidding"
+    },
+    "activation" : {
+      "name" : "Activation"
+    }
+  },
+  "strategies" : {
+    "lucky" : {
+      "phase" : "activation",
+      "name" : "Lucky (Core)",
+      "flavor" : "It seems luck has gone our way. Or maybe it's something more...",
+      "description" : "Once per round, re-roll a single skill test die. It may not be re-rolled again.",
+      "cost" : 1
+    },
+    "incredible_courage" : {
+      "phase" : "activation",
+      "name" : "Incredible Courage (Core)",
+      "flavor" : "Even in the darkest of times, moments of great courage can occur.",
+      "description" : "Once per round, choose a unit that is about to take a Courage test. That unit gains +2 Courage until the end of its activation.",
+      "cost" : 2
+    },
+    "battlefield_reserves" : {
+      "phase" : "pre_game",
+      "name" : "Outflanking Reserves (Core)",
+      "flavor" : "Sometimes assets are most useful finding an alternate route around the enemy.",
+      "description" : "Up to half of any force's units, one point for each may be placed in outflanking reserves instead of deployed on the field. Any round after the first, when this unit is activated, it may be set up within 6\" of a table edge that is not in the enemy deployment zone, and more than 12\" from any enemy units.",
+      "cost" : "1/per"
+    }
+  },
+  "hidden_strategies" : {
+    "hidden_deployment" : {
+      "phase" : "pre_game",
+      "name" : "Hidden Deployment (Core)",
+      "flavor" : "Staying hidden and waiting for the right moment to strike can have a devastating effect.",
+      "description" : "Any number of _Infantry_, _Artillery_ or _Fortification_ units, one point per pair may be placed in hidden deployment instead of deployed on the field. See the section for hidden units in the core rules for details on how hidden units work.",
+      "cost" : "1/pair"
+    }
+  },
+  "rules" : {
+    "guardian" : {
+      "name" : "Guardian",
+      "description" : "Hits must be assigned to this model or another model in this unit with Guardian before other models."
+    },
+    "impact" : {
+      "name" : "Impact",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This model causes X Melee hits with no AP when it successfully charges an enemy unit.",
+      "points" : [
+        2,
+        {
+          "multiply" : "rule.x"
+        }
+      ]
+    },
+    "phalanx" : {
+      "name" : "Phalanx",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "You may make X free attacks with this weapon when a unit moves into your engagement range.",
+      "points" : [
+        {
+          "add" : [
+            "model.fight",
+            {
+              "subtract" : "constants.baseStats.fight"
+            }
+          ]
+        },
+        {
+          "add" : [
+            "weapon.ap",
+            {
+              "multiply" : "constants.apCost"
+            }
+          ]
+        },
+        {
+          "multiply" : "rule.x"
+        },
+        {
+          "multiply" : 0.5
+        }
+      ]
+    },
+    "exposed" : {
+      "name" : "Exposed",
+      "description" : "This model may receive shock even from weapons that it can't be damaged by.",
+      "points" : -10
+    },
+    "assault" : {
+      "name" : "Assault",
+      "description" : "Models with this weapon may make a free shoot action after moving at -1 Accuracy. They may not shoot again this round.",
+      "points" : [
+        "weapon.attacks"
+      ]
+    },
+    "rapid_fire" : {
+      "name" : "Rapid Fire",
+      "description" : "When shooting with this weapon, a model may choose to fire twice with it. If it does, halve both the Short and Long ranges of the weapon.",
+      "points" : [
+        "weapon.attacks"
+      ]
+    },
+    "blast" : {
+      "name" : "Blast",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "Multiply hits from this weapon by X. A unit may not take more hits than the number of models in the unit.",
+      "notes" : "Don't pay more than once for range with blast weapons.",
+      "points" : [
+        "rule.x",
+        {
+          "subtract" : 1
+        },
+        {
+          "multiply" : "weapon.points"
+        }
+      ]
+    },
+    "emp" : {
+      "name" : "EMP",
+      "description" : "This weapon gains +2 AP against units with a Damage Table(x).",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : 2
+        }
+      ]
+    },
+    "flame" : {
+      "name" : "Flame",
+      "description" : "This weapon ignores cover bonuses at Short range.",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : 0.5
+        }
+      ]
+    },
+    "ammo" : {
+      "name" : "Ammo",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This weapon may only be fired X times per game.",
+      "pointNotes" : "Always apply this rule last or your numbers will be off.",
+      "points" : [
+        1,
+        {
+          "subtract" : [
+            0.25,
+            {
+              "multiply" : "rule.x"
+            }
+          ]
+        },
+        {
+          "multiply" : -1
+        },
+        {
+          "multiply" : "weapon.points"
+        }
+      ]
+    },
+    "fear" : {
+      "name" : "Fear",
+      "description" : "Enemy units within 6\" get -1 Courage.",
+      "points" : 2
+    },
+    "fly" : {
+      "name" : "Fly",
+      "description" : "This model may ignore terrain and other models without the Fly special rule when moving.",
+      "points" : 2
+    },
+    "deployable" : {
+      "name" : "Deployable",
+      "description" : "As an action, this model can be set up on the field. It may not be used to control or contest objectives and may not be targeted by abilities."
+    },
+    "ambush" : {
+      "name" : "Ambush",
+      "description" : "This unit may be set aside in reserves before the match begins if all models have ambush. Any round after the first, when this unit is activated while in reserves, you may choose a point on the battlefield 12\" away from any enemy units and take an Initiative check. If passed, place the unit at that location on the location. If failed, use D10 scattering to determine the landing location of the unit relative to the chosen point.",
+      "points" : 2
+    },
+    "ambush_large" : {
+      "name" : "Ambush",
+      "description" : "This unit may be set aside in reserves before the match begins if all models have ambush. Any round after the first, when this unit is activated while in reserves, you may choose a point on the battlefield 12\" away from any enemy units and take a Initiative check. If passed, place the unit at that location on the location. If failed, use D10 scattering to determine the landing location of the unit relative to the chosen point.",
+      "points" : 10
+    },
+    "scout" : {
+      "name" : "Scout",
+      "description" : "When this model arrives on the field, it may make a free 6\" move.",
+      "points" : 1
+    },
+    "outflank" : {
+      "name" : "Outflank",
+      "description" : "This unit may be set aside in reserves before the match begins if all models have outflank. Any round after the first, when this unit is activated you may place the unit within 6\" of a table edge over 12\" away from enemy units.",
+      "points" : 1
+    },
+    "bomb" : {
+      "name" : "Bomb",
+      "description" : "This weapon may be used at any time during a unit's movement. It must still use a Shoot action to fire."
+    },
+    "resilient" : {
+      "name" : "Resilient",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "Roll a die when this model loses a wound. On a value of X or less that wound is not lost.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : 2
+        }
+      ]
+    },
+    "reach" : {
+      "name" : "Reach",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This weapon may engage and fight models up to X\" away. Enemy models must still move into base contact unless they also have reach.",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : "rule.x"
+        }
+      ]
+    },
+    "tough" : {
+      "name" : "Tough",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This model may re-roll X Save tests per round.",
+      "points" : [
+        "model.defense",
+        {
+          "multiply" : "rule.x"
+        },
+        {
+          "multiply" : 1
+        }
+      ]
+    },
+    "wounds" : {
+      "name" : "Wounds",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.",
+      "points" : [
+        "model.defense",
+        {
+          "subtract" : "constants.baseStats.defense"
+        },
+        {
+          "max" : 0
+        },
+        {
+          "multiply" : 2
+        },
+        {
+          "add" : 5
+        },
+        {
+          "multiply" : [
+            "rule.x",
+            {
+              "subtract" : 1
+            }
+          ]
+        }
+      ]
+    },
+    "swarm" : {
+      "name" : "Swarm",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This model is treated as having X models per base (for the purposes of abilities that interact with models) that it may lose before it is killed. If a unit contains multiple models with Swarm, damage must be assigned to an already damaged model before being assigned to any other model.",
+      "points" : [
+        "model.defense",
+        {
+          "subtract" : "constants.baseStats.defense"
+        },
+        {
+          "max" : 0
+        },
+        {
+          "multiply" : 2
+        },
+        {
+          "add" : 5
+        },
+        {
+          "multiply" : [
+            "rule.x",
+            {
+              "subtract" : 1
+            }
+          ]
+        }
+      ]
+    },
+    "crew" : {
+      "name" : "Crew",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This model is crewed by X models (and is treated as having X models in its unit), each of which must be killed before the weapon is disabled. When the amount of crew is reduced to half or less, this weapon suffers -1 to hit. This unit takes up X additional transport space.",
+      "points" : [
+        "model.defense",
+        {
+          "subtract" : "constants.baseStats.defense"
+        },
+        {
+          "multiply" : 2
+        },
+        {
+          "add" : 5
+        },
+        {
+          "multiply" : [
+            "rule.x",
+            {
+              "subtract" : 1
+            }
+          ]
+        }
+      ]
+    },
+    "stealth" : {
+      "name" : "Stealth",
+      "description" : "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".",
+      "points" : 2
+    },
+    "poison" : {
+      "name" : "Poison",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "Models hit by this weapon suffer X hits instead of 1. Additional hits must be assigned to the same model.",
+      "points" : [
+        "rule.x",
+        {
+          "subtract" : 1
+        },
+        {
+          "multiply" : "weapon.points"
+        }
+      ]
+    },
+    "critical" : {
+      "name" : "Critical",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "Models hit by this weapon add X to any Damage Table(X) rolls.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : "weapon.attacks"
+        },
+        {
+          "multiply" : 5
+        }
+      ]
+    },
+    "deadly" : {
+      "name" : "Deadly",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "Models hit by this weapon suffer X hits instead of 1. Additional hits must be assigned to the same model.",
+      "points" : [
+        "rule.x",
+        {
+          "subtract" : 1
+        },
+        {
+          "multiply" : [
+            "weapon.points",
+            {
+              "multiply" : 0.5
+            }
+          ]
+        }
+      ]
+    },
+    "armored_front" : {
+      "name" : "Heavy Armor(Front)",
+      "description" : "This model gets +1 Save when hit in its front arc.",
+      "points" : 5
+    },
+    "vulnerable_side_rear" : {
+      "name" : "Vulnerable(Side, Rear)",
+      "description" : "This model gets -1 Save when hit in its Side arc or -2 Save when hit in its Rear arc.",
+      "points" : -10
+    },
+    "vulnerable_rear" : {
+      "name" : "Vulnerable(Rear)",
+      "description" : "This unit gets -1 Save when hit in its Rear arc.",
+      "points" : -5
+    },
+    "furious" : {
+      "name" : "Furious",
+      "description" : "When this model charges, Strength rolls of 1 or 2 cause 2 hits instead of 1.",
+      "points" : 2
+    },
+    "relentless" : {
+      "name" : "Relentless",
+      "description" : "When this model shoots, Accuracy rolls of 1 or 2 cause 2 hits instead of 1.",
+      "points" : 2
+    },
+    "power" : {
+      "name" : "Power",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This unit may cast X Powers at any point during its movement. To cast, roll a D10 and if the result is equal to or less than the power's cast value it is successful. A unit may only successfully cast each power once per turn. Any other Power unit within 24\" may attempt to dispel the Magic power. Roll a D10. If the value is lower than the rolled value for the test, the power is stopped. If the spell is not stopped, no further attempts may be made to stop the same power. If this model is locked in Melee, it may only target units in the combat. This ability may not be used against enemy units in melee with friendly units.",
+      "points" : [
+        15,
+        {
+          "multiply" : "rule.x"
+        }
+      ]
+    },
+    "shocking" : {
+      "name" : "Shocking",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "A unit hit by this weapon gains X additional Shock.",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : "rule.x"
+        }
+      ]
+    },
+    "dispel" : {
+      "name" : "Ward",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This unit within 24\" may attempt to dispel Magic powers. Roll a D10. If the value is lower than the rolled value for the test, the power is stopped. If the spell is not stopped, no further attempts may be made to stop the same power.",
+      "points" : [
+        8,
+        {
+          "multiply" : "rule.x"
+        }
+      ]
+    },
+    "defensive" : {
+      "name" : "Defensive",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This model increases its Save by X.",
+      "points" : [
+        2,
+        {
+          "multiply" : "rule.x"
+        }
+      ]
+    },
+    "hover" : {
+      "name" : "Hover",
+      "description" : "This unit may ignore difficult terrain and obstacles of height 2\" or less when moving.",
+      "points" : 1
+    },
+    "agile" : {
+      "name" : "Agile",
+      "description" : "This unit may ignore low obstacles of 1\" or less in height when moving.",
+      "points" : 1
+    },
+    "walker" : {
+      "name" : "Walker",
+      "description" : "This unit may ignore low obstacles of 1\" or less in height when moving.",
+      "points" : 5
+    },
+    "repair" : {
+      "name" : "Repair",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "At any point during this unit's activation, if within 3\" of a _Vehicle_ unit, roll one die. On an X or less the vehicle may remove one critical damage.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : 2
+        }
+      ]
+    },
+    "damage_table_titan" : {
+      "name" : "Damage Table(Titanic)",
+      "description" : "When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-4): Take one additional shock. \n * Stunned(5-6): The unit permenantly suffers -1 Courage. \n * Damaged(7-8): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(9-10): The unit permenantly halves its movement. \n * Panic(11-12): Take 2 additional shock and immediately take a Courage test. \n * Destroyed(13+): It is instantly destroyed. \n * Catastrophic(15+): The unit crashes down and all units within 6\" gain 3 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+      "points" : [
+        "model.defense",
+        {
+          "subtract" : "constants.baseStats.defense"
+        },
+        {
+          "multiply" : 20
+        }
+      ]
+    },
+    "damage_table_monster" : {
+      "name" : "Damage Table(Monster)",
+      "description" : "When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-2): Take one additional shock. \n * Stunned(3-4): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement. \n * Panic(9-10): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Fall(13+): The unit crashes down and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+      "points" : [
+        "model.defense",
+        {
+          "subtract" : "constants.baseStats.defense"
+        },
+        {
+          "multiply" : 10
+        }
+      ]
+    },
+    "damage_table_vehicle" : {
+      "name" : "Damage Table(Vehicle)",
+      "description" : "When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-2): Take one additional shock. \n * Stunned(3-4): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement. \n * Fire(9-10): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Explosion(13+): The unit explodes and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+      "points" : [
+        "model.defense",
+        {
+          "subtract" : "constants.baseStats.defense"
+        },
+        {
+          "multiply" : 10
+        }
+      ]
+    },
+    "damage_table_chariot" : {
+      "name" : "Damage Table(Chariot)",
+      "description" : "When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-2): Take one additional shock. \n * Stunned(3-4): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement. \n * Panic(9-10): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Crash(13+): The unit explodes and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+      "points" : [
+        "model.defense",
+        {
+          "subtract" : "constants.baseStats.defense"
+        },
+        {
+          "multiply" : 10
+        }
+      ]
+    },
+    "damage_table_aircraft" : {
+      "name" : "Damage Table(Aircraft)",
+      "description" : "When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-2): Take one additional shock. \n * Stunned(3-4): The unit permenantly suffers -1 Courage. \n * Damaged(5-6): The unit permenantly suffers -1 Accuracy and -1 Strength. \n * Slowed(7-8): The unit permenantly halves its movement.. \n * Fire(9-10): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(11+): It is instantly destroyed. \n * Crash(13+): The unit crashes into the ground and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+      "points" : [
+        "model.defense",
+        {
+          "subtract" : "constants.baseStats.defense"
+        },
+        {
+          "multiply" : 10
+        }
+      ]
+    },
+    "catches_fire" : {
+      "name" : "Catches Fire",
+      "description" : "This unit suffers the \"Fire\" result on the Vehicle Damage table on rolls of (4-5) instead of (5).",
+      "points" : -5
+    },
+    "fearless" : {
+      "name" : "Fearless",
+      "description" : "This unit requires an extra shock to take break tests.",
+      "points" : 1
+    },
+    "resist" : {
+      "name" : "Protect",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This unit gets +X to its Resist rolls.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : 2
+        }
+      ]
+    },
+    "open_topped" : {
+      "name" : "Open-Topped",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "Units inside this transport may take a single fire action when activated. Up to X models total may fire their weapons.",
+      "points" : [
+        "rule.x"
+      ]
+    },
+    "teleport" : {
+      "name" : "Teleport",
+      "description" : "Once per activation, this model may ignore models and any terrain when making a Move action.",
+      "points" : 1
+    },
+    "transport" : {
+      "name" : "Transport",
+      "description" : "This model may carry X _Infantry_ models inside of it. Units may spend a Move action to embark or disembark from this model. To disembark, measure a Move action originating from this model's edge. To embark, the unit must all get within 1\" of this model. If this model is destroyed while units are embarked, each model inside must take a single Save with no AP and then the unit takes 3 Shock. If this unit makes two Move actions, units may not embark or disembark from this unit.",
+      "inputs" : [
+        "x"
+      ],
+      "points" : [
+        "rule.x"
+      ]
+    },
+    "reload" : {
+      "name" : "Reload",
+      "description" : "After firing, a unit must spend 1 action to reload this weapon before it can be fired again.",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : -1
+        }
+      ]
+    },
+    "sniper" : {
+      "name" : "Sniper",
+      "description" : "This weapon may ignore the Long Range penalty. You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.",
+      "points" : 5
+    },
+    "assassin" : {
+      "name" : "Assassin",
+      "description" : "You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.",
+      "points" : 5
+    },
+    "aircraft" : {
+      "name" : "Aircraft",
+      "description" : "Enemy units suffer -1 Accuracy when shooting at this model. This model may ignore terrain and other models when moving. This model may only turn up to 90 degrees. When activated, it must first take a free move action its full movement distance in a straight line. If it ends its move off the table, place it back on any table edge. Its activation then ends. Enemy models may not engage this unit in Melee unless they have the Fly rule. This model may not control objectives.",
+      "points" : 20
+    },
+    "team" : {
+      "name" : "Team",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This weapon requires X models to operate effectively. It suffers -1 Accuracy for each model under this number.",
+      "points" : [
+        "rule.x",
+        {
+          "subtract" : 1
+        },
+        {
+          "multiply" : -1
+        }
+      ]
+    },
+    "smoke" : {
+      "name" : "Smoke",
+      "description" : "Choose a location on the battlefield within range of this weapon and if a hit is successful, place a 3\" diameter smoke marker at the target location. If the weapon fires multiple shots and more than one lands on target, place any additional smoke markers in contact with the edge of the first hit. Smoke markers block line of sight and models inside or partially obscured by smoke markers gain the benefit of Soft Cover. At the end of the round, roll a D10 for each smoke marker. On a 5 or less the smoke marker is removed.",
+      "points" : [
+        -1
+      ]
+    },
+    "side_skirts" : {
+      "name" : "Side Skirts",
+      "description" : "This model gains +1 to its Save when hit in its side arcs from weapons with AP 4 or less.",
+      "points" : 5
+    },
+    "fanatical" : {
+      "name" : "Fanatical",
+      "description" : "This unit is treated as having +2 Courage for all break tests and does not gain shock from close combat.",
+      "points" : 2
+    },
+    "gun_shield" : {
+      "name" : "Gun Shield",
+      "description" : "This model gains +1 to its Save when hit in its front arc.",
+      "points" : 5
+    },
+    "homing" : {
+      "name" : "Homing",
+      "description" : "This weapon hits at Accuracy +1.",
+      "points" : [
+        "weapon.attacks"
+      ]
+    },
+    "stun" : {
+      "name" : "Stun",
+      "description" : "Instead of inflicting damage, if this weapon hits its target, that unit gets -1 Strength and -1 Accuracy for its next attack."
+    },
+    "amphibious" : {
+      "name" : "Amphibious",
+      "description" : "This unit may treat impassable water terrain as difficult terrain.",
+      "points" : 5
+    },
+    "scatter" : {
+      "name" : "Scatter",
+      "description" : "When choosing a target for this weapon, choose a specific model in the unit. If this weapon misses, use D10 scattering to determine the landing point of the shot relative to that model. If it lands within 1\" of a different unit, that unit is hit instead.",
+      "points" : [
+        "weapon.attacks"
+      ]
+    },
+    "salvo" : {
+      "name" : "Salvo",
+      "description" : "This weapon always hits at -1 Accuracy. When scattering results from this weapon, it hits the closest unit within 3\" instead of just 1\".",
+      "points" : [
+        "weapon.attacks"
+      ]
+    },
+    "overheat" : {
+      "name" : "Overheat",
+      "description" : "The firer must take 1 Save roll for each hit roll of 9+.",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : -1
+        }
+      ]
+    },
+    "pistol" : {
+      "name" : "Pistol",
+      "description" : "This weapon may be used instead of a model's other weapons even while engaged in close combat."
+    },
+    "strider" : {
+      "name" : "Strider",
+      "description" : "This model can cross difficult and dangerous terrain without penalty.",
+      "points" : 1
+    },
+    "rending" : {
+      "name" : "Rending",
+      "description" : "Hit rolls of 1 or 2 have +1 AP.",
+      "points" : [
+        "weapon.attacks",
+        0.2
+      ]
+    },
+    "indirect" : {
+      "name" : "Indirect",
+      "description" : "This weapon may target units out of line of sight at -1 Accuracy.",
+      "points" : [
+        "weapon.attacks"
+      ]
+    },
+    "anti_air" : {
+      "name" : "Anti-air",
+      "description" : "This weapon gets +1 to hit units with the Aircraft special rule.",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : 3
+        }
+      ]
+    },
+    "titanic" : {
+      "name" : "Titanic",
+      "description" : "When this unit is activated it may only perform one action and benefit from abilties which trigger when the unit is activated once. It may then be activated a second time to perform its second action."
+    },
+    "grenade" : {
+      "name" : "Grenade",
+      "description" : "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."
+    },
+    "leader" : {
+      "name" : "Leader(Infantry)",
+      "description" : "When this unit is activated, friendly units of X types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of X type within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly unit of X type unless that unit is also a Leader and attacking in Melee.",
+      "points" : 10
+    },
+    "lance" : {
+      "name" : "Lance",
+      "description" : "This weapon gets +1 AP when used during a Charge.",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : 1
+        }
+      ]
+    },
+    "leader_x" : {
+      "name" : "Leader",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "When this unit is activated, friendly units of X types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of X type within 6\" may use this unit's Courage value when taking Courage tests. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly unit of X type unless that unit is also a Leader and attacking in Melee.",
+      "points" : 10
+    },
+    "support" : {
+      "name" : "Support",
+      "description" : "When a, friendly _Infantry_ unit within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
+      "points" : 5
+    },
+    "support_x" : {
+      "name" : "Support",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "When a friendly unit of X type within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of X type.",
+      "points" : 5
+    },
+    "hero" : {
+      "name" : "Hero",
+      "description" : "When this unit is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."
+    },
+    "cumbersome" : {
+      "name" : "Cumbersome",
+      "description" : "Attacks with this weapon are made at -1 Strength.",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : -1
+        }
+      ]
+    },
+    "unreliable" : {
+      "name" : "Unreliable",
+      "description" : "Attacks with this weapon are made at -1 Accuracy.",
+      "points" : [
+        "weapon.attacks",
+        {
+          "multiply" : -1
+        }
+      ]
+    },
+    "terrain" : {
+      "name" : "Terrain",
+      "description" : "This unit may be placed anywhere on the field during deployment, more than 24\" from any enemies units or deployment zones. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."
+    },
+    "impassable" : {
+      "name" : "Impassable",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This model may not be crossed by X unit types.",
+      "points" : 10
+    },
+    "clearable" : {
+      "name" : "Clearable(5)",
+      "description" : "_Infantry_ units within 3\" of this model may take a Clear action to attempt to clear this obstacle. Roll a D10 and on a roll of 5 or less this obstacle is cleared."
+    },
+    "garrison" : {
+      "name" : "Garrison",
+      "description" : "Up to X models or a gun with X or less Crew may occupy this model in the same way models occupy a building.",
+      "inputs" : [
+        "x"
+      ]
+    },
+    "soft_cover_x" : {
+      "name" : "Soft-Cover",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This model provides soft cover to X models in it.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : 2
+        }
+      ]
+    },
+    "soft_cover" : {
+      "name" : "Soft-Cover",
+      "description" : "This model provides soft cover to models behind it.",
+      "points" : 10
+    },
+    "hard_cover_x" : {
+      "name" : "Hard-Cover",
+      "inputs" : [
+        "x"
+      ],
+      "description" : "This model provides soft cover to X models in it.",
+      "points" : [
+        "rule.x",
+        {
+          "multiply" : 4
+        }
+      ]
+    },
+    "hard_cover" : {
+      "name" : "Hard-Cover",
+      "description" : "This model provides hard cover to models behind it.",
+      "points" : 20
+    },
+    "mount_horse" : {
+      "name" : "Horse",
+      "hidden" : true,
+      "description_short" : "+2\" Movement",
+      "description" : "Increase this model's Movement by 2\".",
+      "points" : 2
+    },
+    "skirmishers" : {
+      "name" : "Skirmishers",
+      "description" : "This unit has +1 Save when hit by a shooting attack, +1 to initiative tests when sprinting and has a 3“ coherency instead of a 2“ coherency if all models in it have this rule.",
+      "points" : 2
+    },
+    "musician" : {
+      "name" : "Musician",
+      "description" : "This unit may re-roll a single failed Initiative test when sprinting.",
+      "points" : 5
+    },
+    "banner" : {
+      "name" : "Banner",
+      "description" : "This unit may re-roll a single failed Courage test when removing Shock.",
+      "points" : 5
+    },
+    "champion" : {
+      "name" : "Champion",
+      "description" : "This unit may re-roll a single failed Accuracy or Strength test when attacking.",
+      "points" : 5
+    }
+  },
+  "weapons" : {
+    "unarmed" : {
+      "name" : "Unarmed (Melee)",
+      "attacks" : 1,
+      "short" : "Melee"
+    },
+    "sword" : {
+      "name" : "Sword",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 1
+    },
+    "spear" : {
+      "name" : "Spear",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 1,
+      "rules" : [
+        {
+          "id" : "reach",
+          "x" : 2
+        }
+      ]
+    },
+    "pike" : {
+      "name" : "Pike",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 1,
+      "rules" : [
+        "cumbersome",
+        {
+          "id" : "reach",
+          "x" : 4
+        }
+      ]
+    },
+    "crossbow" : {
+      "name" : "Crossbow",
+      "attacks" : 1,
+      "short" : 12,
+      "medium" : 24,
+      "ap" : 2
+    },
+    "bow" : {
+      "name" : "Bow",
+      "attacks" : 1,
+      "short" : 12,
+      "medium" : 24,
+      "ap" : 1
+    },
+    "longbow" : {
+      "name" : "Long Bow",
+      "attacks" : 1,
+      "short" : 15,
+      "medium" : 30,
+      "ap" : 1,
+      "rules" : [
+        "indirect"
+      ]
+    },
+    "lance" : {
+      "name" : "Lance",
+      "attacks" : 1,
+      "short" : "Melee",
+      "rules" : [
+        {
+          "id" : "impact",
+          "x" : 1
+        }
+      ],
+      "ap" : 2
+    },
+    "impact" : {
+      "name" : "Impact",
+      "attacks" : 1,
+      "short" : "Melee"
+    },
+    "longsword" : {
+      "name" : "Longsword",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 2
+    },
+    "wizard_staff" : {
+      "name" : "Wizard Staff",
+      "attacks" : 1,
+      "short" : "Melee",
+      "ap" : 1,
+      "damage" : 2
+    }
+  }
+}
