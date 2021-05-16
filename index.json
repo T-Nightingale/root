@@ -254,10 +254,10 @@
             "points": [15, {"multiply": "rule.x"}]
         },
         "shocking": {"name": "Shocking", "inputs": ["x"], "description": "A unit hit by this weapon gains X additional Shock.", "points": ["weapon.attacks", {"multiply": "rule.x"}]},
-        "dispel": {
+        "ward": {
             "name": "Ward",
             "inputs": ["x"],
-            "description": "This unit within 24\" may attempt to dispel Magic powers. Roll a D10. If the value is lower than the rolled value for the test, the power is stopped. If the spell is not stopped, no further attempts may be made to stop the same power.",
+            "description": "Up to X times per round, this model may attempt to dispel a Power cast within 24\". Roll a D10 and if the value is equal to or lower than the rolled value for the test, the power is stopped. If the power is not stopped, no further attempts may be made to stop the same power.",
             "points": [8, {"multiply": "rule.x"}]
         },
         "defensive": {"name": "Defensive", "inputs": ["x"], "description": "This model increases its Save by X.", "points": [2, {"multiply": "rule.x"}]},
