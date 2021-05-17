@@ -122,9 +122,7 @@
             "flavor": "Sometimes assets are most useful finding an alternate route around the enemy.",
             "description": "Up to half of any force's units, one point for each may be placed in outflanking reserves instead of deployed on the field. Any round after the first, when this unit is activated, it may be set up within 6\" of a table edge that is not in the enemy deployment zone, and more than 12\" from any enemy units.",
             "cost": "1/per"
-        }
-    },
-    "hidden_strategies": {
+        },
         "hidden_deployment": {
             "phase": "pre_game",
             "name": "Hidden Deployment (Core)",
