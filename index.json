@@ -231,8 +231,8 @@
         "critical": {
             "name": "Critical",
             "inputs": ["x"],
-            "description": "Models hit by this weapon add X to any Damage Table(X) rolls.",
-            "points": ["rule.x", {"multiply": "weapon.attacks"}, {"multiply": 5}]
+            "description": "Enemy units roll X on any _Damage Table(X)_ and choose the highest result when hit by this weapon at Short range.",
+            "points": ["rule.x", {"multiply": "weapon.attacks"}, {"multiply": 4}]
         },
         "deadly": {
             "name": "Deadly",
