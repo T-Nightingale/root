@@ -245,6 +245,7 @@
         "vulnerable_rear": {"name": "Vulnerable(Rear)", "description": "This unit gets -1 Save when hit in its Rear arc.", "points": -5},
         "furious": {"name": "Furious", "description": "When this model charges, Strength rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
         "relentless": {"name": "Relentless", "description": "When this model shoots, Accuracy rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
+        "crack_shot": {"inputs": ["x"], "name": "Crack Shot", "description": "Hits from shooting attacks made by this model reduce the target's cover level by X.", "points": [2, {"multiply": "rule.x"}]},
         "power": {
             "name": "Power",
             "inputs": ["x"],
