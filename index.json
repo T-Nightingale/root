@@ -437,5 +437,22 @@
         "impact": {"name": "Impact", "attacks": 1, "short": "Melee"},
         "longsword": {"name": "Longsword", "attacks": 1, "short": "Melee", "ap": 2},
         "wizard_staff": {"name": "Wizard Staff", "attacks": 1, "short": "Melee", "ap": 1, "damage": 2}
+    },
+    "perks": {
+        "courageous": {
+            "name": "Courageous",
+            "description": "This unit may re-roll one failed Courage test when removing Shock.",
+            "points": 5
+        },
+        "marksmen": {
+            "name": "Marksmen",
+            "description": "This unit may re-roll one failed Accuracy test when shooting.",
+            "points": 5
+        },
+        "fighters": {
+            "name": "Fighters",
+            "description": "This unit may re-roll one failed Strength test when fighting.",
+            "points": 5
+        }
     }
 }
