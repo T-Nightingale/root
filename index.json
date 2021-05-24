@@ -136,7 +136,7 @@
         "impact": {"name": "Impact", "inputs": ["x"], "description": "This model causes X Melee hits with no AP when it successfully charges an enemy unit.", "points": [2, {"multiply": "rule.x"}]},
         "phalanx": {
             "name": "Phalanx",
-            "description": "Attacks with this weapon are made at +1 Strength until the end of the round against units that charged this unit.",
+            "description": "Attacks with this weapon are made at +1 Strength when performing a Counter-Attack reaction.",
             "points": [1]
         },
         "exposed": {"name": "Exposed", "description": "This model may receive shock even from weapons that it can't be damaged by.", "points": -10},
