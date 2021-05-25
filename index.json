@@ -137,7 +137,7 @@
         "phalanx": {
             "name": "Phalanx",
             "description": "Attacks with this weapon are made at +1 Strength when performing a Counter-Attack reaction.",
-            "points": [0.5]
+            "points": 1
         },
         "exposed": {"name": "Exposed", "description": "This model may receive shock even from weapons that it can't be damaged by.", "points": -10},
         "assault": {
@@ -199,7 +199,7 @@
             "name": "Reach",
             "inputs": ["x"],
             "description": "This weapon may engage and fight models up to X\" away. Enemy models must still move into base contact unless they also have reach.",
-            "points": ["weapon.attacks", {"multiply": ["rule.x", {"multiply": 0.5}]}]
+            "points": ["weapon.attacks", {"multiply": ["rule.x", {"multiply": 1}]}]
         },
         "tough": {"name": "Tough", "inputs": ["x"], "description": "This model may re-roll X Save tests per round.", "points": ["model.defense", {"multiply": "rule.x"}, {"multiply": 1}]},
         "wounds": {
