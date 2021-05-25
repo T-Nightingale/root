@@ -55,7 +55,7 @@
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/fantasy-realms/master/",
             "description": "Fantasy battles in the realms with many unique and possibly familiar factions.",
-            "color": "#7761ab"
+            "color": "#38733a"
         },
         "ancients": {
             "id": "ancients",
