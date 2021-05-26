@@ -446,13 +446,13 @@
             "level": 1
         },
         "marksmen": {
-            "name": "Marksmen",
+            "name": "Marksman",
             "description": "This unit may re-roll one failed Accuracy test when shooting.",
             "points": 5,
             "level": 1
         },
         "fighters": {
-            "name": "Fighters",
+            "name": "Fighter",
             "description": "This unit may re-roll one failed Strength test when fighting.",
             "points": 5,
             "level": 1
@@ -476,13 +476,13 @@
             "level": 2
         },
         "infiltrators": {
-            "name": "Infiltrators",
+            "name": "Infiltrator",
             "description": "This unit may be set aside in reserves before the match begins if all models have outflank. Any round after the first, when this unit is activated you may place the unit within 6\" of a table edge over 12\" away from enemy units.",
             "points": 20,
             "level": 3
         },
         "breachers": {
-            "name": "Breachers",
+            "name": "Breacher",
             "description": "Enemy units do not benefit from cover when hit by an attack made by this unit.",
             "points": 20,
             "level": 3
@@ -494,7 +494,7 @@
             "level": 3
         },
         "survivors": {
-            "name": "Survivors",
+            "name": "Survivor",
             "description": "This unit increases its Save characteristic by 1\".",
             "points": 20,
             "level": 3
