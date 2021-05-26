@@ -442,17 +442,58 @@
         "courageous": {
             "name": "Courageous",
             "description": "This unit may re-roll one failed Courage test when removing Shock.",
-            "points": 5
+            "points": 5,
+            "level": 1
         },
         "marksmen": {
             "name": "Marksmen",
             "description": "This unit may re-roll one failed Accuracy test when shooting.",
-            "points": 5
+            "points": 5,
+            "level": 1
         },
         "fighters": {
             "name": "Fighters",
             "description": "This unit may re-roll one failed Strength test when fighting.",
-            "points": 5
+            "points": 5,
+            "level": 1
+        },
+        "fearless": {
+            "name": "Fearless",
+            "description": "This unit increases its Courage by 1 for all tests.",
+            "points": 10,
+            "level": 2
+        }
+    },
+    "setbacks": {
+        "fearful": {
+            "name": "Fearful",
+            "description": "This unit suffers -1 to Courage tests when removing Shock.",
+            "points": -10
+        },
+        "slowed": {
+            "name": "Slowed",
+            "description": "This unit subtracts 1\" from its Movement characteristic.",
+            "points": -10
+        },
+        "wounded": {
+            "name": "Wounded",
+            "description": "This unit suffers -1 to Save rolls.",
+            "points": -10
+        },
+        "blinded": {
+            "name": "Blinded",
+            "description": "This unit suffers -1 Accuracy for all tests.",
+            "points": -10
+        },
+        "weakened": {
+            "name": "Weakened",
+            "description": "This unit suffers -1 Strength for all tests.",
+            "points": -10
+        },
+        "exhausted": {
+            "name": "Exhausted",
+            "description": "This unit suffers -1 Initiative for all tests.",
+            "points": -10
         }
     }
 }
