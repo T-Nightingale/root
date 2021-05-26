@@ -457,11 +457,47 @@
             "points": 5,
             "level": 1
         },
-        "fearless": {
-            "name": "Fearless",
-            "description": "This unit increases its Courage by 1 for all tests.",
+        "motivated": {
+            "name": "Motivated",
+            "description": "When this unit activates, it may automatically remove one Shock point.",
             "points": 10,
             "level": 2
+        },
+        "aggressive": {
+            "name": "Aggressive",
+            "description": "This unit increases its Movement characteristic by 1\".",
+            "points": 10,
+            "level": 2
+        },
+        "trained": {
+            "name": "Trained",
+            "description": "This unit increases its Initiative characteristic by 1.",
+            "points": 10,
+            "level": 2
+        },
+        "infiltrators": {
+            "name": "Infiltrators",
+            "description": "This unit may be set aside in reserves before the match begins if all models have outflank. Any round after the first, when this unit is activated you may place the unit within 6\" of a table edge over 12\" away from enemy units.",
+            "points": 20,
+            "level": 3
+        },
+        "breachers": {
+            "name": "Breachers",
+            "description": "Enemy units do not benefit from cover when hit by an attack made by this unit.",
+            "points": 20,
+            "level": 3
+        },
+        "fearless": {
+            "name": "Fearless",
+            "description": "This unit increases its Courage characteristic by 1\".",
+            "points": 20,
+            "level": 3
+        },
+        "survivors": {
+            "name": "Survivors",
+            "description": "This unit increases its Save characteristic by 1\".",
+            "points": 20,
+            "level": 3
         }
     },
     "setbacks": {
