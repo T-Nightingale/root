@@ -53,7 +53,7 @@
             "version": "1.0",
             "name": "Fantasy Realms",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg",
-            "url": "https://raw.githubusercontent.com/wargame-engine/fantasy-realms/master/",
+            "url": "https://raw.githubusercontent.com/wargame-engine/fantasy-realms/main/",
             "description": "Fantasy battles in the realms with many unique and possibly familiar factions.",
             "color": "#38733a"
         },
@@ -94,7 +94,7 @@
             "category": "sci_fi",
             "version": "0.1",
             "name": "Weird West Skirmish",
-            "url": "https://raw.githubusercontent.com/wargame-engine/weird_west/master/",
+            "url": "https://raw.githubusercontent.com/wargame-engine/weird-west/main/",
             "description": "Sci-fi skirmish battles set in the american civil war of another time.",
             "color": "#0d407f"
         }
