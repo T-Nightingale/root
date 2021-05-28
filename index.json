@@ -442,31 +442,31 @@
         "courageous": {
             "name": "Courageous",
             "description": "This unit may re-roll one failed Courage test per round.",
-            "points": 5,
+            "points": [1, {"multiply": ["unit.totalModels"]}],
             "level": 1
         },
         "marksmen": {
             "name": "Marksman",
             "description": "This unit may re-roll one failed Accuracy test per round.",
-            "points": 5,
+            "points": [1, {"multiply": ["unit.totalModels"]}],
             "level": 1
         },
         "fighters": {
             "name": "Fighter",
             "description": "This unit may re-roll one failed Strength test per round.",
-            "points": 5,
+            "points": [1, {"multiply": ["unit.totalModels"]}],
             "level": 1
         },
         "vigilant": {
             "name": "Vigilant",
             "description": "This unit may re-roll one failed Initiative test per round.",
-            "points": 5,
+            "points": [1, {"multiply": ["unit.totalModels"]}],
             "level": 1
         },
         "motivated": {
             "name": "Motivated",
             "description": "When this unit activates, it may automatically remove one Shock point.",
-            "points": 5,
+            "points": [1, {"multiply": ["unit.totalModels"]}],
             "level": 2
         },
         "mobile": {
