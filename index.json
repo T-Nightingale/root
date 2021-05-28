@@ -94,7 +94,6 @@
             "category": "sci_fi",
             "version": "0.1",
             "name": "Weird West Skirmish",
-            "image": "https://raw.githubusercontent.com/wargame-engine/root/master/wbf.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/weird_west/master/",
             "description": "Sci-fi skirmish battles set in the american civil war of another time.",
             "color": "#0d407f"
