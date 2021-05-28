@@ -441,98 +441,98 @@
     "perks": {
         "courageous": {
             "name": "Courageous",
-            "description": "This unit may re-roll one failed Courage test when removing Shock.",
+            "description": "This unit may re-roll one failed Courage test per round.",
             "points": 5,
             "level": 1
         },
         "marksmen": {
             "name": "Marksman",
-            "description": "This unit may re-roll one failed Accuracy test when shooting.",
+            "description": "This unit may re-roll one failed Accuracy test per round.",
             "points": 5,
             "level": 1
         },
         "fighters": {
             "name": "Fighter",
-            "description": "This unit may re-roll one failed Strength test when fighting.",
+            "description": "This unit may re-roll one failed Strength test per round.",
             "points": 5,
             "level": 1
         },
         "vigilant": {
             "name": "Vigilant",
-            "description": "This unit may re-roll one failed Initiative test when reacting.",
+            "description": "This unit may re-roll one failed Initiative test per round.",
             "points": 5,
             "level": 1
         },
         "motivated": {
             "name": "Motivated",
             "description": "When this unit activates, it may automatically remove one Shock point.",
-            "points": 10,
+            "points": 5,
             "level": 2
         },
         "mobile": {
             "name": "Mobile",
             "description": "This unit increases its Movement characteristic by 1\".",
-            "points": 10,
+            "points": [1, {"multiply": ["unit.totalModels"]}],
             "level": 2
         },
         "trained": {
             "name": "Trained",
             "description": "This unit increases its Initiative characteristic by 1.",
-            "points": 10,
+            "points": [1, {"multiply": ["unit.totalModels"]}],
             "level": 2
         },
         "infiltrators": {
             "name": "Infiltrator",
             "description": "This unit may be set aside in reserves before the match begins if all models have outflank. Any round after the first, when this unit is activated you may place the unit within 6\" of a table edge over 12\" away from enemy units.",
-            "points": 20,
+            "points": [2, {"multiply": ["unit.totalModels"]}],
             "level": 3
         },
         "breachers": {
             "name": "Breacher",
-            "description": "Enemy units do not benefit from cover when hit by an attack made by this unit.",
-            "points": 20,
+            "description": "Enemy units do not benefit from cover when hit by an attack made by this unit at short range.",
+            "points": [2, {"multiply": ["unit.totalModels"]}],
             "level": 3
         },
         "fearless": {
             "name": "Fearless",
             "description": "This unit increases its Courage characteristic by 1\".",
-            "points": 20,
+            "points": [2, {"multiply": ["unit.totalModels"]}],
             "level": 3
         },
         "survivors": {
             "name": "Survivor",
             "description": "Once per round a model in this unit may re-roll a Save roll\".",
-            "points": 20,
+            "points": [2, {"multiply": ["unit.totalModels"]}],
             "level": 3
         },
         "unwavering": {
             "name": "Unwavering",
             "description": "Once per round this unit may automatically pass a Break test.",
-            "points": 30,
+            "points": [2, {"multiply": ["unit.totalModels"]}],
             "level": 3
         },
         "aggressive": {
             "name": "Aggressive",
             "description": "This unit may perform a free Aim action before Charging.",
-            "points": 30,
+            "points": [3, {"multiply": ["unit.totalModels"]}],
             "level": 4
         },
         "steadfast": {
             "name": "Steadfast",
             "description": "This unit gains +1 Save when Charged.",
-            "points": 30,
+            "points": [3, {"multiply": ["unit.totalModels"]}],
             "level": 4
         },
         "tenacious": {
             "name": "Tenacious",
             "description": "Models in this unit count as one additional model for the purposes of controlling objectives.",
-            "points": 30,
+            "points": [3, {"multiply": ["unit.totalModels"]}],
             "level": 4
         },
         "careful": {
             "name": "Careful",
             "description": "This unit may perform a free Standby action after performing a Move action.",
-            "points": 30,
+            "points": [3, {"multiply": ["unit.totalModels"]}],
             "level": 4
         }
     },
@@ -540,32 +540,32 @@
         "fearful": {
             "name": "Fearful",
             "description": "This unit suffers -1 to Courage tests when removing Shock.",
-            "points": -10
+            "points": [-2, {"multiply": ["unit.totalModels"]}]
         },
         "slowed": {
             "name": "Slowed",
             "description": "This unit subtracts 1\" from its Movement characteristic.",
-            "points": -10
+            "points": [-1, {"multiply": ["unit.totalModels"]}]
         },
         "wounded": {
             "name": "Wounded",
             "description": "This unit suffers -1 to Save rolls.",
-            "points": -10
+            "points": [-2, {"multiply": ["unit.totalModels"]}]
         },
         "blinded": {
             "name": "Blinded",
             "description": "This unit suffers -1 Accuracy for all tests.",
-            "points": -10
+            "points": [-1, {"multiply": ["unit.totalModels"]}]
         },
         "weakened": {
             "name": "Weakened",
             "description": "This unit suffers -1 Strength for all tests.",
-            "points": -10
+            "points": [-1, {"multiply": ["unit.totalModels"]}]
         },
         "exhausted": {
             "name": "Exhausted",
             "description": "This unit suffers -1 Initiative for all tests.",
-            "points": -10
+            "points": [-1, {"multiply": ["unit.totalModels"]}]
         }
     }
 }
