@@ -2,21 +2,23 @@
   "high_elf": {
     "name": "High Elf",
     "description": "Classic high elf names.",
-    "first": [
-      "Edyrm",
-      "Hagmer",
-      "Afamrail"
-    ],
-    "last": [
-      "Heican",
-      "Ulara",
-      "Uriro"
-    ]
+    "male": {
+      "first": [
+        "Edyrm",
+        "Hagmer",
+        "Afamrail"
+      ],
+      "last": [
+        "Heican",
+        "Ulara",
+        "Uriro"
+      ]
+    }
   },
   "orc": {
     "name": "Orc",
     "description": "Orc names for either fantasy or sci-fi.",
-    "male": {
+    "any": {
       "first": [
         "Jugag",
         "Lugrub",
