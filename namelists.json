@@ -1,15 +1,71 @@
 {
-    "high_elf": {
-        "name": "High Elf",
-        "first": [
-            "Edyrm",
-            "Hagmer",
-            "Afamrail"
-        ],
-        "last": [
-            "Heican",
-            "Ulara",
-            "Uriro"
-        ]
+  "high_elf": {
+    "name": "High Elf",
+    "description": "Classic high elf names.",
+    "first": [
+      "Edyrm",
+      "Hagmer",
+      "Afamrail"
+    ],
+    "last": [
+      "Heican",
+      "Ulara",
+      "Uriro"
+    ]
+  },
+  "orc": {
+    "name": "Orc",
+    "description": "Orc names for either fantasy or sci-fi.",
+    "male": {
+      "first": [
+        "Jugag",
+        "Lugrub",
+        "Wokganit",
+        "Ditgurat",
+        "Shulhug",
+        "Omegugh",
+        "Unrugagh",
+        "Lugrub",
+        "Wrukag",
+        "Oodagh",
+        "Kugbu",
+        "Zinsbog",
+        "Vrikdarok",
+        "Targhed",
+        "Hugagug",
+        "Baghig",
+        "Umruigig",
+        "Zogugbu",
+        "Hanz",
+        "Krognak",
+        "Drikdarok",
+        "Guag",
+        "Nodagog",
+        "Slaugh",
+        "Ulgan",
+        "Shuzug",
+        "Glush",
+        "Zugarod",
+        "Ulgan",
+        "Bagrak",
+        "Murzush",
+        "Lagakh",
+        "Ugak",
+        "Gluronk",
+        "Ushug"
+      ],
+      "last": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "The Killer",
+        "The Biggest",
+        "The Mean",
+        "The Cunning"
+      ]
     }
+  }
 }
