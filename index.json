@@ -238,12 +238,7 @@
                 },
                 "evasive": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 2},
                 "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 2},
-                "poison": {
-                    "name": "Poison",
-                    "inputs": ["x"],
-                    "description": "Models hit by this weapon suffer X hits instead of 1. Additional hits must be assigned to the same model.",
-                    "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}]
-                },
+                "poison": {"name": "Poison", "description": "This weapon gains +1 AP against targets without Damage Table(X).", "points": ["weapon.attacks", {"multiply": 0.5}]},
                 "critical": {
                     "name": "Critical",
                     "inputs": ["x"],
@@ -387,6 +382,7 @@
                     "description": "When this unit is activated, up to 2 other friendly units of X types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of X type within 6\" may use this unit's Courage and Initiative value when taking skill tests. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of X type unless that unit is also a Leader and attacking in Melee.",
                     "points": 10
                 },
+                "pestilence": {"name": "Pestilence", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "leader_x": {
                     "name": "Leader",
