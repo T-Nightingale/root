@@ -113,7 +113,10 @@
     "globalData": {
         "skirmish": {
             "rules": {
-                "grenade": {"name": "Grenade", "description": "One model per round may use this weapon instead of any other weapons. This weapon ignores cover bonuses."}
+                "grenade": {"name": "Grenade", "description": "One model per round may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
+                "musician": {"name": "Musician", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Initiative test when sprinting.", "points": 5},
+                "banner": {"name": "Banner", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Courage test when removing Shock.", "points": 5},
+                "champion": {"name": "Champion", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Accuracy or Strength test when attacking.", "points": 5}
             }
         },
         "all": {
