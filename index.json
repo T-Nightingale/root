@@ -427,6 +427,7 @@
                     "points": 5
                 },
                 "hero": {"name": "Hero", "description": "When this unit is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."},
+                "lightweight": {"name": "Lightweight", "description": "Attacks with this weapon are made at +1 Strength.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "cumbersome": {"name": "Cumbersome", "description": "Attacks with this weapon are made at -1 Strength.", "points": ["weapon.attacks", {"multiply": -1}]},
                 "accurate": {"name": "Accurate", "description": "Attacks with this weapon are made at +1 Accuracy.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "unreliable": {"name": "Unreliable", "description": "Attacks with this weapon are made at -1 Accuracy.", "points": ["weapon.attacks", {"multiply": -1}]},
