@@ -392,7 +392,7 @@
                     "points": ["weapon.attacks"]
                 },
                 "overheat": {"name": "Overheat", "description": "The firer must take 1 Save roll for each hit roll of 9+.", "points": ["weapon.attacks", {"multiply": -1}]},
-                "pistol": {"name": "Pistol", "description": "This weapon may be used instead of a model's other weapons even while engaged in close combat."},
+                "pistol": {"name": "Pistol", "description": "This weapon may be used instead of a model's other weapons even while engaged in close combat.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": 1},
                 "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 have +1 AP.", "points": ["weapon.attacks", {"multiply": 0.2}]},
                 "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks"]},
