@@ -262,8 +262,8 @@
                 },
                 "evasive": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 2},
                 "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 2},
-                "poison": {"name": "Poison", "description": "This weapon gains +1 AP against targets without Damage Table(X).", "points": ["weapon.attacks", {"multiply": 0.5}]},
-                "deadly_poison": {"name": "Deadly Poison", "description": "This weapon gains +2 AP against targets without Damage Table(X).", "points": ["weapon.attacks", {"multiply": 1}]},
+                "poison": {"name": "Poison", "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by (after AP) 1 to a minimum of 5.", "points": ["weapon.attacks", {"multiply": 0.5}]},
+                "deadly_poison": {"name": "Deadly Poison", "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 2 (after AP) to a minimum of 5.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "critical": {
                     "name": "Critical",
                     "inputs": ["x"],
