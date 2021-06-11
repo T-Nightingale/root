@@ -248,6 +248,16 @@
                     "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.",
                     "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
                 },
+                "medic": {
+                    "name": "Medic",
+                    "description": "Whenever a friendly _Infantry_ model within 6\" is killed or loses a Wound(x), roll a D10. On a 3 or less, that loss is prevented.",
+                    "points": 15
+                },
+                "non_combat": {
+                    "name": "Non-combatant",
+                    "description": "This model may never control or contest objectives, and may not score secondary objectives.",
+                    "points": 0
+                },
                 "swarm": {
                     "name": "Swarm",
                     "inputs": ["x"],
