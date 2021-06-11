@@ -416,24 +416,24 @@
                 "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "leader": {
                     "name": "Leader(Infantry)",
-                    "description": "When this unit is activated, up to 2 other friendly units of X types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of X type within 6\" may use this unit's Courage and Initiative value when taking skill tests. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of X type unless that unit is also a Leader and attacking in Melee.",
+                    "description": "When this unit is activated, up to 2 other friendly units of X types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of _X_ type within 6\" may use this unit's Courage and Initiative value when taking skill tests. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of _X_ type unless that unit is also a Leader and attacking in Melee.",
                     "points": 10
                 },
                 "leader_x": {
                     "name": "Leader",
                     "inputs": ["x"],
-                    "description": "When this unit is activated, up to 2 other friendly units of X types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of X type within 6\" may use this unit's Courage and Initiative value when taking skill tests. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of X type unless that unit is also a Leader and attacking in Melee.",
+                    "description": "When this unit is activated, up to 2 other friendly units of _X_ types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of _X_ type within 6\" may use this unit's Courage and Initiative value when taking skill tests. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of _X_ type unless that unit is also a Leader and attacking in Melee.",
                     "points": 10
                 },
                 "support": {
                     "name": "Support",
-                    "description": "When a, friendly _Infantry_ unit within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targetted by enemy attacks while it is within 3\" of another friendly Infantry unit.",
+                    "description": "When a, friendly _Infantry_ unit within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly _Infantry_ unit.",
                     "points": 5
                 },
                 "support_x": {
                     "name": "Support",
                     "inputs": ["x"],
-                    "description": "When a friendly unit of X type within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of X type.",
+                    "description": "When a friendly unit of _X_ type within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of _X_ type.",
                     "points": 5
                 },
                 "hero": {"name": "Hero", "description": "When this unit is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."},
