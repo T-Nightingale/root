@@ -303,7 +303,7 @@
                     "name": "Ward",
                     "inputs": ["x"],
                     "description": "Up to X times per round, this model may attempt to dispel a Power cast within 24\". Roll a D10 and if the value is equal to or lower than the rolled value for the test, the power is stopped. If the power is not stopped, no further attempts may be made to stop the same power.",
-                    "points": [8, {"multiply": "rule.x"}]
+                    "points": [5, {"multiply": "rule.x"}]
                 },
                 "defensive": {"name": "Defensive", "inputs": ["x"], "description": "This model increases its Save by X.", "points": [2, {"multiply": "rule.x"}]},
                 "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 1},
