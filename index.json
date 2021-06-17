@@ -292,7 +292,7 @@
                 "furious": {"name": "Furious", "description": "When this model charges, Strength rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
                 "relentless": {"name": "Relentless", "description": "When this model shoots, Accuracy rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
                 "crack_shot": {"name": "Crack Shot", "description": "Hits rolls of 1 or 2 from shooting attacks made by this model ignore the benefit of cover.", "points": [1]},
-                "stubborn": {"name": "Stubborn", "description": "This model requires 1 additional shock to become broken.", "points": [1]},
+                "stubborn": {"name": "Stubborn", "description": "This model adds 1 to Courage tests when removing Shock.", "points": [1]},
                 "power": {
                     "name": "Power",
                     "inputs": ["x"],
