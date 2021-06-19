@@ -206,6 +206,7 @@
                     "pointNotes": "Always apply this rule last or your numbers will be off.",
                     "points": [1, {"subtract": [0.25, {"multiply": "rule.x"}]}, {"multiply": -1}, {"multiply": "weapon.points"}]
                 },
+                "scoped": {"name": "Scoped", "description": "This weapon ignores the Long Range penalty.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "fear": {"name": "Fear", "description": "Enemy units within 6\" get -1 Courage.", "points": 2},
                 "fly": {"name": "Fly", "description": "This model may ignore terrain and other models without the Fly special rule when moving.", "points": 2},
                 "deployable": {
