@@ -278,7 +278,7 @@
                 "critical": {
                     "name": "Critical",
                     "inputs": ["x"],
-                    "description": "Enemy units roll X additional dice on _Damage Table(X)_ rolls and choose the highest result when hit by this weapon at Short range. Enemy units without _Damage Table(X)_ must re-roll X successful Save rolls.",
+                    "description": "Enemy units add X to _Damage Table(X)_ rolls when hit by this weapon at Short range.",
                     "points": ["rule.x", {"multiply": "weapon.attacks"}, {"multiply": 4}]
                 },
                 "deadly": {
