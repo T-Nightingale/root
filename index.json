@@ -215,18 +215,18 @@
                 },
                 "ambush": {
                     "name": "Ambush",
-                    "description": "This unit may be set aside in reserves before the match begins if all models have ambush. Any round after the first, when this unit is activated while in reserves, you may choose a point on the battlefield 12\" away from any enemy units and take an Initiative check. If passed, place the unit at that location on the location. If failed, use D10 scattering to determine the landing location of the unit relative to the chosen point.",
+                    "description": "This unit may be placed in _Ambush Reserves_ before the game begins.",
                     "points": 2
                 },
                 "ambush_large": {
                     "name": "Ambush",
-                    "description": "This unit may be set aside in reserves before the match begins if all models have ambush. Any round after the first, when this unit is activated while in reserves, you may choose a point on the battlefield 12\" away from any enemy units and take a Initiative check. If passed, place the unit at that location on the location. If failed, use D10 scattering to determine the landing location of the unit relative to the chosen point.",
+                    "description": "This unit may be placed in _Ambush Reserves_ before the game begins.",
                     "points": 10
                 },
                 "scout": {"name": "Scout", "description": "When this model arrives on the field, it may make a free Move action. This action may not move within 12\" of any enemy units.", "points": 1},
                 "outflank": {
                     "name": "Outflank",
-                    "description": "This unit may be set aside in reserves before the match begins if all models have outflank. Any round after the first, when this unit is activated you may place the unit within 6\" of a table edge over 12\" away from enemy units.",
+                    "description": "This unit may be placed in Outflanking Reserves_ before the game begins.",
                     "points": 1
                 },
                 "bomb": {"name": "Bomb", "description": "This weapon may be used at any time during a unit's movement. It must still use a Shoot action to fire."},
