@@ -1,3 +1,14 @@
+# Monday, June 21, 2021
+Continuing work on the WW2 module with some additional content as well as some new fantasy realms content.
+## Force Builder
+- Allow going back when choosing faction, subfaction and force org
+- Skip choosing focus if faction has no available subfactions
+## World War Two
+- New generic legend "improvised armor" representing field improvised vehicle armor
+- Experimental special forces focus (will be assigned to existing factions soon)
+## Fantasy Realms
+- New Traitor Legions chariot units
+
 # Sunday, June 20, 2021
 Some relatively impactful changes involving this brand new page. You can expect to see these whenever important changes are made to game modules.
 Work was also done to re-do all deployment maps. I feel that with deployment zones, games begin quicker and slower armies are penalized less.
