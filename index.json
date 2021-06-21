@@ -445,7 +445,7 @@
                 "unreliable": {"name": "Unreliable", "description": "Attacks with this weapon are made at -1 Accuracy.", "points": ["weapon.attacks", {"multiply": -1}]},
                 "terrain": {
                     "name": "Terrain",
-                    "description": "This unit may be placed anywhere on the field during deployment, more than 24\" from any enemies units or deployment zones. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."
+                    "description": "This unit may be placed anywhere on the field during deployment, more than 12\" from any enemy units or deployment zones. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."
                 },
                 "impassable": {"name": "Impassable", "inputs": ["x"], "description": "This model may not be crossed by X unit types.", "points": 10},
                 "clearable": {
