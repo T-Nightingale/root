@@ -1,3 +1,10 @@
+# Tuesday, June 22, 2021
+Some additional units and weapons in the ww2 module.
+## World War Two
+- New observation aircraft which are able to call in artillery strikes and act as observers for on-table artillery
+- New glider aircraft transports for combat dropping airborne and special forces units
+- New Scoped Assault Rifle weapon type available initially for fallschirmjager units but will be expanded to additional units in the future
+
 # Monday, June 21, 2021
 Continuing work on the WW2 module with some additional content as well as some new fantasy realms content.
 ## Force Builder
