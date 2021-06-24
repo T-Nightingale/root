@@ -1,3 +1,12 @@
+# Wednesday, June 23, 2021
+Complete re-balance of WW2 anti-tank weaponry and other heavy weapons
+## Core Game
+- Stun now also causes hits in addition to stun effect
+- Fixed sniper rule cost (from 5 points down to 2 for the special rule)
+
+## World War Two
+- Review and re-evaluation of all anti-tank weapons with most bumped up by 1 AP
+
 # Tuesday, June 22, 2021
 Some additional units and weapons in the ww2 module.
 ## World War Two
