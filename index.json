@@ -409,7 +409,7 @@
                 "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": 1},
                 "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 have +1 AP.", "points": ["weapon.attacks", {"multiply": 0.2}]},
                 "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks"]},
-                "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Aircraft special rule.", "points": ["weapon.attacks", {"multiply": 1}]},
+                "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Aircraft special rule.", "points": ["weapon.attacks", {"multiply": 0.5}, {"max": 1}]},
                 "titanic": {
                     "name": "Titanic",
                     "description": "When this unit is activated it may only perform one action and benefit from abilties which trigger when the unit is activated once. It may then be activated a second time to perform its second action."
