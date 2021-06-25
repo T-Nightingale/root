@@ -1,3 +1,14 @@
+# Friday, June 25, 2021
+Additional units and new special rules along with some strategy updates.
+## Core Game
+- Sniper rule now ignores cover
+- Add reluctant special rule which gives -1 Courage to clearing Shock
+
+## World War Two
+- Brand new faction Italy (much more to come)
+- Several new Soviet, United States and Germany units
+- Updated some faction strategies to be more useful
+
 # Wednesday, June 23, 2021
 Complete re-balance of WW2 anti-tank weaponry and other heavy weapons
 ## Core Game
