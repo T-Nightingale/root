@@ -453,7 +453,7 @@
                     "name": "Clearable(5)",
                     "description": "_Infantry_ units within 3\" of this model may take a Clear action to attempt to clear this obstacle. Roll a D10 and on a roll of 5 or less this obstacle is cleared."
                 },
-                "garrison": {"name": "Garrison", "description": "Up to X models or a gun with X or less Crew may occupy this model in the same way models occupy a building.", "inputs": ["x"]},
+                "garrison": {"name": "Garrison", "description": "Up to X models or a gun with X or less Crew may occupy this model in the same way models occupy a building. If this model is destroyed while units are embarked, each model inside must take a single Save with no AP and then the unit takes 3 Shock.", "inputs": ["x"]},
                 "soft_cover_x": {"name": "Soft-Cover", "inputs": ["x"], "description": "This model provides soft cover to X models in it.", "points": ["rule.x", {"multiply": 2}]},
                 "soft_cover": {"name": "Soft-Cover", "description": "This model provides soft cover to models behind it.", "points": 10},
                 "hard_cover_x": {"name": "Hard-Cover", "inputs": ["x"], "description": "This model provides soft cover to X models in it.", "points": ["rule.x", {"multiply": 4}]},
