@@ -536,27 +536,37 @@
                 "crater": {
                     "name": "Crater",
                     "description": "A blast crater created by artillery or another large object.",
-                    "rules": "\n * Soft Cover \n * Area Terrain \n * Visible Through"
+                    "rules": ["Soft Cover", "Area Terrain", "Visible Through"]
                 },
-                "wood_wall": {
-                    "name": "Wooden Wall",
-                    "description": "A low wall, either wood stone or less durable material.",
-                    "rules": "\n * Soft Cover \n * Obstacle \n * Defensible"
+                "wood_fence": {
+                    "name": "Wooden Fence",
+                    "description": "A low fence, either wood stone or less durable material.",
+                    "rules": ["Soft Cover", "Obstacle", "Defensible"]
                 },
                 "stone_wall": {
                     "name": "Stone Wall",
                     "description": "A low wall, either concrete stone or other durable material.",
-                    "rules": "\n * Hard Cover \n * Obstacle \n * Defensible"
+                    "rules": ["Hard Cover", "Obstacle", "Defensible"]
                 },
                 "woods": {
                     "name": "Woods",
                     "description": "A dense forest or wooded area.",
-                    "rules": "\n * Soft Cover \n * Area Terrain \n * Not Visible Through"
+                    "rules": ["Soft Cover", "Area Terrain", "Not Visible Through"]
                 },
                 "ruined_building": {
                     "name": "Ruined Building",
                     "description": "A ruined building. Can be multiple floors.",
-                    "rules": "\n * Hard Cover \n * Area Terrain \n * Not Visible Through"
+                    "rules": ["Hard Cover", "Area Terrain", "Not Visible Through"]
+                },
+                "hedgerow": {
+                    "name": "Hedgerow",
+                    "description": "A low hedgerow wild or trimmed.",
+                    "rules": ["Soft Cover", "Obstacle"]
+                },
+                "bocage": {
+                    "name": "Bocage",
+                    "description": "A thick section of bocage typically 6 feet or more in height.",
+                    "rules": ["Soft Cover", "Obstacle", "Visible Through When Within 2\""]
                 }
             }
         }
