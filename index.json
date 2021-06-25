@@ -533,10 +533,25 @@
                 "exhausted": {"name": "Exhausted", "description": "This unit suffers -1 Initiative for all tests.", "points": [-1, {"multiply": ["unit.totalModels"]}]}
             },
             "terrain": {
+                "wooden_house": {
+                    "name": "Wooden House",
+                    "description": "A wood constructed house.",
+                    "rules": ["Soft Cover", "Building"]
+                },
+                "stone_house": {
+                    "name": "Stone/Brick House",
+                    "description": "A stone or brick constructed house.",
+                    "rules": ["Hard Cover", "Building"]
+                },
                 "crater": {
                     "name": "Crater",
                     "description": "A blast crater created by artillery or another large object.",
-                    "rules": ["Soft Cover", "Area Terrain", "Visible Through"]
+                    "rules": ["Soft Cover", "Area Terrain"]
+                },
+                "improvised_wall": {
+                    "name": "Improvised Wall/Barricade",
+                    "description": "An improvised barricade or hastily constructed wall.",
+                    "rules": ["Soft Cover", "Obstacle", "Defensible"]
                 },
                 "wood_fence": {
                     "name": "Wooden Fence",
@@ -566,7 +581,7 @@
                 "bocage": {
                     "name": "Bocage",
                     "description": "A thick section of bocage typically 6 feet or more in height.",
-                    "rules": ["Soft Cover", "Obstacle", "Visible Through When Within 2\""]
+                    "rules": ["Soft Cover", "Obstacle", "Only Visible Through When Within 2\""]
                 }
             }
         }
