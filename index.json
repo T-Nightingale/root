@@ -404,7 +404,7 @@
                     "description": "This weapon always hits at -1 Accuracy. When scattering results from this weapon, it hits the closest unit within 3\" instead of just 1\".",
                     "points": ["weapon.attacks"]
                 },
-                "overcharge": {"name": "Overcharge", "description": "You may choose to overcharge this weapon and gain +1 AP. If you do, any hit rolls of 1 cause the firer to take 1 Save roll.", "points": ["weapon.attacks", {"multiply": -1}]},
+                "overcharge": {"name": "Overcharge", "description": "You may choose to overcharge this weapon and gain +1 AP. If you do, any hit rolls of 1 cause the firer to take 1 Save roll.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "overheat": {"name": "Overheat", "description": "The firer must take 1 Save roll for each hit roll of 9+.", "points": ["weapon.attacks", {"multiply": -1}]},
                 "pistol": {"name": "Pistol", "description": "This weapon may be used instead of a model's other weapons even while engaged in close combat.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": 1},
