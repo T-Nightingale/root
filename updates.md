@@ -1,3 +1,15 @@
+# Tuesday, July 13, 2021
+Some rules clarifications and additional content.
+
+## Core Game
+- Clarified how Saves interact with automatic failures on 10s
+- Fixed some Secondary Objectives and rebalanced them
+- Strategy Points no longer carry over round-to-round
+
+## World War Two
+- More additions to the Italy faction
+- Brand new Brazil faction with mostly US equipment
+
 # Friday, June 25, 2021
 Additional units and new special rules along with some strategy updates.
 ## Core Game
