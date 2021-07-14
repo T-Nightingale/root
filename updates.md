@@ -10,6 +10,9 @@ Some rules clarifications and additional content.
 - More additions to the Italy faction
 - Brand new Brazil faction with mostly US equipment
 
+## Grim Darkness
+- Several balance updates to the Alien Swarm faction
+
 # Friday, June 25, 2021
 Additional units and new special rules along with some strategy updates.
 ## Core Game
