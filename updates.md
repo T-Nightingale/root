@@ -1,3 +1,11 @@
+# Friday, July 16, 2021
+Some brand new app features and more clarifications.
+
+## Core Game
+- Added new model makers section into the overview tab of each faction
+- Adjusted damage tables again (hopefully for the final time)
+- Adjusted skirmish injury table based on damage table changes
+
 # Tuesday, July 13, 2021
 Some rules clarifications and additional content.
 
