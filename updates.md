@@ -1,3 +1,8 @@
+# Sunday, July 18, 2021
+Several updates for the skirmish system and some skirmish factions
+## Grim Darkness Skirmish
+- Several updates and new units for Undercity Gangs
+- Updated Medic rule to allow healing of other models
 # Friday, July 16, 2021
 Some brand new app features and more clarifications.
 
