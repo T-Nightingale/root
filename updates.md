@@ -1,3 +1,10 @@
+# Monday, July 19, 2021
+Many page design updates including a brand new splash page redesign
+## Core Game
+- Scenario generator now generates 3 secondaries instead of 1
+- Redesigned scenario generator and missions list page with less extra information
+## Grim Darkness
+- New Biker units for Loyal Marines including Scout Bikers and Regular Bikers
 # Sunday, July 18, 2021
 Several updates for the skirmish system and some skirmish factions
 ## Grim Darkness Skirmish
