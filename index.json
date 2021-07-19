@@ -11,7 +11,7 @@
             "name": "Grim Darkness Skirmish",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/grim-darkness-skirmish/master/",
-            "description": "Sci-fi skirmish battles in the far future with many unique and possibly familiar factions.",
+            "description": "In the far flung future, mankind has expanded into the stars, to be met with a war-ravaged battlefield.  Alien races fight for supremacy, impossible gods send forth impossible legions, and no corner is safe.  Realizing that the only way to survive was through bloodshed, the leaders of man created great war-divisions to help beat back the alien hordes.  But, will mankind be the victor, or just another player in this galactic game? Take part in small skirmish battles to control vital resources as part of a galactic campaign.",
             "color": "#7761ab"
         },
         "grim_darkness": {
@@ -22,7 +22,7 @@
             "name": "Grim Darkness",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/grimdark.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/grim-darkness/master/",
-            "description": "Sci-fi battles in the far future with many unique and possibly familiar factions.",
+            "description": "In the far flung future, mankind has expanded into the stars, to be met with a war-ravaged battlefield. Alien races fight for supremacy, impossible gods send forth impossible legions, and no corner is safe. Realizing that the only way to survive was through bloodshed, the leaders of man created great war-divisions to help beat back the alien hordes. But, will mankind be the victor, or just another player in this galactic game? Take part in large all out battles to decide the fate of the galaxy itself.",
             "color": "#7761ab"
         },
         "space_wars": {
