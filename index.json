@@ -702,7 +702,7 @@
                     "sworn_enemies": {
                         "name": "Sworn Enemies",
                         "description": "Both sides have fought previously and given each other a battering. Today they are here to fight.",
-                        "rules": "* When assaulting, all units may move an additional 2” and receive +1 to hit."
+                        "rules": "* When assaulting, all units may move an additional 2\" and receive +1 to hit."
                     },
                     "organizational_chaos": {
                         "name": "Organizational Chaos",
@@ -714,12 +714,12 @@
                     "infiltrate": {
                         "name": "Infiltrate",
                         "description": "Infiltrating the enemy zone and gathering intel can be critical to success.",
-                        "rules": "* Once per round, a unit may perform the Gather Intel action within 6\" of the enemy deployment area for an additional 5 VP."
+                        "rules": "* Once per round, a unit may perform the Gather Intel action within 6\" of the enemy deployment area for 5 VP."
                     },
                     "secure": {
                         "name": "Secure",
                         "description": "Securing an objective for further control can be essential.",
-                        "rules": "* Once per round, a unit in range of an objective may perform the Secure action for an additional 3 VP."
+                        "rules": "* Once per round, a unit in range of an objective may perform the Secure action. Perform an Initiative test with that unit. If successful, gain 3 VP."
                     },
                     "new_orders": {
                         "name": "New Orders",
@@ -734,12 +734,12 @@
                     "priority_orders": {
                         "name": "Priority Orders",
                         "description": "A message has come from high command to take this important objective.",
-                        "rules": "* Players designate one objective to be their priority objective. If held, you gain an additional 3 VP. This cannot be the objective closest to your deployment."
+                        "rules": "* Players designate one objective to be their priority objective. If held, you gain 3 VP. This cannot be the objective closest to your deployment."
                     },
                     "critical_item": {
                         "name": "Critical Item",
                         "description": "You must take a secure an important item for further investigation.",
-                        "rules": "* Place one additional objective marker at the center of the table. At the end of the round, if a player controls that objective, that unit picks up the objective and it travels with the unit. If the unit is killed, place the objective where the unit was destroyed. \n * If a player manages to control the objective at the end of the game or escapes the table with the objective, that player gains 5 additional VP."
+                        "rules": "* Place one additional objective marker at the center of the table. At the end of the round, if a player controls that objective, that unit picks up the objective and it travels with the unit. If the unit is killed, place the objective where the unit was destroyed. \n * If a player manages to control the objective at the end of the game or escapes the table with the objective, that player gains 5 VP."
                     },
                     "attrition": {
                         "name": "Attrition",
@@ -749,17 +749,17 @@
                     "raze": {
                         "name": "Raze",
                         "description": "Burning an objective can ensure your opponent cannot use it against you.",
-                        "rules": "* At the end of the round after objectives are scored, if you control more than one objective, you may choose to destroy an objective you control for an additional 5 VP. After you do this, remove the objective."
+                        "rules": "* At the end of the round after objectives are scored, if you control more than one objective, you may choose to destroy an objective you control for 5 VP. After you do this, remove the objective."
                     },
                     "domination": {
                         "name": "Domination",
                         "description": "Securing the most ground can give you a positional advantage in the fight.",
-                        "rules": "* At the end of the round after objectives are scored, if you have an unbroken unit in at least 3 table quarters, gain 3 additional VP. Instead, if you have an unbroken unit in all table quarters gain 5 additional VP."
+                        "rules": "* At the end of the round after objectives are scored, if you have an unbroken unit in at least 3 table quarters, gain 3 VP. Instead, if you have an unbroken unit in all table quarters gain 5 VP."
                     },
                     "bounty": {
                         "name": "Bounty",
                         "description": "It is sometimes necessary to eliminate a key target during the battle for operational purposes.",
-                        "rules": "* Choose one enemy unit at the start of the game. If that unit is fully destroyed, gain an additional 5 VP."
+                        "rules": "* Choose one enemy unit at the start of the game. If that unit is fully destroyed, gain 5 VP."
                     }
                 }
             }
