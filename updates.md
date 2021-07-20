@@ -1,4 +1,3 @@
-
 # Tuesday, July 20, 2021
 Some new core rules updates and secondary objective rebalances.
 ## Core Game
