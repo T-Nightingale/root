@@ -182,7 +182,12 @@
             },
             "rules": {
                 "guardian": {"name": "Guardian", "description": "Hits must be assigned to this model or another model in this unit with Guardian before other models."},
-                "impact": {"name": "Impact", "inputs": ["x"], "description": "This model causes X Melee hits with no AP when it successfully charges an enemy unit.", "points": [2, {"multiply": "rule.x"}]},
+                "impact": {
+                    "name": "Impact",
+                    "inputs": ["x"],
+                    "description": "This model causes X Melee hits with no AP when it successfully charges an enemy unit.",
+                    "points": [2, {"multiply": "rule.x"}]
+                },
                 "phalanx": {"name": "Phalanx", "description": "Attacks with this weapon are made at +1 Strength when performing a Counter-Attack reaction.", "points": 1},
                 "exposed": {"name": "Exposed", "description": "This model may receive shock even from weapons that it can't be damaged by.", "points": -10},
                 "assault": {
@@ -218,22 +223,14 @@
                     "name": "Deployable",
                     "description": "As an action, this model can be set up on the field. It may not be used to control or contest objectives and may not be targeted by abilities."
                 },
-                "ambush": {
-                    "name": "Ambush",
-                    "description": "This unit may be placed in _Ambush Reserves_ before the game begins.",
-                    "points": 2
-                },
-                "ambush_large": {
-                    "name": "Ambush",
-                    "description": "This unit may be placed in _Ambush Reserves_ before the game begins.",
-                    "points": 10
-                },
-                "scout": {"name": "Scout", "description": "When this model arrives on the field, it may make a free Move action. This action may not move within 12\" of any enemy units.", "points": 1},
-                "outflank": {
-                    "name": "Outflank",
-                    "description": "This unit may be placed in _Outflanking Reserves_ before the game begins.",
+                "ambush": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 2},
+                "ambush_large": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 10},
+                "scout": {
+                    "name": "Scout",
+                    "description": "When this model arrives on the field, it may make a free Move action. This action may not move within 12\" of any enemy units.",
                     "points": 1
                 },
+                "outflank": {"name": "Outflank", "description": "This unit may be placed in _Outflanking Reserves_ before the game begins.", "points": 1},
                 "bomb": {"name": "Bomb", "description": "This weapon may be used at any time during a unit's movement. It must still use a Shoot action to fire."},
                 "resilient": {
                     "name": "Resilient",
@@ -259,11 +256,7 @@
                     "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented.",
                     "points": 15
                 },
-                "non_combat": {
-                    "name": "Non-combatant",
-                    "description": "This model may never control or contest objectives, and may not score secondary objectives.",
-                    "points": 0
-                },
+                "non_combat": {"name": "Non-combatant", "description": "This model may never control or contest objectives, and may not score secondary objectives.", "points": 0},
                 "swarm": {
                     "name": "Swarm",
                     "inputs": ["x"],
@@ -278,8 +271,16 @@
                 },
                 "evasive": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 2},
                 "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 2},
-                "poison": {"name": "Poison", "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 5.", "points": ["weapon.attacks", {"multiply": 1}]},
-                "deadly_poison": {"name": "Deadly Poison", "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 2 (after AP) to a minimum of 5.", "points": ["weapon.attacks", {"multiply": 2}]},
+                "poison": {
+                    "name": "Poison",
+                    "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 5.",
+                    "points": ["weapon.attacks", {"multiply": 1}]
+                },
+                "deadly_poison": {
+                    "name": "Deadly Poison",
+                    "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 2 (after AP) to a minimum of 5.",
+                    "points": ["weapon.attacks", {"multiply": 2}]
+                },
                 "critical": {
                     "name": "Critical",
                     "inputs": ["x"],
@@ -369,7 +370,11 @@
                     "inputs": ["x"],
                     "points": ["rule.x"]
                 },
-                "reload": {"name": "Reload", "description": "After firing, a unit must spend 1 action to reload this weapon before it can be fired again.", "points": ["weapon.attacks", {"multiply": -1}]},
+                "reload": {
+                    "name": "Reload",
+                    "description": "After firing, a unit must spend 1 action to reload this weapon before it can be fired again.",
+                    "points": ["weapon.attacks", {"multiply": -1}]
+                },
                 "sniper": {
                     "name": "Sniper",
                     "description": "This weapon may ignore the Long Range penalty and any Cover bonuses. You may choose which model is hit even if it has Leader.",
@@ -410,9 +415,17 @@
                     "description": "This weapon always hits at -1 Accuracy. When scattering results from this weapon, it hits the closest unit within 3\" instead of just 1\".",
                     "points": ["weapon.attacks"]
                 },
-                "overcharge": {"name": "Overcharge", "description": "You may choose to overcharge this weapon and gain +1 AP. If you do, any hit rolls of 10 cause the firer to take 1 Save roll.", "points": ["weapon.attacks", {"multiply": 1}]},
+                "overcharge": {
+                    "name": "Overcharge",
+                    "description": "You may choose to overcharge this weapon and gain +1 AP. If you do, any hit rolls of 10 cause the firer to take 1 Save roll.",
+                    "points": ["weapon.attacks", {"multiply": 1}]
+                },
                 "overheat": {"name": "Overheat", "description": "The firer must take 1 Save roll for each hit roll of 10.", "points": ["weapon.attacks", {"multiply": -1}]},
-                "pistol": {"name": "Pistol", "description": "This weapon may be used instead of a model's other weapons even while engaged in close combat.", "points": ["weapon.attacks", {"multiply": 1}]},
+                "pistol": {
+                    "name": "Pistol",
+                    "description": "This weapon may be used instead of a model's other weapons even while engaged in close combat.",
+                    "points": ["weapon.attacks", {"multiply": 1}]
+                },
                 "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": 1},
                 "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 gain +2 AP.", "points": ["weapon.attacks", {"multiply": 0.5}]},
                 "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks"]},
@@ -460,7 +473,11 @@
                     "name": "Clearable(5)",
                     "description": "_Infantry_ units within 3\" of this model may take a Clear action to attempt to clear this obstacle. Roll a D10 and on a roll of 5 or less this obstacle is cleared."
                 },
-                "garrison": {"name": "Garrison", "description": "Up to X models or a gun with X or less Crew may occupy this model in the same way models occupy a building. If this model is destroyed while units are embarked, each model inside must take a single Save with no AP and then the unit takes 3 Shock.", "inputs": ["x"]},
+                "garrison": {
+                    "name": "Garrison",
+                    "description": "Up to X models or a gun with X or less Crew may occupy this model in the same way models occupy a building. If this model is destroyed while units are embarked, each model inside must take a single Save with no AP and then the unit takes 3 Shock.",
+                    "inputs": ["x"]
+                },
                 "soft_cover_x": {"name": "Soft-Cover", "inputs": ["x"], "description": "This model provides soft cover to X models in it.", "points": ["rule.x", {"multiply": 2}]},
                 "soft_cover": {"name": "Soft-Cover", "description": "This model provides soft cover to models behind it.", "points": 10},
                 "hard_cover_x": {"name": "Hard-Cover", "inputs": ["x"], "description": "This model provides soft cover to X models in it.", "points": ["rule.x", {"multiply": 4}]},
@@ -479,11 +496,7 @@
                     "description": "Hit rolls of 1 or 2 from this weapon cause 2 hits instead of 1. Additional hits must be assigned to the same model.",
                     "points": ["weapon.attacks", {"multiply": 2}]
                 },
-                "brutal": {
-                    "name": "Brutal",
-                    "description": "This weapon gains +1 AP at Short range.",
-                    "points": ["weapon.attacks", {"multiply": 0.5}]
-                }
+                "brutal": {"name": "Brutal", "description": "This weapon gains +1 AP at Short range.", "points": ["weapon.attacks", {"multiply": 0.5}]}
             },
             "weapons": {
                 "unarmed": {"name": "Unarmed (Melee)", "attacks": 1, "short": "Melee"},
@@ -503,7 +516,12 @@
                 "marksmen": {"name": "Marksman", "description": "This unit may re-roll one failed Accuracy test per round.", "points": [1, {"multiply": ["unit.totalModels"]}], "level": 1},
                 "fighters": {"name": "Fighter", "description": "This unit may re-roll one failed Strength test per round.", "points": [1, {"multiply": ["unit.totalModels"]}], "level": 1},
                 "vigilant": {"name": "Vigilant", "description": "This unit may re-roll one failed Initiative test per round.", "points": [1, {"multiply": ["unit.totalModels"]}], "level": 1},
-                "motivated": {"name": "Motivated", "description": "When this unit activates, it may automatically remove one Shock point.", "points": [1, {"multiply": ["unit.totalModels"]}], "level": 2},
+                "motivated": {
+                    "name": "Motivated",
+                    "description": "When this unit activates, it may automatically remove one Shock point.",
+                    "points": [1, {"multiply": ["unit.totalModels"]}],
+                    "level": 2
+                },
                 "mobile": {"name": "Mobile", "description": "This unit increases its Movement characteristic by 1\".", "points": [1, {"multiply": ["unit.totalModels"]}], "level": 2},
                 "trained": {"name": "Trained", "description": "This unit increases its Initiative characteristic by 1.", "points": [1, {"multiply": ["unit.totalModels"]}], "level": 2},
                 "infiltrators": {
@@ -529,7 +547,12 @@
                     "points": [3, {"multiply": ["unit.totalModels"]}],
                     "level": 4
                 },
-                "careful": {"name": "Careful", "description": "This unit may perform a free Standby action after performing a Move action.", "points": [3, {"multiply": ["unit.totalModels"]}], "level": 4}
+                "careful": {
+                    "name": "Careful",
+                    "description": "This unit may perform a free Standby action after performing a Move action.",
+                    "points": [3, {"multiply": ["unit.totalModels"]}],
+                    "level": 4
+                }
             },
             "setbacks": {
                 "fearful": {"name": "Fearful", "description": "This unit suffers -1 to Courage tests when removing Shock.", "points": [-2, {"multiply": ["unit.totalModels"]}]},
@@ -540,55 +563,202 @@
                 "exhausted": {"name": "Exhausted", "description": "This unit suffers -1 Initiative for all tests.", "points": [-1, {"multiply": ["unit.totalModels"]}]}
             },
             "terrain": {
-                "wooden_house": {
-                    "name": "Wooden House",
-                    "description": "A wood constructed house.",
-                    "rules": ["Soft Cover", "Building"]
-                },
-                "stone_house": {
-                    "name": "Stone/Brick House",
-                    "description": "A stone or brick constructed house.",
-                    "rules": ["Hard Cover", "Building"]
-                },
-                "crater": {
-                    "name": "Crater",
-                    "description": "A blast crater created by artillery or another large object.",
-                    "rules": ["Soft Cover", "Area Terrain"]
-                },
-                "improvised_wall": {
-                    "name": "Improvised Wall/Barricade",
-                    "description": "An improvised barricade or hastily constructed wall.",
-                    "rules": ["Soft Cover", "Obstacle", "Defensible"]
-                },
-                "wood_fence": {
-                    "name": "Wooden Fence",
-                    "description": "A low fence, either wood stone or less durable material.",
-                    "rules": ["Soft Cover", "Obstacle", "Defensible"]
-                },
-                "stone_wall": {
-                    "name": "Stone Wall",
-                    "description": "A low wall, either concrete stone or other durable material.",
-                    "rules": ["Hard Cover", "Obstacle", "Defensible"]
-                },
-                "woods": {
-                    "name": "Woods",
-                    "description": "A dense forest or wooded area.",
-                    "rules": ["Soft Cover", "Area Terrain", "Not Visible Through"]
-                },
-                "ruined_building": {
-                    "name": "Ruined Building",
-                    "description": "A ruined building. Can be multiple floors.",
-                    "rules": ["Hard Cover", "Area Terrain", "Not Visible Through"]
-                },
-                "hedgerow": {
-                    "name": "Hedgerow",
-                    "description": "A low hedgerow wild or trimmed.",
-                    "rules": ["Soft Cover", "Obstacle"]
-                },
+                "wooden_house": {"name": "Wooden House", "description": "A wood constructed house.", "rules": ["Soft Cover", "Building"]},
+                "stone_house": {"name": "Stone/Brick House", "description": "A stone or brick constructed house.", "rules": ["Hard Cover", "Building"]},
+                "crater": {"name": "Crater", "description": "A blast crater created by artillery or another large object.", "rules": ["Soft Cover", "Area Terrain"]},
+                "improvised_wall": {"name": "Improvised Wall/Barricade", "description": "An improvised barricade or hastily constructed wall.", "rules": ["Soft Cover", "Obstacle", "Defensible"]},
+                "wood_fence": {"name": "Wooden Fence", "description": "A low fence, either wood stone or less durable material.", "rules": ["Soft Cover", "Obstacle", "Defensible"]},
+                "stone_wall": {"name": "Stone Wall", "description": "A low wall, either concrete stone or other durable material.", "rules": ["Hard Cover", "Obstacle", "Defensible"]},
+                "woods": {"name": "Woods", "description": "A dense forest or wooded area.", "rules": ["Soft Cover", "Area Terrain", "Not Visible Through"]},
+                "ruined_building": {"name": "Ruined Building", "description": "A ruined building. Can be multiple floors.", "rules": ["Hard Cover", "Area Terrain", "Not Visible Through"]},
+                "hedgerow": {"name": "Hedgerow", "description": "A low hedgerow wild or trimmed.", "rules": ["Soft Cover", "Obstacle"]},
                 "bocage": {
                     "name": "Bocage",
                     "description": "A thick section of bocage typically 6 feet or more in height.",
                     "rules": ["Soft Cover", "Obstacle", "Only Visible Through When Within 2\""]
+                }
+            },
+            "missions": {
+                "missions": {
+                    "frontline": {
+                        "name": "Frontline",
+                        "map": "/data/missions/frontline_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round. "
+                    },
+                    "dual_fronts": {
+                        "name": "Dual Fronts",
+                        "map": "/data/missions/dual_frontline_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
+                    },
+                    "wide": {
+                        "name": "Frontline Wide",
+                        "map": "/data/missions/wide_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
+                    },
+                    "push": {
+                        "name": "Push",
+                        "map": "/data/missions/push_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
+                    },
+                    "corner_push": {
+                        "name": "Corner Push",
+                        "map": "/data/missions/corner_push_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
+                    },
+                    "flanking_frontlines": {
+                        "name": "Flanking Frontlines",
+                        "map": "/data/missions/flanking_frontlines_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
+                    },
+                    "corner_frontlines": {
+                        "name": "Corner Frontlines",
+                        "map": "/data/missions/corner_frontlines_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
+                    },
+                    "diagonal_frontlines": {
+                        "name": "Diagonal Frontlines",
+                        "map": "/data/missions/diagonal_frontlines_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
+                    },
+                    "sectors": {
+                        "name": "Sectors",
+                        "map": "/data/missions/sectors_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
+                    },
+                    "wide_push": {
+                        "name": "Push Wide",
+                        "map": "/data/missions/wide_push.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
+                    },
+                    "spearhead_defense": {
+                        "name": "Spearhead Defense",
+                        "map": "/data/missions/defense_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the game."
+                    },
+                    "corner_defense": {
+                        "name": "Corner Defense",
+                        "map": "/data/missions/corner_defense_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the game."
+                    }
+                },
+                "weather": {
+                    "night_fighting": {
+                        "name": "Night Fighting",
+                        "description": "The perfect time for a silent raid is at night. Use the following alternations to fight at night. Note that loud actions such as shooting will be heard and make units more vulnerable.",
+                        "rules": "* Units may not fire at targets more than 20” away.\n * Mark any units that have fired this round That unit, and friendly units within 3” are visible and may be targeted regardless of range conditions \n * Choose any light-emitting terrain or obstacles and mark them (campfires, lampposts etc). These items light up units within 3” and they may be targeted regardless of range."
+                    },
+                    "severe_storm": {
+                        "name": "Severe Storm",
+                        "description": "While storms are certainly not ideal fighting conditions, some operations may be pushed forward regardless.",
+                        "rules": "* All movement not taking place on a road or other terrain designated as storm proof is reduced by 2” to a minimum of 1” \n * Units may not receive the terrain benefits of roads"
+                    },
+                    "dense_fog": {
+                        "name": "Dense Fog",
+                        "description": "While less imapactful than a fully night time attack, dense fog provides a challenge for those attempting to spot enemy units in it.",
+                        "rules": "* Units may not fire at targets more than 36\" away \n * hidden units may enter within 24\" of enemy markers, but not within 12\""
+                    },
+                    "extreme_temperatures": {
+                        "name": "Extreme Temperatures",
+                        "description": "Some battles while not affected by poor visibility or storming conditions, may simply be too hot or cold to fight effectively.",
+                        "rules": "* At the start of the round, each unit not inside a piece of terrain designated as safe from the elements receives 1 shock marker \n * Units that have lost a close combat assault suffer -1 to Courage tests following the assault."
+                    },
+                    "normal": {"name": "Normal Conditions", "description": "Both sides are prepared to fight normally.", "rules": "No additional effects apply."},
+                    "preparatory_bombardment": {
+                        "name": "Preparatory Bombardment",
+                        "description": "Both sides have opened with a large shelling of artillery to attempt to pin the down the enemy before the attack commences.",
+                        "rules": "* Whenever a unit arrives on the table, it receives 2 shock and must first test to remove it."
+                    },
+                    "exhaustion": {
+                        "name": "Exhaustion",
+                        "description": "The fighting has lasted days or weeks without end and both forces are beginning to break.",
+                        "rules": "* All units suffer -1 to Courage rolls and receive 1 additional shock after engaging in assaults."
+                    },
+                    "sworn_enemies": {
+                        "name": "Sworn Enemies",
+                        "description": "Both sides have fought previously and given each other a battering. Today they are here to fight.",
+                        "rules": "* When assaulting, all units may move an additional 2” and receive +1 to hit."
+                    },
+                    "organizational_chaos": {
+                        "name": "Organizational Chaos",
+                        "description": "The chain of command has fallen short and the men are now fighting with or without orders.",
+                        "rules": "* All units suffer -1 to Courage tests."
+                    }
+                },
+                "secondaries": {
+                    "infiltrate": {
+                        "name": "Infiltrate",
+                        "description": "Infiltrating the enemy zone and gathering intel can be critical to success.",
+                        "rules": "* Once per round, a unit may perform the Gather Intel action within 6\" of the enemy deployment area for an additional 5 VP."
+                    },
+                    "secure": {
+                        "name": "Secure",
+                        "description": "Securing an objective for further control can be essential.",
+                        "rules": "* Once per round, a unit in range of an objective may perform the Secure action for an additional 3 VP."
+                    },
+                    "new_orders": {
+                        "name": "New Orders",
+                        "description": "New orders have been received and additional objectives are available.",
+                        "rules": "* Each player places one additional objective 12\" away from any existing objectives and more than 12\" away from their deployment area."
+                    },
+                    "breakthrough": {
+                        "name": "Breakthrough",
+                        "description": "Taking the enemies approach can cripple their reinforcements.",
+                        "rules": "* Each player places one additional objective inside an enemy deployment area and 12\" away from all existing objectives."
+                    },
+                    "priority_orders": {
+                        "name": "Priority Orders",
+                        "description": "A message has come from high command to take this important objective.",
+                        "rules": "* Players designate one objective to be their priority objective. If held, you gain an additional 3 VP. This cannot be the objective closest to your deployment."
+                    },
+                    "critical_item": {
+                        "name": "Critical Item",
+                        "description": "You must take a secure an important item for further investigation.",
+                        "rules": "* Place one additional objective marker at the center of the table. At the end of the round, if a player controls that objective, that unit picks up the objective and it travels with the unit. If the unit is killed, place the objective where the unit was destroyed. \n * If a player manages to control the objective at the end of the game or escapes the table with the objective, that player gains 5 additional VP."
+                    },
+                    "attrition": {
+                        "name": "Attrition",
+                        "description": "As the losses add up, both sides must consider what they are willing to do to win.",
+                        "rules": "* Players score 2 additional VP for each enemy unit that is full destroyed \n * When a unit is activated, you may choose to withdraw it from the table and it does not count as being destroyed."
+                    },
+                    "raze": {
+                        "name": "Raze",
+                        "description": "Burning an objective can ensure your opponent cannot use it against you.",
+                        "rules": "* At the end of the round after objectives are scored, you may choose to destroy an objective you control for an additional 5 VP. After you do this, remove the objective. You may not do this for objectives in your deployment area."
+                    },
+                    "domination": {
+                        "name": "Domination",
+                        "description": "Securing the most ground can give you a positional advantage in the fight.",
+                        "rules": "* At the end of the round after objectives are scored, if you have an unbroken unit in at least 3 table quarters, gain 3 additional VP. Instead, if you have an unbroken unit in all table quarters gain 5 additional VP."
+                    },
+                    "bounty": {
+                        "name": "Bounty",
+                        "description": "It is sometimes necessary to eliminate a key target during the battle for operational purposes.",
+                        "rules": "* Choose one enemy unit at the start of the game. If that unit is fully destroyed, gain an additional 5 VP."
+                    }
                 }
             }
         }
