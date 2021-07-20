@@ -7,6 +7,7 @@ Some new core rules updates and secondary objective rebalances,
 - Added brand new Stand Ground action with Brace reaction
 ## Grim Darkness
 - Unified all shield rules into a combat shield weapon and distributed it accordingly
+- Fixed loyal marines destroyer equipment options
 ## Core Game
 - Scenario generator now generates 3 secondaries instead of 1
 - Redesigned scenario generator and missions list page with less extra information
