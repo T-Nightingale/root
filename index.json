@@ -579,6 +579,22 @@
                 }
             },
             "missions": {
+                "hidden_missions": {
+                    "spearhead_defense": {
+                        "name": "Spearhead Defense",
+                        "map": "/data/missions/defense_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the game."
+                    },
+                    "corner_defense": {
+                        "name": "Corner Defense",
+                        "map": "/data/missions/corner_defense_dz.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
+                        "victory_conditions": "Players score 5 VP per objective they control at the end of the game."
+                    }
+                },
                 "missions": {
                     "frontline": {
                         "name": "Frontline",
@@ -649,20 +665,6 @@
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
                         "victory_conditions": "Players score 5 VP per objective they control at the end of the round."
-                    },
-                    "spearhead_defense": {
-                        "name": "Spearhead Defense",
-                        "map": "/data/missions/defense_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-                        "victory_conditions": "Players score 5 VP per objective they control at the end of the game."
-                    },
-                    "corner_defense": {
-                        "name": "Corner Defense",
-                        "map": "/data/missions/corner_defense_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-                        "victory_conditions": "Players score 5 VP per objective they control at the end of the game."
                     }
                 },
                 "weather": {
@@ -747,7 +749,7 @@
                     "raze": {
                         "name": "Raze",
                         "description": "Burning an objective can ensure your opponent cannot use it against you.",
-                        "rules": "* At the end of the round after objectives are scored, you may choose to destroy an objective you control for an additional 5 VP. After you do this, remove the objective. You may not do this for objectives in your deployment area."
+                        "rules": "* At the end of the round after objectives are scored, if you control more than one objective, you may choose to destroy an objective you control for an additional 5 VP. After you do this, remove the objective."
                     },
                     "domination": {
                         "name": "Domination",
