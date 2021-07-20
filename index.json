@@ -714,7 +714,7 @@
                     "infiltrate": {
                         "name": "Infiltrate",
                         "description": "Infiltrating the enemy zone and gathering intel can be critical to success.",
-                        "rules": "* Once per round, a unit may perform the Gather Intel action within 6\" of the enemy deployment area for 5 VP."
+                        "rules": "* Once per round, a unit may perform the Gather Intel action inside the enemy deployment area. Perform an Initiative test with that unit. If successful, gain 5 VP."
                     },
                     "secure": {
                         "name": "Secure",
