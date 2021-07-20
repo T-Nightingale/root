@@ -1,3 +1,15 @@
+
+# Tuesday, July 20, 2021
+Some new core rules updates and secondary objective rebalances,
+## Core Game
+- Rebalanced multiple secondary objectives to be more fair for different lists
+- Moved all scenarios into root repository open for merge requests
+- Added brand new Stand Ground action with Brace reaction
+## Grim Darkness
+- Unified all shield rules into a combat shield weapon and distributed it accordingly
+## Core Game
+- Scenario generator now generates 3 secondaries instead of 1
+- Redesigned scenario generator and missions list page with less extra information
 # Monday, July 19, 2021
 Many page design updates including a brand new splash page redesign
 ## Core Game
