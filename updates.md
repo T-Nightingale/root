@@ -1,6 +1,6 @@
 
 # Tuesday, July 20, 2021
-Some new core rules updates and secondary objective rebalances,
+Some new core rules updates and secondary objective rebalances.
 ## Core Game
 - Rebalanced multiple secondary objectives to be more fair for different lists
 - Moved all scenarios into root repository open for merge requests
