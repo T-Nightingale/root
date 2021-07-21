@@ -43,7 +43,7 @@
             "name": "Fantasy Realms Skirmish (Beta)",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/fantasy-realms-skirmish/master/",
-            "description": "Fantasy skirmish battles in the realms with many unique and possibly familiar factions.",
+            "description": "In a wartorn realm of dead gods and living magic, fantastic races fight for the few areas of prosperity and success. The dead walk, elf clashes sword with elf, and the twisted power of the corpses of the divine tear holes from one world to another. Will you defend what's yours in a magical world gone mad, or will you walk between realms, bringing war and ruin in your wake? Take part in small skirmish battles to control vital resources as part of the war of realms.",
             "color": "#38733a"
         },
         "fantasy_realms": {
@@ -54,7 +54,7 @@
             "name": "Fantasy Realms",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/fantasy.jpg",
             "url": "https://raw.githubusercontent.com/wargame-engine/fantasy-realms/main/",
-            "description": "Fantasy battles in the realms with many unique and possibly familiar factions.",
+            "description": "In a wartorn realm of dead gods and living magic, fantastic races fight for the few areas of prosperity and success. The dead walk, elf clashes sword with elf, and the twisted power of the corpses of the divine tear holes from one world to another. Will you defend what's yours in a magical world gone mad, or will you walk between realms, bringing war and ruin in your wake? Take part in large all out battles to decide the fate of the realms.",
             "color": "#38733a"
         },
         "ancients": {
@@ -745,7 +745,7 @@
                     "attrition": {
                         "name": "Attrition",
                         "description": "As the losses add up, both sides must consider what they are willing to do to win.",
-                        "rules": "* Players score 2 additional VP for each enemy unit that is full destroyed \n * When a unit is activated, you may choose to withdraw it from the table and it does not count as being destroyed."
+                        "rules": "* Players score 2 additional VP for each enemy unit that is full destroyed \n * Any unit may perform the Withdraw action if it is not engaged in melee. When performed, the unit is removed from the table, but does not count as being destroyed."
                     },
                     "raze": {
                         "name": "Raze",
