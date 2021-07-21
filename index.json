@@ -269,8 +269,8 @@
                     "description": "This weapon requires X models to operate effectively. When the amount of crew is reduced to half or less, this weapon suffers -1 to hit.",
                     "points": ["rule.x", {"subtract": 1}, {"multiply": -1}]
                 },
-                "evasive": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 2},
-                "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this unit at a range of more than 12\".", "points": 2},
+                "evasive": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this model while it is in cover or at a range of more than 12\".", "points": 2},
+                "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this model while it is in cover or at a range of more than 12\".", "points": 2},
                 "poison": {
                     "name": "Poison",
                     "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 5.",
@@ -295,7 +295,7 @@
                 },
                 "armored_front": {"name": "Heavy Armor(Front)", "description": "This model gets +1 Save when hit in its front arc.", "points": 5},
                 "vulnerable_side_rear": {"name": "Vulnerable(Side, Rear)", "description": "This model gets -1 Save when hit in its Side arc or -2 Save when hit in its Rear arc.", "points": -10},
-                "vulnerable_rear": {"name": "Vulnerable(Rear)", "description": "This unit gets -1 Save when hit in its Rear arc.", "points": -5},
+                "vulnerable_rear": {"name": "Vulnerable(Rear)", "description": "This model gets -1 Save when hit in its Rear arc.", "points": -5},
                 "furious": {"name": "Furious", "description": "When this model charges, Strength rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
                 "relentless": {"name": "Relentless", "description": "When this model shoots, Accuracy rolls of 1 or 2 cause 2 hits instead of 1.", "points": 2},
                 "crack_shot": {"name": "Crack Shot", "description": "Hits rolls of 1 or 2 from shooting attacks made by this model ignore the benefit of cover.", "points": [1]},
@@ -304,7 +304,7 @@
                 "power": {
                     "name": "Power",
                     "inputs": ["x"],
-                    "description": "This unit may cast X Powers. Powers may be cast before or after any action. To cast, roll a D10 and if the result is equal to or less than the power's cast value it is successful. On a roll of a 10, that unit gains 2 Shock. A unit may only successfully cast each power once per turn. Up to X times per round, this model may attempt to dispel a Power cast within 24\". Roll a D10 and if the value is equal to or lower than the rolled value for the test, the power is stopped. If the power is not stopped, no further attempts may be made to stop the same power. If this model is locked in Melee, it may only target units in the combat. This ability may not be used against enemy units in melee with friendly units.",
+                    "description": "This model may cast X Powers. Powers may be cast before or after any action. To cast, roll a D10 and if the result is equal to or less than the power's cast value it is successful. On a roll of a 10, that unit gains 2 Shock. A unit may only successfully cast each power once per turn. Up to X times per round, this model may attempt to dispel a Power cast within 24\". Roll a D10 and if the value is equal to or lower than the rolled value for the test, the power is stopped. If the power is not stopped, no further attempts may be made to stop the same power. If this model is locked in Melee, it may only target units in the combat. This ability may not be used against enemy units in melee with friendly units.",
                     "points": [15, {"multiply": "rule.x"}]
                 },
                 "shocking": {"name": "Shocking", "inputs": ["x"], "description": "A unit hit by this weapon gains X additional Shock.", "points": ["rule.x"]},
@@ -315,13 +315,13 @@
                     "points": [5, {"multiply": "rule.x"}]
                 },
                 "defensive": {"name": "Defensive", "inputs": ["x"], "description": "This model increases its Save by X.", "points": [2, {"multiply": "rule.x"}]},
-                "hover": {"name": "Hover", "description": "This unit may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 1},
-                "agile": {"name": "Agile", "description": "This unit may ignore low obstacles of 1\" or less in height when moving.", "points": 1},
-                "walker": {"name": "Walker", "description": "This unit may ignore low obstacles of 1\" or less in height when moving.", "points": 5},
+                "hover": {"name": "Hover", "description": "This model may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 1},
+                "agile": {"name": "Agile", "description": "This model may ignore low obstacles of 1\" or less in height when moving.", "points": 1},
+                "walker": {"name": "Walker", "description": "This model may ignore low obstacles of 1\" or less in height when moving.", "points": 5},
                 "repair": {
                     "name": "Repair",
                     "inputs": ["x"],
-                    "description": "At any point during this unit's activation, if within 3\" of a _Vehicle_ unit, roll one die. On an X or less the vehicle may remove one critical damage.",
+                    "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On an X or less the vehicle may remove one critical damage.",
                     "points": ["rule.x", {"multiply": 2}]
                 },
                 "damage_table_titan": {
@@ -404,7 +404,7 @@
                 "fanatical": {"name": "Fanatical", "description": "This unit is treated as having +2 Courage for all break tests and does not gain shock from close combat.", "points": 2},
                 "homing": {"name": "Homing", "description": "This weapon hits at Accuracy +1.", "points": ["weapon.attacks"]},
                 "stun": {"name": "Stun", "description": "If this weapon hits its target, that unit gets -1 Strength and -1 Accuracy for its next attack.", "points": 1},
-                "amphibious": {"name": "Amphibious", "description": "This unit may treat impassable water terrain as difficult terrain.", "points": 5},
+                "amphibious": {"name": "Amphibious", "description": "This model may treat impassable water terrain as difficult terrain.", "points": 5},
                 "scatter": {
                     "name": "Scatter",
                     "description": "When choosing a target for this weapon, choose a specific model in the unit. If this weapon misses, use D10 scattering to determine the landing point of the shot relative to that model. If it lands within 1\" of a different unit, that unit is hit instead.",
@@ -446,7 +446,7 @@
                 "leader_x": {
                     "name": "Leader",
                     "inputs": ["x"],
-                    "description": "When this unit is activated, up to 2 other friendly units of _X_ types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of _X_ type within 6\" may use this unit's Courage and Initiative value when taking skill tests. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of _X_ type unless that unit is also a Leader and attacking in Melee.",
+                    "description": "When this model is activated, up to 2 other friendly units of _X_ types within 6\" may choose to activate for free if they have not activated yet and perform the same actions as this unit. Friendly units of _X_ type within 6\" may use this unit's Courage and Initiative value when taking skill tests. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of _X_ type unless that unit is also a Leader and attacking in Melee.",
                     "points": 10
                 },
                 "support": {
@@ -460,14 +460,14 @@
                     "description": "When a friendly unit of _X_ type within 6\" activates, this unit may choose to activate for free if it has not activated yet and perform the same actions as that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of _X_ type.",
                     "points": 5
                 },
-                "hero": {"name": "Hero", "description": "When this unit is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."},
+                "hero": {"name": "Hero", "description": "When this model is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."},
                 "lightweight": {"name": "Lightweight", "description": "Attacks with this weapon are made at +1 Strength.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "cumbersome": {"name": "Cumbersome", "description": "Attacks with this weapon are made at -1 Strength.", "points": ["weapon.attacks", {"multiply": -1}]},
                 "accurate": {"name": "Accurate", "description": "Attacks with this weapon are made at +1 Accuracy.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "unreliable": {"name": "Unreliable", "description": "Attacks with this weapon are made at -1 Accuracy.", "points": ["weapon.attacks", {"multiply": -1}]},
                 "terrain": {
                     "name": "Terrain",
-                    "description": "This unit may be placed anywhere on the field during deployment, more than 12\" from any enemy units or deployment zones. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."
+                    "description": "This model may be placed anywhere on the field during deployment, more than 12\" from any enemy units or deployment zones. Once placed, this unit is treated as terrain and may not be controlled or activated by the owning player."
                 },
                 "impassable": {"name": "Impassable", "inputs": ["x"], "description": "This model may not be crossed by X unit types.", "points": 10},
                 "clearable": {
@@ -489,9 +489,9 @@
                     "description": "This unit has +1 Save when hit by a shooting attack, +1 to initiative tests when sprinting and has a 3“ coherency instead of a 2“ coherency if all models in it have this rule.",
                     "points": 2
                 },
-                "musician": {"name": "Musician", "description": "This unit may re-roll a single failed Initiative test when sprinting.", "points": 5},
-                "banner": {"name": "Banner", "description": "This unit may re-roll a single failed Courage test when removing Shock.", "points": 5},
-                "champion": {"name": "Champion", "description": "This unit may re-roll a single failed Accuracy or Strength test when attacking.", "points": 5},
+                "musician": {"name": "Musician", "description": "This model's unit may re-roll a single failed Initiative test when sprinting.", "points": 5},
+                "banner": {"name": "Banner", "description": "This model's unit may re-roll a single failed Courage test when removing Shock.", "points": 5},
+                "champion": {"name": "Champion", "description": "This model's unit may re-roll a single failed Accuracy or Strength test when attacking.", "points": 5},
                 "lethal": {
                     "name": "Lethal",
                     "description": "Hit rolls of 1 or 2 from this weapon cause 2 hits instead of 1. Additional hits must be assigned to the same model.",
