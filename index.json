@@ -730,7 +730,12 @@
                     },
                     "breakthrough": {
                         "name": "Breakthrough",
-                        "description": "Taking the enemies approach can cripple their reinforcements.",
+                        "description": "Breaking through enemy lines can cause havoc for troop organization.",
+                        "rules": "* Players may move units off their opponents table edge. After doing so, remove the unit from the field and gain 5 VP."
+                    },
+                    "take_and_hold": {
+                        "name": "Take and Hold",
+                        "description": "Taking key ground can be critical to moving the frontline forward.",
                         "rules": "* Each player places one additional objective inside an enemy deployment area and 12\" away from all existing objectives."
                     },
                     "priority_orders": {
@@ -738,10 +743,15 @@
                         "description": "A message has come from high command to take this important objective.",
                         "rules": "* Players designate one objective to be their priority objective. If held, you gain 3 VP. This cannot be the objective closest to your deployment."
                     },
-                    "critical_item": {
-                        "name": "Critical Item",
+                    "critical_asset": {
+                        "name": "Critical Asset",
                         "description": "You must take a secure an important item for further investigation.",
-                        "rules": "* Place one additional objective marker at the center of the table. At the end of the round, if a player controls that objective, that unit picks up the objective and it travels with the unit. If the unit is killed, place the objective where the unit was destroyed. \n * If a player manages to control the objective at the end of the game or escapes the table with the objective, that player gains 5 VP."
+                        "rules": "* Place one critical item marker at the center of the table. At the end of the round, if a player controls that objective, that unit picks up the objective and it travels with the unit. If the unit is killed, place the objective where the unit was destroyed. \n * If a player manages to control the objective at the end of the game or escapes the table with the objective, that player gains 5 VP."
+                    },
+                    "loot": {
+                        "name": "Loot",
+                        "description": "Important caches are scattered throughout the battlefield which can be secured.",
+                        "rules": "* Players roll off and alternate placing 5 loot markers on the field within 12\" of the table center and more than 6\" away from other loot markers. When a unit performs a move action which crosses a loot marker, perform an Initiative test. If passed, remove it from the field and gain 3 VP."
                     },
                     "attrition": {
                         "name": "Attrition",
@@ -752,6 +762,11 @@
                         "name": "Raze",
                         "description": "Burning an objective can ensure your opponent cannot use it against you.",
                         "rules": "* At the end of the round after objectives are scored, if you control more than one objective, you may choose to destroy an objective you control for 5 VP. After you do this, remove the objective."
+                    },
+                    "lockdown": {
+                        "name": "Lockdown",
+                        "description": "It is not enough to simply control important ground. It must be fully locked down.",
+                        "rules": "* Each objective with no enemy units within 12\" grants an additional 3 VP."
                     },
                     "domination": {
                         "name": "Domination",
