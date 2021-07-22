@@ -274,12 +274,12 @@
                 "poison": {
                     "name": "Poison",
                     "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 5.",
-                    "points": ["weapon.attacks", {"multiply": 1}]
+                    "points": ["weapon.attacks", {"multiply": 0.5}]
                 },
                 "deadly_poison": {
                     "name": "Deadly Poison",
                     "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 2 (after AP) to a minimum of 5.",
-                    "points": ["weapon.attacks", {"multiply": 2}]
+                    "points": ["weapon.attacks", {"multiply": 1}]
                 },
                 "critical": {
                     "name": "Critical",
