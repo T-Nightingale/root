@@ -751,7 +751,7 @@
                     "caches": {
                         "name": "Caches",
                         "description": "Important caches are scattered throughout the battlefield which can be secured.",
-                        "rules": "* Players roll off and alternate placing 5 cache markers on the field within 6\" of the table center line and more than 6\" away from other cache markers. When a unit performs a move action which crosses a cache marker, perform an Initiative test. If passed, remove it from the field and gain 3 VP."
+                        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 6\" of the table center line and more than 6\" away from other cache markers. When a unit performs a move action which crosses a cache marker, perform an Initiative test. If passed, remove it from the field and gain 3 VP."
                     },
                     "attrition": {
                         "name": "Attrition",
