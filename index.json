@@ -748,10 +748,10 @@
                         "description": "You must take a secure an important item for further investigation.",
                         "rules": "* Place one critical item marker at the center of the table. At the end of the round, if a player controls that objective, that unit picks up the objective and it travels with the unit. If the unit is killed, place the objective where the unit was destroyed. \n * If a player manages to control the objective at the end of the game or escapes the table with the objective, that player gains 5 VP."
                     },
-                    "loot": {
-                        "name": "Loot",
+                    "caches": {
+                        "name": "Caches",
                         "description": "Important caches are scattered throughout the battlefield which can be secured.",
-                        "rules": "* Players roll off and alternate placing 5 loot markers on the field within 12\" of the table center and more than 6\" away from other loot markers. When a unit performs a move action which crosses a loot marker, perform an Initiative test. If passed, remove it from the field and gain 3 VP."
+                        "rules": "* Players roll off and alternate placing 5 cache markers on the field within 6\" of the table center line and more than 6\" away from other cache markers. When a unit performs a move action which crosses a cache marker, perform an Initiative test. If passed, remove it from the field and gain 3 VP."
                     },
                     "attrition": {
                         "name": "Attrition",
