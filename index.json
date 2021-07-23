@@ -731,7 +731,7 @@
                     "breakthrough": {
                         "name": "Breakthrough",
                         "description": "Breaking through enemy lines can cause havoc for troop organization.",
-                        "rules": "* Players may move units off their opponents table edge. After doing so, remove the unit from the field and gain 5 VP."
+                        "rules": "* Once per round, players may move a unit off their opponents table edge. After doing so, remove the unit from the field and gain 5 VP."
                     },
                     "take_and_hold": {
                         "name": "Take and Hold",
