@@ -419,8 +419,8 @@
                 },
                 "overcharge": {
                     "name": "Overcharge",
-                    "description": "You may choose to overcharge this weapon and gain +1 AP. If you do, any hit rolls of 10 cause the firer to take 1 Save roll.",
-                    "points": ["weapon.attacks", {"multiply": 1}]
+                    "description": "You may choose to overcharge this weapon and gain +1 AP. If you do, any hit rolls of 10 cause the firing unit to take 2 Shock.",
+                    "points": ["weapon.attacks", {"multiply": 0.5}]
                 },
                 "overheat": {"name": "Overheat", "description": "The firer must take 1 Save roll for each hit roll of 10.", "points": ["weapon.attacks", {"multiply": -1}]},
                 "pistol": {
