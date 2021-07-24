@@ -207,7 +207,7 @@
                     "notes": "Don't pay more than once for range with blast weapons.",
                     "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}]
                 },
-                "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with a Damage Table(x).", "points": ["weapon.attacks", {"multiply": 2}]},
+                "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with a Damage Chart.", "points": ["weapon.attacks", {"multiply": 2}]},
                 "flame": {"name": "Flame", "description": "Hits from this weapon ignore any cover bonuses.", "points": ["weapon.attacks", {"multiply": 0.5}]},
                 "ammo": {
                     "name": "Ammo",
@@ -273,18 +273,18 @@
                 "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this model while it is in cover or at a range of more than 12\".", "points": 2},
                 "poison": {
                     "name": "Poison",
-                    "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 6.",
+                    "description": "Enemies without _Damage Chart_ hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 6.",
                     "points": ["weapon.attacks", {"multiply": 0.5}]
                 },
                 "deadly_poison": {
                     "name": "Deadly Poison",
-                    "description": "Enemies without _Damage Table(X)_ hit by this weapon reduce their Save value by 2 (after AP) to a minimum of 6.",
+                    "description": "Enemies without _Damage Chart_ hit by this weapon reduce their Save value by 2 (after AP) to a minimum of 6.",
                     "points": ["weapon.attacks", {"multiply": 1}]
                 },
                 "critical": {
                     "name": "Critical",
                     "inputs": ["x"],
-                    "description": "Enemy units add X to _Damage Table(X)_ rolls when hit by this weapon at Short range.",
+                    "description": "Enemy units add X to _Damage Chart_ rolls when hit by this weapon at Short range.",
                     "points": ["rule.x", {"multiply": "weapon.attacks"}, {"multiply": 2}]
                 },
                 "deadly": {
@@ -335,7 +335,7 @@
                     "description": "When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Shaken(5+): Take one additional shock. \n * Panic(8+): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(10+): It is instantly destroyed. \n * Critical(12+): The unit is destroyed and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the chart with a critical damage token. While a unit has one or more damage tokens, it may not remove that amount of Shock. If a unit contains multiple models with Damage Chart, hits must be assigned to models with a critical damage token first.",
                     "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
                 },
-                "catches_fire": {"name": "Catches Fire", "description": "This unit suffers the \"Fire\" result on the Vehicle Damage table on rolls of (6-8) instead of (7-8).", "points": -5},
+                "catches_fire": {"name": "Catches Fire", "description": "This unit suffers the \"Fire\" result on Damage Chart on rolls of (6-8) instead of (7-8).", "points": -5},
                 "fearless": {"name": "Fearless", "description": "This unit requires an extra shock to take break tests.", "points": 1},
                 "resist": {"name": "Protect", "inputs": ["x"], "description": "This unit gets +X to its Resist rolls.", "points": ["rule.x", {"multiply": 2}]},
                 "open_topped": {
