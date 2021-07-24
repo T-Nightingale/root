@@ -325,6 +325,16 @@
                     "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On an X or less the vehicle may remove one critical damage.",
                     "points": ["rule.x", {"multiply": 2}]
                 },
+                "titanic": {
+                    "name": "Titanic",
+                    "description": "This unit subtracts 2 from all Damage Chart rolls.",
+                    "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
+                },
+                "damage_chart": {
+                    "name": "Damage Chart",
+                    "description": "When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Shaken(5+): Take one additional shock. \n * Panic(8+): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(10+): It is instantly destroyed. \n * Critical(12+): The unit is destroyed and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. While a unit has one or more damage tokens, it may not remove that amount of Shock. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
+                    "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
+                },
                 "damage_table_titan": {
                     "name": "Damage Table(Titanic)",
                     "description": "When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Glance(1-3): Take one additional shock. \n * Slowed(4-5): The unit permanently halves its movement. \n * Stunned(6-7): The unit permanently suffers -1 Courage. \n * Damaged(8-9): The unit permanently suffers -1 Accuracy and -1 Strength. \n * Panic(10-11): Take 2 additional shock and immediately take a Courage test. \n * Destroyed(12+): It is instantly destroyed. \n * Catastrophic(14+): The unit crashes down and all units within 6\" gain 3 Shock. \n\n\n Mark each time the unit rolls on the table with a critical damage token. If that token is removed, the effect of the table is removed. If a unit contains multiple models with Damage Table(x), hits must be assigned to models with a critical damage token first.",
@@ -432,10 +442,6 @@
                 "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 gain +1 AP.", "points": ["weapon.attacks", {"multiply": 0.2}]},
                 "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks"]},
                 "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Aircraft special rule.", "points": ["weapon.attacks", {"multiply": 1}]},
-                "titanic": {
-                    "name": "Titanic",
-                    "description": "When this unit is activated it may only perform one action and benefit from abilties which trigger when the unit is activated once. It may then be activated a second time to perform its second action."
-                },
                 "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
                 "pestilence": {"name": "Pestilence", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 1}]},
