@@ -1,3 +1,8 @@
+# Saturday, July 24, 2021
+Complete damage table rebalance and unification
+## Core Game
+- Unify all damage tables into Damage Charts and change the way critical damage works
+- New titanic rule which subtracts from damage chart damages
 # Tuesday, July 20, 2021
 Some new core rules updates and secondary objective rebalances.
 ## Core Game
