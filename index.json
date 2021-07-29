@@ -232,10 +232,22 @@
                 },
                 "outflank": {"name": "Outflank", "description": "This unit may be placed in _Outflanking Reserves_ before the game begins.", "points": 1},
                 "bomb": {"name": "Bomb", "description": "This weapon may be used at any time during a unit's movement. It must still use a Shoot action to fire."},
-                "resilient": {
-                    "name": "Resilient",
+                "resistant": {
+                    "name": "Resistant",
                     "inputs": ["x"],
-                    "description": "Roll a die when this model loses a wound. On a value of X or less that wound is not lost.",
+                    "description": "This model may ignore up to X points of AP. This may not ignore AP from abilities which increase a weapon's base AP.",
+                    "points": ["rule.x", {"multiply": 1}]
+                },
+                "resilient": {
+                    "name": "Defiant",
+                    "inputs": ["x"],
+                    "description": "Roll a die when this model is killed or loses a Wound. On a value of X or less that wound is not lost.",
+                    "points": ["rule.x", {"multiply": 2}]
+                },
+                "defiant": {
+                    "name": "Defiant",
+                    "inputs": ["x"],
+                    "description": "Roll a die when this model is killed or loses a Wound. On a value of X or less that wound is not lost.",
                     "points": ["rule.x", {"multiply": 2}]
                 },
                 "reach": {
