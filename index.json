@@ -253,7 +253,7 @@
                 "reach": {
                     "name": "Reach",
                     "inputs": ["x"],
-                    "description": "This weapon may engage and fight models up to X\" away. Enemy models must still move into base contact unless they also have reach.",
+                    "description": "This weapon may engage and fight models up to X\" away. Enemy models count as engaged and must still move into base contact to fight unless they also have reach.",
                     "points": ["weapon.attacks", {"multiply": ["rule.x", {"multiply": 1}]}]
                 },
                 "tough": {"name": "Tough", "inputs": ["x"], "description": "This model may re-roll X Save tests per round.", "points": ["model.defense", {"multiply": "rule.x"}, {"multiply": 1}]},
