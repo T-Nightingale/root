@@ -1,3 +1,10 @@
+# Saturday, August 7, 2021
+Rules clarifications, official start of fantasy skirmish porting
+## Core Game
+- Clarified Reach core rule
+## Grim Darkness + Skirmish
+- Renamed Orc specialists to Orc Looters (more accurate name)
+- Adjusted Orc specialist weapons
 # Saturday, July 24, 2021
 Complete damage table rebalance and unification
 ## Core Game
