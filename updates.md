@@ -1,3 +1,8 @@
+# Sunday, August 8, 2021
+List builder updates and some rules clarifications
+## Core App
+- Moved injury chart reference to new button for various rules quick references
+- Added new action and reaction quick reference button
 # Saturday, August 7, 2021
 Rules clarifications, official start of fantasy skirmish porting
 ## Core Game
