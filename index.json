@@ -167,7 +167,7 @@
                     "phase": "pre_game",
                     "name": "Outflanking Reserves",
                     "flavor": "Sometimes assets are most useful finding an alternate route around the enemy.",
-                    "description": "Up to half of any force's units, one point for each may be placed in _outflanking reserves_ instead of deployed on the field.",
+                    "description": "Up to half of any force's units, one point for each may be placed in _Outflanking Reserves_ instead of deployed on the field.",
                     "cost": "1/per"
                 }
             },
