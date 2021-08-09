@@ -330,7 +330,7 @@
                 "defensive": {"name": "Defensive", "inputs": ["x"], "description": "This model increases its Save by X.", "points": [2, {"multiply": "rule.x"}]},
                 "hover": {"name": "Hover", "description": "This model may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 1},
                 "agile": {"name": "Agile", "description": "This model may ignore low obstacles of 1\" or less in height when moving.", "points": 1},
-                "walker": {"name": "Walker", "description": "This model may ignore low obstacles of 1\" or less in height when moving.", "points": 5},
+                "walker": {"name": "Walker", "description": "This model may ignore low obstacles of 2\" or less in height when moving.", "points": 5},
                 "repair": {
                     "name": "Repair",
                     "inputs": ["x"],
