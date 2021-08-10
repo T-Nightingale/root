@@ -484,7 +484,7 @@
                 "lethal": {
                     "name": "Lethal",
                     "description": "Hit rolls of 1 or 2 from this weapon cause 2 hits instead of 1. Additional hits must be assigned to the same model.",
-                    "points": ["weapon.attacks", {"multiply": 2}]
+                    "points": ["weapon.attacks", {"multiply": 1}]
                 },
                 "brutal": {"name": "Brutal", "description": "This weapon gains +1 AP at Short range.", "points": ["weapon.attacks", {"multiply": 0.5}]}
             },
