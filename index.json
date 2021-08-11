@@ -223,6 +223,17 @@
                     "name": "Deployable",
                     "description": "As an action, this model can be set up on the field. It may not be used to control or contest objectives and may not be targeted by abilities."
                 },
+                "ensnare": {
+                    "name": "Ensnare",
+                    "description": "Units engaged in Melee with a model that has this weapon suffer -1 to Initiative tests when escaping combat for each weapon with this rule.",
+                    "points": 1
+                },
+                "slowing": {
+                    "inputs": ["x"],
+                    "name": "Slowing",
+                    "description": "Enemy units hit by this weapon suffer -X\" of Movement until the end of the round.",
+                    "points": ["rule.x", {"multiply": 0.5}]
+                },
                 "ambush": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 2},
                 "ambush_large": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 10},
                 "scout": {
