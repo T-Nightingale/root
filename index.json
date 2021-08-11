@@ -739,7 +739,7 @@
                     "caches": {
                         "name": "Caches",
                         "description": "Important caches are scattered throughout the battlefield which can be secured.",
-                        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 3\" of any objective marker and more than 3\" away from other cache markers. Units may perform the Recover action to collect the caches. To do so, take an Initiative test and if passed, remove it from the field and gain 3 VP."
+                        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 3\" of any objective marker and more than 3\" away from other cache markers. No objective may have more than 2 cache markers placed near it. Units may perform the Recover action to collect the caches. To do so, take an Initiative test and if passed, remove it from the field and gain 3 VP."
                     },
                     "attrition": {
                         "name": "Attrition",
