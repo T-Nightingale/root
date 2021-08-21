@@ -489,9 +489,9 @@
                     "description": "This unit has +1 Save when hit by a shooting attack, +1 to initiative tests when sprinting and has a 3“ coherency instead of a 2“ coherency if all models in it have this rule.",
                     "points": 2
                 },
-                "musician": {"name": "Musician", "description": "This model's unit may re-roll a single failed Initiative test when sprinting.", "points": 5},
-                "banner": {"name": "Banner", "description": "This model's unit may re-roll a single failed Courage test when removing Shock.", "points": 5},
-                "champion": {"name": "Champion", "description": "This model's unit may re-roll a single failed Accuracy or Strength test when attacking.", "points": 5},
+                "musician": {"name": "Musician", "description": "Once per round, this model's unit may re-roll a single failed Initiative test when sprinting.", "points": 5},
+                "banner": {"name": "Banner", "description": "Once per round, this model's unit may re-roll a single failed Courage test when removing Shock.", "points": 5},
+                "champion": {"name": "Champion", "description": "Once per round, this model's unit may re-roll a single failed Accuracy or Strength test when attacking.", "points": 5},
                 "lethal": {
                     "name": "Lethal",
                     "description": "Hit rolls of 1 or 2 from this weapon cause 2 hits instead of 1. Additional hits must be assigned to the same model.",
