@@ -294,6 +294,8 @@
                 },
                 "evasive": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this model while it is in cover or at a range of more than 12\".", "points": 2},
                 "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this model while it is in cover or at a range of more than 12\".", "points": 2},
+                "dodge": {"name": "Swift", "description": "Models suffer -1 Strength when fighting this model.", "points": 2},
+                "swift": {"name": "Swift", "description": "Models suffer -1 Strength when fighting this model.", "points": 2},
                 "poison": {
                     "name": "Poison",
                     "description": "Enemies without _Damage Chart_ hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 6.",
