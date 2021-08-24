@@ -114,7 +114,7 @@
         "skirmish": {
             "rules": {
                 "grenade": {"name": "Grenade", "description": "One model per round may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
-                "musician": {"name": "Musician", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Initiative test when sprinting.", "points": 5},
+                "musician": {"name": "Musician", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Initiative test when rushing.", "points": 5},
                 "banner": {"name": "Banner", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Courage test when removing Shock.", "points": 5},
                 "champion": {"name": "Champion", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Accuracy or Strength test when attacking.", "points": 5},
                 "leader": {
@@ -497,10 +497,10 @@
                 "mount_horse": {"name": "Horse", "hidden": true, "description_short": "+2\" Movement", "description": "Increase this model's Movement by 2\".", "points": 2},
                 "skirmishers": {
                     "name": "Skirmishers",
-                    "description": "This unit has +1 Save when hit by a shooting attack, +1 to initiative tests when sprinting and has a 3“ coherency instead of a 2“ coherency if all models in it have this rule.",
+                    "description": "This unit has +1 Save when hit by a shooting attack, +1 to initiative tests when rushing and has a 3“ coherency instead of a 2“ coherency if all models in it have this rule.",
                     "points": 2
                 },
-                "musician": {"name": "Musician", "description": "Once per round, this model's unit may re-roll a single failed Initiative test when sprinting.", "points": 5},
+                "musician": {"name": "Musician", "description": "Once per round, this model's unit may re-roll a single failed Initiative test when rushing.", "points": 5},
                 "banner": {"name": "Banner", "description": "Once per round, this model's unit may re-roll a single failed Courage test when removing Shock.", "points": 5},
                 "champion": {"name": "Champion", "description": "Once per round, this model's unit may re-roll a single failed Accuracy or Strength test when attacking.", "points": 5},
                 "lethal": {
