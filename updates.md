@@ -1,3 +1,13 @@
+# Tuesday, August 24, 2021
+Some important core rules changes as well as a brand new token set and some new additions to the Grim Darkness module
+## Core Game
+- Simplified several reactions and grouped them together as many were redundant
+- Guard and Evade merged into one action called Evade which now works differently
+- Sprinting now renamed to Rush and rule text updated with clarifications
+- New token set which now correctly matches all available long-term actions with new icons
+## Grim Darkness
+- New titanic units for Corrupted Marines and Alien Swarm
+- Rebalanced some Alien Cult units, especially those originally belonging to Imperial Defense Force
 # Sunday, August 8, 2021
 List builder updates and some rules clarifications
 ## Core App
