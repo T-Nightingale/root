@@ -111,6 +111,208 @@
         }
     },
     "globalData": {
+        "battle": {
+            "missions": {
+                "hidden_missions": {
+                    "spearhead_defense": {
+                        "name": "Spearhead Defense",
+                        "map": "/data/missions/defense.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "corner_defense": {
+                        "name": "Corner Defense",
+                        "map": "/data/missions/corner_defense.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    }
+                },
+                "missions": {
+                    "frontline": {
+                        "name": "Frontline",
+                        "map": "/data/missions/battle/frontline.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "dual_fronts": {
+                        "name": "Dual Fronts",
+                        "map": "/data/missions/battle/dual_fronts.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "wide": {
+                        "name": "Frontline Wide",
+                        "map": "/data/missions/battle/wide.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "push": {
+                        "name": "Push",
+                        "map": "/data/missions/battle/push.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "corner_push": {
+                        "name": "Corner Push",
+                        "map": "/data/missions/battle/corner_push.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "flanking_frontlines": {
+                        "name": "Flanking Frontlines",
+                        "map": "/data/missions/battle/flanking_frontlines.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "corner_frontlines": {
+                        "name": "Corner Frontlines",
+                        "map": "/data/missions/battle/corner_frontlines.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "diagonal_frontlines": {
+                        "name": "Diagonal Frontlines",
+                        "map": "/data/missions/battle/diagonal_frontlines.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "sectors": {
+                        "name": "Sectors",
+                        "map": "/data/missions/battle/sectors.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "wide_push": {
+                        "name": "Push Wide",
+                        "map": "/data/missions/battle/wide_push.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    }
+                },
+                "weather": {
+                    "night_fighting": {
+                        "name": "Night Fighting",
+                        "description": "The perfect time for a silent raid is at night. Use the following alternations to fight at night. Note that loud actions such as shooting will be heard and make units more vulnerable.",
+                        "rules": "* Units may not fire at targets more than 20” away.\n * Mark any units that have fired this round That unit, and friendly units within 3” are visible and may be targeted regardless of range conditions \n * Choose any light-emitting terrain or obstacles and mark them (campfires, lampposts etc). These items light up units within 3” and they may be targeted regardless of range."
+                    },
+                    "severe_storm": {
+                        "name": "Severe Storm",
+                        "description": "While storms are certainly not ideal fighting conditions, some operations may be pushed forward regardless.",
+                        "rules": "* All movement not taking place on a road or other terrain designated as storm proof is reduced by 2” to a minimum of 1” \n * Units may not receive the terrain benefits of roads"
+                    },
+                    "dense_fog": {
+                        "name": "Dense Fog",
+                        "description": "While less imapactful than a fully night time attack, dense fog provides a challenge for those attempting to spot enemy units in it.",
+                        "rules": "* Units may not fire at targets more than 36\" away \n * hidden units may enter within 24\" of enemy markers, but not within 12\""
+                    },
+                    "extreme_temperatures": {
+                        "name": "Extreme Temperatures",
+                        "description": "Some battles while not affected by poor visibility or storming conditions, may simply be too hot or cold to fight effectively.",
+                        "rules": "* At the start of the round, each unit not inside a piece of terrain designated as safe from the elements receives 1 shock marker \n * Units that have lost a close combat assault suffer -1 to Courage tests following the assault."
+                    },
+                    "normal": {"name": "Normal Conditions", "description": "Both sides are prepared to fight normally.", "rules": "No additional effects apply."},
+                    "preparatory_bombardment": {
+                        "name": "Preparatory Bombardment",
+                        "description": "Both sides have opened with a large shelling of artillery to attempt to pin the down the enemy before the attack commences.",
+                        "rules": "* Whenever a unit arrives on the table, it receives 2 shock and must first test to remove it."
+                    },
+                    "exhaustion": {
+                        "name": "Exhaustion",
+                        "description": "The fighting has lasted days or weeks without end and both forces are beginning to break.",
+                        "rules": "* All units suffer -1 to Courage rolls and receive 1 additional shock after engaging in assaults."
+                    },
+                    "sworn_enemies": {
+                        "name": "Sworn Enemies",
+                        "description": "Both sides have fought previously and given each other a battering. Today they are here to fight.",
+                        "rules": "* When assaulting, all units may move an additional 2\" and receive +1 to hit."
+                    },
+                    "organizational_chaos": {
+                        "name": "Organizational Chaos",
+                        "description": "The chain of command has fallen short and the men are now fighting with or without orders.",
+                        "rules": "* All units suffer -1 to Courage tests."
+                    }
+                },
+                "secondaries": {
+                    "infiltrate": {
+                        "name": "Infiltrate",
+                        "description": "Infiltrating the enemy zone and gathering intel can be critical to success.",
+                        "rules": "* Once per round, a unit may perform the Gather Intel action inside the enemy deployment area. Perform an Initiative test with that unit. If successful, gain 5 VP."
+                    },
+                    "secure": {
+                        "name": "Secure",
+                        "description": "Securing an objective for further control can be essential.",
+                        "rules": "* Once per round, a unit in range of an objective may perform the Secure action. Perform an Initiative test with that unit. If successful, gain 3 VP."
+                    },
+                    "new_orders": {
+                        "name": "New Orders",
+                        "description": "New orders have been received and additional objectives are available.",
+                        "rules": "* Each player places one additional objective 12\" away from any existing objectives and more than 12\" away from their deployment area."
+                    },
+                    "breakthrough": {
+                        "name": "Breakthrough",
+                        "description": "Breaking through enemy lines can cause havoc for troop organization.",
+                        "rules": "* Once per round, players may move a unit off their opponents table edge. After doing so, remove the unit from the field and gain 5 VP."
+                    },
+                    "take_and_hold": {
+                        "name": "Take and Hold",
+                        "description": "Taking key ground can be critical to moving the frontline forward.",
+                        "rules": "* Each player places one additional objective inside an enemy deployment area and 12\" away from all existing objectives."
+                    },
+                    "priority_orders": {
+                        "name": "Priority Orders",
+                        "description": "A message has come from high command to take this important objective.",
+                        "rules": "* Players designate one objective to be their priority objective. If held, you gain 3 VP. This cannot be the objective closest to your deployment."
+                    },
+                    "critical_asset": {
+                        "name": "Critical Asset",
+                        "description": "You must take a secure an important item for further investigation.",
+                        "rules": "* Place one critical item marker at the center of the table. At the end of the round, if a player controls that objective, that unit picks up the objective and it travels with the unit. If the unit is killed, place the objective where the unit was destroyed. \n * If a player manages to control the objective at the end of the game or escapes the table with the objective, that player gains 5 VP."
+                    },
+                    "caches": {
+                        "name": "Caches",
+                        "description": "Important caches are scattered throughout the battlefield which can be secured.",
+                        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 3\" of any objective marker and more than 3\" away from other cache markers. No objective may have more than 2 cache markers placed near it. Units may perform the Recover action to collect the caches. To do so, take an Initiative test and if passed, remove it from the field and gain 3 VP."
+                    },
+                    "attrition": {
+                        "name": "Attrition",
+                        "description": "As the losses add up, both sides must consider what they are willing to do to win.",
+                        "rules": "* Players score 2 additional VP for each enemy unit that is full destroyed \n * Any unit may perform the Withdraw action if it is not engaged in melee. When performed, the unit is removed from the table, but does not count as being destroyed."
+                    },
+                    "raze": {
+                        "name": "Raze",
+                        "description": "Burning an objective can ensure your opponent cannot use it against you.",
+                        "rules": "* At the end of the round after objectives are scored, if you control more than one objective, you may choose to destroy an objective you control for 5 VP. After you do this, remove the objective."
+                    },
+                    "lockdown": {
+                        "name": "Lockdown",
+                        "description": "It is not enough to simply control important ground. It must be fully locked down.",
+                        "rules": "* Each objective with no enemy units within 12\" grants an additional 3 VP."
+                    },
+                    "domination": {
+                        "name": "Domination",
+                        "description": "Securing the most ground can give you a positional advantage in the fight.",
+                        "rules": "* At the end of the round after objectives are scored, if you have an unbroken unit in at least 3 table quarters, gain 3 VP. Instead, if you have an unbroken unit in all table quarters gain 5 VP."
+                    },
+                    "bounty": {
+                        "name": "Bounty",
+                        "description": "It is sometimes necessary to eliminate a key target during the battle for operational purposes.",
+                        "rules": "* Choose one enemy unit at the start of the game. If that unit is fully destroyed, gain 5 VP."
+                    }
+                }
+            }
+        },
         "skirmish": {
             "rules": {
                 "grenade": {"name": "Grenade", "description": "One model per round may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
@@ -143,6 +345,206 @@
                     "name": "Medic",
                     "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented. This model perform the Heal action on a friendly _Infantry_ model within 3\". Roll a D10 and on a result of 3 or less that model may remove one critical damge.",
                     "points": 5
+                }
+            },
+            "missions": {
+                "hidden_missions": {
+                    "spearhead_defense": {
+                        "name": "Spearhead Defense",
+                        "map": "/data/missions/defense.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "corner_defense": {
+                        "name": "Corner Defense",
+                        "map": "/data/missions/corner_defense.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    }
+                },
+                "missions": {
+                    "frontline": {
+                        "name": "Frontline",
+                        "map": "/data/missions/skirmish/frontline.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "dual_fronts": {
+                        "name": "Dual Fronts",
+                        "map": "/data/missions/skirmish/dual_fronts.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "wide": {
+                        "name": "Frontline Wide",
+                        "map": "/data/missions/skirmish/wide.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "push": {
+                        "name": "Push",
+                        "map": "/data/missions/skirmish/push.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "corner_push": {
+                        "name": "Corner Push",
+                        "map": "/data/missions/skirmish/corner_push.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "flanking_frontlines": {
+                        "name": "Flanking Frontlines",
+                        "map": "/data/missions/skirmish/flanking_frontlines.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "corner_frontlines": {
+                        "name": "Corner Frontlines",
+                        "map": "/data/missions/skirmish/corner_frontlines.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "diagonal_frontlines": {
+                        "name": "Diagonal Frontlines",
+                        "map": "/data/missions/skirmish/diagonal_frontlines.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "sectors": {
+                        "name": "Sectors",
+                        "map": "/data/missions/skirmish/sectors.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    },
+                    "wide_push": {
+                        "name": "Push Wide",
+                        "map": "/data/missions/skirmish/wide_push.png",
+                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
+                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                    }
+                },
+                "weather": {
+                    "night_fighting": {
+                        "name": "Night Fighting",
+                        "description": "The perfect time for a silent raid is at night. Use the following alternations to fight at night. Note that loud actions such as shooting will be heard and make units more vulnerable.",
+                        "rules": "* Units may not fire at targets more than 20” away.\n * Mark any units that have fired this round That unit, and friendly units within 3” are visible and may be targeted regardless of range conditions \n * Choose any light-emitting terrain or obstacles and mark them (campfires, lampposts etc). These items light up units within 3” and they may be targeted regardless of range."
+                    },
+                    "severe_storm": {
+                        "name": "Severe Storm",
+                        "description": "While storms are certainly not ideal fighting conditions, some operations may be pushed forward regardless.",
+                        "rules": "* All movement not taking place on a road or other terrain designated as storm proof is reduced by 2” to a minimum of 1” \n * Units may not receive the terrain benefits of roads"
+                    },
+                    "dense_fog": {
+                        "name": "Dense Fog",
+                        "description": "While less imapactful than a fully night time attack, dense fog provides a challenge for those attempting to spot enemy units in it.",
+                        "rules": "* Units may not fire at targets more than 36\" away \n * hidden units may enter within 24\" of enemy markers, but not within 12\""
+                    },
+                    "extreme_temperatures": {
+                        "name": "Extreme Temperatures",
+                        "description": "Some battles while not affected by poor visibility or storming conditions, may simply be too hot or cold to fight effectively.",
+                        "rules": "* At the start of the round, each unit not inside a piece of terrain designated as safe from the elements receives 1 shock marker \n * Units that have lost a close combat assault suffer -1 to Courage tests following the assault."
+                    },
+                    "normal": {"name": "Normal Conditions", "description": "Both sides are prepared to fight normally.", "rules": "No additional effects apply."},
+                    "preparatory_bombardment": {
+                        "name": "Preparatory Bombardment",
+                        "description": "Both sides have opened with a large shelling of artillery to attempt to pin the down the enemy before the attack commences.",
+                        "rules": "* Whenever a unit arrives on the table, it receives 2 shock and must first test to remove it."
+                    },
+                    "exhaustion": {
+                        "name": "Exhaustion",
+                        "description": "The fighting has lasted days or weeks without end and both forces are beginning to break.",
+                        "rules": "* All units suffer -1 to Courage rolls and receive 1 additional shock after engaging in assaults."
+                    },
+                    "sworn_enemies": {
+                        "name": "Sworn Enemies",
+                        "description": "Both sides have fought previously and given each other a battering. Today they are here to fight.",
+                        "rules": "* When assaulting, all units may move an additional 2\" and receive +1 to hit."
+                    },
+                    "organizational_chaos": {
+                        "name": "Organizational Chaos",
+                        "description": "The chain of command has fallen short and the men are now fighting with or without orders.",
+                        "rules": "* All units suffer -1 to Courage tests."
+                    }
+                },
+                "secondaries": {
+                    "infiltrate": {
+                        "name": "Infiltrate",
+                        "description": "Infiltrating the enemy zone and gathering intel can be critical to success.",
+                        "rules": "* Once per round, a unit may perform the Gather Intel action inside the enemy deployment area. Perform an Initiative test with that unit. If successful, gain 5 VP."
+                    },
+                    "secure": {
+                        "name": "Secure",
+                        "description": "Securing an objective for further control can be essential.",
+                        "rules": "* Once per round, a unit in range of an objective may perform the Secure action. Perform an Initiative test with that unit. If successful, gain 3 VP."
+                    },
+                    "new_orders": {
+                        "name": "New Orders",
+                        "description": "New orders have been received and additional objectives are available.",
+                        "rules": "* Each player places one additional objective 8\" away from any existing objectives and more than 8\" away from their deployment area."
+                    },
+                    "breakthrough": {
+                        "name": "Breakthrough",
+                        "description": "Breaking through enemy lines can cause havoc for troop organization.",
+                        "rules": "* Once per round, players may move a unit off their opponents table edge. After doing so, remove the unit from the field and gain 5 VP."
+                    },
+                    "take_and_hold": {
+                        "name": "Take and Hold",
+                        "description": "Taking key ground can be critical to moving the frontline forward.",
+                        "rules": "* Each player places one additional objective inside an enemy deployment area and 8\" away from all existing objectives."
+                    },
+                    "priority_orders": {
+                        "name": "Priority Orders",
+                        "description": "A message has come from high command to take this important objective.",
+                        "rules": "* Players designate one objective to be their priority objective. If held, you gain 3 VP. This cannot be the objective closest to your deployment."
+                    },
+                    "critical_asset": {
+                        "name": "Critical Asset",
+                        "description": "You must take a secure an important item for further investigation.",
+                        "rules": "* Place one critical item marker at the center of the table. At the end of the round, if a player controls that objective, that unit picks up the objective and it travels with the unit. If the unit is killed, place the objective where the unit was destroyed. \n * If a player manages to control the objective at the end of the game or escapes the table with the objective, that player gains 5 VP."
+                    },
+                    "caches": {
+                        "name": "Caches",
+                        "description": "Important caches are scattered throughout the battlefield which can be secured.",
+                        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 3\" of any objective marker and more than 3\" away from other cache markers. No objective may have more than 2 cache markers placed near it. Units may perform the Recover action to collect the caches. To do so, take an Initiative test and if passed, remove it from the field and gain 3 VP."
+                    },
+                    "attrition": {
+                        "name": "Attrition",
+                        "description": "As the losses add up, both sides must consider what they are willing to do to win.",
+                        "rules": "* Players score 2 additional VP for each enemy unit that is full destroyed \n * Any unit may perform the Withdraw action if it is not engaged in melee. When performed, the unit is removed from the table, but does not count as being destroyed."
+                    },
+                    "raze": {
+                        "name": "Raze",
+                        "description": "Burning an objective can ensure your opponent cannot use it against you.",
+                        "rules": "* At the end of the round after objectives are scored, if you control more than one objective, you may choose to destroy an objective you control for 5 VP. After you do this, remove the objective."
+                    },
+                    "lockdown": {
+                        "name": "Lockdown",
+                        "description": "It is not enough to simply control important ground. It must be fully locked down.",
+                        "rules": "* Each objective with no enemy units within 8\" grants an additional 3 VP."
+                    },
+                    "domination": {
+                        "name": "Domination",
+                        "description": "Securing the most ground can give you a positional advantage in the fight.",
+                        "rules": "* At the end of the round after objectives are scored, if you have an unbroken unit in at least 3 table quarters, gain 3 VP. Instead, if you have an unbroken unit in all table quarters gain 5 VP."
+                    },
+                    "bounty": {
+                        "name": "Bounty",
+                        "description": "It is sometimes necessary to eliminate a key target during the battle for operational purposes.",
+                        "rules": "* Choose one enemy unit at the start of the game. If that unit is fully destroyed, gain 5 VP."
+                    }
                 }
             }
         },
@@ -589,206 +991,6 @@
                     "name": "Bocage",
                     "description": "A thick section of bocage typically 6 feet or more in height.",
                     "rules": ["Soft Cover", "Obstacle", "Only Visible Through When Within 2\""]
-                }
-            },
-            "missions": {
-                "hidden_missions": {
-                    "spearhead_defense": {
-                        "name": "Spearhead Defense",
-                        "map": "/data/missions/defense_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "corner_defense": {
-                        "name": "Corner Defense",
-                        "map": "/data/missions/corner_defense_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    }
-                },
-                "missions": {
-                    "frontline": {
-                        "name": "Frontline",
-                        "map": "/data/missions/frontline_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "dual_fronts": {
-                        "name": "Dual Fronts",
-                        "map": "/data/missions/dual_frontline_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "wide": {
-                        "name": "Frontline Wide",
-                        "map": "/data/missions/wide_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "push": {
-                        "name": "Push",
-                        "map": "/data/missions/push_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "corner_push": {
-                        "name": "Corner Push",
-                        "map": "/data/missions/corner_push_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "flanking_frontlines": {
-                        "name": "Flanking Frontlines",
-                        "map": "/data/missions/flanking_frontlines_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "corner_frontlines": {
-                        "name": "Corner Frontlines",
-                        "map": "/data/missions/corner_frontlines_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "diagonal_frontlines": {
-                        "name": "Diagonal Frontlines",
-                        "map": "/data/missions/diagonal_frontlines_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "sectors": {
-                        "name": "Sectors",
-                        "map": "/data/missions/sectors_dz.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    },
-                    "wide_push": {
-                        "name": "Push Wide",
-                        "map": "/data/missions/wide_push.png",
-                        "setup": "You and your opponent must set up objective markers as shown in the mission map.",
-                        "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
-                    }
-                },
-                "weather": {
-                    "night_fighting": {
-                        "name": "Night Fighting",
-                        "description": "The perfect time for a silent raid is at night. Use the following alternations to fight at night. Note that loud actions such as shooting will be heard and make units more vulnerable.",
-                        "rules": "* Units may not fire at targets more than 20” away.\n * Mark any units that have fired this round That unit, and friendly units within 3” are visible and may be targeted regardless of range conditions \n * Choose any light-emitting terrain or obstacles and mark them (campfires, lampposts etc). These items light up units within 3” and they may be targeted regardless of range."
-                    },
-                    "severe_storm": {
-                        "name": "Severe Storm",
-                        "description": "While storms are certainly not ideal fighting conditions, some operations may be pushed forward regardless.",
-                        "rules": "* All movement not taking place on a road or other terrain designated as storm proof is reduced by 2” to a minimum of 1” \n * Units may not receive the terrain benefits of roads"
-                    },
-                    "dense_fog": {
-                        "name": "Dense Fog",
-                        "description": "While less imapactful than a fully night time attack, dense fog provides a challenge for those attempting to spot enemy units in it.",
-                        "rules": "* Units may not fire at targets more than 36\" away \n * hidden units may enter within 24\" of enemy markers, but not within 12\""
-                    },
-                    "extreme_temperatures": {
-                        "name": "Extreme Temperatures",
-                        "description": "Some battles while not affected by poor visibility or storming conditions, may simply be too hot or cold to fight effectively.",
-                        "rules": "* At the start of the round, each unit not inside a piece of terrain designated as safe from the elements receives 1 shock marker \n * Units that have lost a close combat assault suffer -1 to Courage tests following the assault."
-                    },
-                    "normal": {"name": "Normal Conditions", "description": "Both sides are prepared to fight normally.", "rules": "No additional effects apply."},
-                    "preparatory_bombardment": {
-                        "name": "Preparatory Bombardment",
-                        "description": "Both sides have opened with a large shelling of artillery to attempt to pin the down the enemy before the attack commences.",
-                        "rules": "* Whenever a unit arrives on the table, it receives 2 shock and must first test to remove it."
-                    },
-                    "exhaustion": {
-                        "name": "Exhaustion",
-                        "description": "The fighting has lasted days or weeks without end and both forces are beginning to break.",
-                        "rules": "* All units suffer -1 to Courage rolls and receive 1 additional shock after engaging in assaults."
-                    },
-                    "sworn_enemies": {
-                        "name": "Sworn Enemies",
-                        "description": "Both sides have fought previously and given each other a battering. Today they are here to fight.",
-                        "rules": "* When assaulting, all units may move an additional 2\" and receive +1 to hit."
-                    },
-                    "organizational_chaos": {
-                        "name": "Organizational Chaos",
-                        "description": "The chain of command has fallen short and the men are now fighting with or without orders.",
-                        "rules": "* All units suffer -1 to Courage tests."
-                    }
-                },
-                "secondaries": {
-                    "infiltrate": {
-                        "name": "Infiltrate",
-                        "description": "Infiltrating the enemy zone and gathering intel can be critical to success.",
-                        "rules": "* Once per round, a unit may perform the Gather Intel action inside the enemy deployment area. Perform an Initiative test with that unit. If successful, gain 5 VP."
-                    },
-                    "secure": {
-                        "name": "Secure",
-                        "description": "Securing an objective for further control can be essential.",
-                        "rules": "* Once per round, a unit in range of an objective may perform the Secure action. Perform an Initiative test with that unit. If successful, gain 3 VP."
-                    },
-                    "new_orders": {
-                        "name": "New Orders",
-                        "description": "New orders have been received and additional objectives are available.",
-                        "rules": "* Each player places one additional objective 12\" away from any existing objectives and more than 12\" away from their deployment area."
-                    },
-                    "breakthrough": {
-                        "name": "Breakthrough",
-                        "description": "Breaking through enemy lines can cause havoc for troop organization.",
-                        "rules": "* Once per round, players may move a unit off their opponents table edge. After doing so, remove the unit from the field and gain 5 VP."
-                    },
-                    "take_and_hold": {
-                        "name": "Take and Hold",
-                        "description": "Taking key ground can be critical to moving the frontline forward.",
-                        "rules": "* Each player places one additional objective inside an enemy deployment area and 12\" away from all existing objectives."
-                    },
-                    "priority_orders": {
-                        "name": "Priority Orders",
-                        "description": "A message has come from high command to take this important objective.",
-                        "rules": "* Players designate one objective to be their priority objective. If held, you gain 3 VP. This cannot be the objective closest to your deployment."
-                    },
-                    "critical_asset": {
-                        "name": "Critical Asset",
-                        "description": "You must take a secure an important item for further investigation.",
-                        "rules": "* Place one critical item marker at the center of the table. At the end of the round, if a player controls that objective, that unit picks up the objective and it travels with the unit. If the unit is killed, place the objective where the unit was destroyed. \n * If a player manages to control the objective at the end of the game or escapes the table with the objective, that player gains 5 VP."
-                    },
-                    "caches": {
-                        "name": "Caches",
-                        "description": "Important caches are scattered throughout the battlefield which can be secured.",
-                        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 3\" of any objective marker and more than 3\" away from other cache markers. No objective may have more than 2 cache markers placed near it. Units may perform the Recover action to collect the caches. To do so, take an Initiative test and if passed, remove it from the field and gain 3 VP."
-                    },
-                    "attrition": {
-                        "name": "Attrition",
-                        "description": "As the losses add up, both sides must consider what they are willing to do to win.",
-                        "rules": "* Players score 2 additional VP for each enemy unit that is full destroyed \n * Any unit may perform the Withdraw action if it is not engaged in melee. When performed, the unit is removed from the table, but does not count as being destroyed."
-                    },
-                    "raze": {
-                        "name": "Raze",
-                        "description": "Burning an objective can ensure your opponent cannot use it against you.",
-                        "rules": "* At the end of the round after objectives are scored, if you control more than one objective, you may choose to destroy an objective you control for 5 VP. After you do this, remove the objective."
-                    },
-                    "lockdown": {
-                        "name": "Lockdown",
-                        "description": "It is not enough to simply control important ground. It must be fully locked down.",
-                        "rules": "* Each objective with no enemy units within 12\" grants an additional 3 VP."
-                    },
-                    "domination": {
-                        "name": "Domination",
-                        "description": "Securing the most ground can give you a positional advantage in the fight.",
-                        "rules": "* At the end of the round after objectives are scored, if you have an unbroken unit in at least 3 table quarters, gain 3 VP. Instead, if you have an unbroken unit in all table quarters gain 5 VP."
-                    },
-                    "bounty": {
-                        "name": "Bounty",
-                        "description": "It is sometimes necessary to eliminate a key target during the battle for operational purposes.",
-                        "rules": "* Choose one enemy unit at the start of the game. If that unit is fully destroyed, gain 5 VP."
-                    }
                 }
             }
         }
