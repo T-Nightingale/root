@@ -838,7 +838,7 @@
                     "description": "When choosing a target for this weapon, choose a specific model in the unit. If this weapon misses, use D10 scattering to determine the landing point of the shot relative to that model. If it lands within 1\" of a different unit, that unit is hit instead.",
                     "points": ["weapon.attacks"]
                 },
-                "gravity": {"name": "Gravity", "description": "This weapon gets +2 AP against targets with Save 10 or higher.", "points": ["weapon.attacks", {"multiply": 2}]},
+                "gravity": {"name": "Gravity", "description": "This weapon gets +2 AP against targets with Save 10 or higher.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "salvo": {
                     "name": "Salvo",
                     "description": "This weapon always hits at -1 Accuracy. When scattering results from this weapon, it hits the closest unit within 3\" instead of just 1\".",
