@@ -620,7 +620,7 @@
                     "notes": "Small RNG discount to account for single shot randomness",
                     "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.8}]
                 },
-                "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with a Damage Chart.", "points": ["weapon.attacks", {"multiply": 2}]},
+                "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with a Damage Chart.", "points": ["weapon.attacks", {"multiply": 1}]},
                 "flame": {"name": "Flame", "description": "Hits from this weapon ignore any cover bonuses.", "points": ["weapon.attacks", {"multiply": 0.5}]},
                 "ammo": {
                     "name": "Ammo",
