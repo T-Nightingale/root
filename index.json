@@ -105,7 +105,7 @@
             "version": "0.1",
             "name": "Wasteland Racers",
             "image": "https://raw.githubusercontent.com/wargame-engine/root/master/wasteland_racers.jpg",
-            "url": "https://raw.githubusercontent.com/wargame-engine/wasteland_racers/master/",
+            "url": "https://raw.githubusercontent.com/wargame-engine/wasteland_racers/main/",
             "description": "Wasteland car battles in a post-apocalyptic future.",
             "color": "#ba7f00"
         }
