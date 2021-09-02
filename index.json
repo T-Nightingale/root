@@ -1,5 +1,5 @@
 {
-    "gameTypes": {"battle": {"name": "Battle"}, "skirmish": {"name": "Skirmish"}},
+    "gameTypes": {"battle": {"name": "Battle"}, "skirmish": {"name": "Skirmish"}, "racers": {"name": "Racers"}},
     "categories": {"historical": {"name": "Historical"}, "sci_fi": {"name": "Sci-fi"}, "fantasy": {"name": "Fantasy"}},
     "reportUrl": "https://github.com/wargame-engine/root/issues",
     "games": {
@@ -97,6 +97,17 @@
             "url": "https://raw.githubusercontent.com/wargame-engine/weird-west/main/",
             "description": "Sci-fi skirmish battles set in the american civil war of another time.",
             "color": "#0d407f"
+        },
+        "wasteland_racers": {
+            "id": "wasteland_racers",
+            "gameType": "racers",
+            "category": "sci_fi",
+            "version": "0.1",
+            "name": "Wasteland Racers",
+            "image": "https://raw.githubusercontent.com/wargame-engine/root/master/wasteland_racers.jpg",
+            "url": "https://raw.githubusercontent.com/wargame-engine/wasteland_racers/master/",
+            "description": "Wasteland car battles in a post-apocalyptic future.",
+            "color": "#231f20"
         }
     },
     "unfinished_games": {
