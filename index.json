@@ -1,5 +1,5 @@
 {
-    "gameTypes": {"battle": {"name": "Battle"}, "skirmish": {"name": "Skirmish"}, "racers": {"name": "Racers"}},
+    "gameTypes": {"battle": {"name": "Battle"}, "skirmish": {"name": "Skirmish"}, "racers": {"name": "Racing"}},
     "categories": {"historical": {"name": "Historical"}, "sci_fi": {"name": "Sci-fi"}, "fantasy": {"name": "Fantasy"}},
     "reportUrl": "https://github.com/wargame-engine/root/issues",
     "games": {
