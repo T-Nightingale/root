@@ -356,6 +356,11 @@
                     "name": "Medic",
                     "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented. This model perform the Heal action on a friendly _Infantry_ model within 3\". Roll a D10 and on a result of 3 or less that model may remove one critical damge.",
                     "points": 5
+                },
+                "poison": {
+                    "name": "Poison",
+                    "description": "Enemies hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 6.",
+                    "points": ["weapon.attacks", {"multiply": 0.5}]
                 }
             },
             "missions": {
