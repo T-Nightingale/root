@@ -1,3 +1,10 @@
+# Saturday, September 11, 2021
+Massive site redesign and huge code cleanup (YAY). Probably the biggest app update yet. Finally some much needed design cleanup and simplification.
+## Core App
+- New interaction method which is Speed Dial based (see button in bottom right)
+- New search menu which interacts with current page
+- New navigation sidebar and groundwork for account system
+
 # Tuesday, August 24, 2021
 Some important core rules changes as well as a brand new token set and some new additions to the Grim Darkness module
 ## Core Game
