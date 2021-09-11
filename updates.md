@@ -4,7 +4,8 @@ Massive site redesign and huge code cleanup (YAY). Probably the biggest app upda
 - New interaction method which is Speed Dial based (see button in bottom right)
 - New search menu which interacts with current page
 - New navigation sidebar and groundwork for account system
-
+## Core Game
+- Clarified Scout and Poison rules to reduce confusion
 # Tuesday, August 24, 2021
 Some important core rules changes as well as a brand new token set and some new additions to the Grim Darkness module
 ## Core Game
