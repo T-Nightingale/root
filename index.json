@@ -656,7 +656,7 @@
                 "ambush_large": {"name": "Ambush", "description": "This unit may be placed in _Ambush Reserves_ before the game begins.", "points": 10},
                 "scout": {
                     "name": "Scout",
-                    "description": "When this model arrives on the field, it may make a free Move action. This action may not move within 12\" of any enemy units.",
+                    "description": "When this unit is deployed or arrives from Reserves, it may make a free Move action. This action may not move within 12\" of any enemy units.",
                     "points": 1
                 },
                 "outflank": {"name": "Outflank", "description": "This unit may be placed in _Outflanking Reserves_ before the game begins.", "points": 1},
