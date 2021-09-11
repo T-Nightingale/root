@@ -756,6 +756,12 @@
                     "description": "This unit may use X _Powers_ and attempt to stop X _Powers_ per round.",
                     "points": [10, {"multiply": "rule.x"}]
                 },
+                "conclave": {
+                    "name": "Conclave",
+                    "inputs": ["x"],
+                    "description": "This unit may use _Powers_ and attempt to stop _Powers_ each round based on the total number of model with this ability: \n * 1-3 Models: 1 Power \n * 4+ Models: 2 Powers \n * 7+ Models: 3 Powers",
+                    "points": [2]
+                },
                 "shocking": {"name": "Shocking", "inputs": ["x"], "description": "A unit hit by this weapon gains X additional Shock.", "points": ["rule.x", {"multiply": 2}]},
                 "distracting": {"name": "Distracting", "description": "Enemy units within engaged with this unit suffer -1 Strength.", "points": 2},
                 "ward": {
