@@ -352,9 +352,15 @@
                     "description": "When another friendly unit of _X_ type within 6\" activates, this unit may perform a group activation with that unit.",
                     "points": 0
                 },
+                "engineer": {
+                    "name": "Engineer",
+                    "inputs": ["x"],
+                    "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On a 5 or less the vehicle may remove one critical damage. This unit gains +2 to any skill tests when performing actions for objectives.",
+                    "points": ["rule.x", {"multiply": 2}]
+                },
                 "medic": {
                     "name": "Medic",
-                    "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented. This model perform the Heal action on a friendly _Infantry_ model within 3\". Roll a D10 and on a result of 3 or less that model may remove one critical damge.",
+                    "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented. This model perform the Heal action on a friendly _Infantry_ model within 3\". Roll a D10 and on a result of 5 or less that model may remove one critical damge.",
                     "points": 5
                 },
                 "poison": {
@@ -766,6 +772,12 @@
                     "name": "Repair",
                     "inputs": ["x"],
                     "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On an X or less the vehicle may remove one critical damage.",
+                    "points": ["rule.x", {"multiply": 2}]
+                },
+                "engineer": {
+                    "name": "Engineer",
+                    "inputs": ["x"],
+                    "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On a 5 or less the vehicle may remove one critical damage.",
                     "points": ["rule.x", {"multiply": 2}]
                 },
                 "titanic": {
