@@ -341,11 +341,7 @@
                     "description": "When activated, this unit may perform a group activation with up to 2 other friendly units of _X_ type within 6\". Friendly units of _X_ type within 6\" may use this unit's Courage and Initiative value when taking skill tests.",
                     "points": 5
                 },
-                "support": {
-                    "name": "Support",
-                    "description": "When another friendly _Infantry_ unit within 6\" activates, this unit may perform a group activation with that unit.",
-                    "points": 0
-                },
+                "support": {"name": "Support", "description": "When another friendly _Infantry_ unit within 6\" activates, this unit may perform a group activation with that unit.", "points": 0},
                 "support_x": {
                     "name": "Support",
                     "inputs": ["x"],
@@ -354,20 +350,15 @@
                 },
                 "engineer": {
                     "name": "Engineer",
-                    "inputs": ["x"],
                     "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On a 5 or less the vehicle may remove one critical damage. This unit gains +2 to any skill tests when performing actions for objectives.",
-                    "points": ["rule.x", {"multiply": 2}]
+                    "points": [10]
                 },
                 "medic": {
                     "name": "Medic",
                     "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented. This model perform the Heal action on a friendly _Infantry_ model within 3\". Roll a D10 and on a result of 5 or less that model may remove one critical damge.",
                     "points": 5
                 },
-                "poison": {
-                    "name": "Poison",
-                    "description": "Enemies hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 5.",
-                    "points": ["weapon.attacks", {"multiply": 0.5}]
-                }
+                "poison": {"name": "Poison", "description": "Enemies hit by this weapon reduce their Save value by 1 (after AP) to a minimum of 5.", "points": ["weapon.attacks", {"multiply": 0.5}]}
             },
             "missions": {
                 "hidden_missions": {
@@ -750,12 +741,7 @@
                 "crack_shot": {"name": "Crack Shot", "description": "Hits rolls of 1 or 2 from shooting attacks made by this model ignore the benefit of cover.", "points": [1]},
                 "stubborn": {"name": "Stubborn", "description": "This model adds 1 to Courage tests when removing Shock.", "points": [1]},
                 "reluctant": {"name": "Reluctant", "description": "This model subtracts 1 from Courage tests when removing Shock.", "points": [-1]},
-                "power": {
-                    "name": "Power",
-                    "inputs": ["x"],
-                    "description": "This unit may use X _Powers_ and attempt to stop X _Powers_ per round.",
-                    "points": [10, {"multiply": "rule.x"}]
-                },
+                "power": {"name": "Power", "inputs": ["x"], "description": "This unit may use X _Powers_ and attempt to stop X _Powers_ per round.", "points": [10, {"multiply": "rule.x"}]},
                 "conclave": {
                     "name": "Conclave",
                     "description": "This unit may use _Powers_ and attempt to stop _Powers_ each round based on the total number of model with this ability: \n * 1-3 Models: 1 Power \n * 4+ Models: 2 Powers \n * 7+ Models: 3 Powers",
@@ -781,9 +767,8 @@
                 },
                 "engineer": {
                     "name": "Engineer",
-                    "inputs": ["x"],
                     "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On a 5 or less the vehicle may remove one critical damage.",
-                    "points": ["rule.x", {"multiply": 2}]
+                    "points": [10]
                 },
                 "titanic": {
                     "name": "Titanic",
@@ -944,7 +929,55 @@
                     "description": "Hit rolls of 1 or 2 from this weapon cause 2 hits instead of 1. Additional hits must be assigned to the same model.",
                     "points": ["weapon.attacks", {"multiply": 1}]
                 },
-                "brutal": {"name": "Brutal", "description": "This weapon gains +1 AP at Short range.", "points": ["weapon.attacks", {"multiply": 0.5}]}
+                "brutal": {"name": "Brutal", "description": "This weapon gains +1 AP at Short range.", "points": ["weapon.attacks", {"multiply": 0.5}]},
+                "rifle_tactics": {
+                    "name": "Rifle Tactics",
+                    "inputs": ["x"],
+                    "description": "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
+                    "points": 10
+                },
+                "melee_tactics": {
+                    "name": "Melee Tactics",
+                    "inputs": ["x"],
+                    "description": "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Strength tests of 9+ until the end of the round.",
+                    "points": 10
+                },
+                "knight_tactics": {
+                    "name": "Knight Tactics",
+                    "inputs": ["x"],
+                    "description": "When this unit is activated, choose up to X friendly _Cavalry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
+                    "points": ["rule.x", {"multiply": 10}]
+                },
+                "marauder_tactics": {
+                    "name": "Marauder Tactics",
+                    "inputs": ["x"],
+                    "description": "When this unit is activated, choose up to X friendly _Cavalry_ units within 6\". This unit and those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
+                    "points": ["rule.x", {"multiply": 10}]
+                },
+                "regeneration": {"name": "Regeneration", "description": "At the end of it's activation you can heal 1 wound that has been allocated to this model.", "points": 5},
+                "crazed": {
+                    "name": "Crazed",
+                    "description": "When you activate this unit make an initiative test. If successful, until the end of the turn whenever you make a move action with this unit you may rush without needing to make an initiative test.",
+                    "points": 4
+                },
+                "battle_prayer": {
+                    "name": "Battle Prayer",
+                    "description": "When this unit is activated, choose a Blessing for this unit or a friendly _Infantry_ unit within 6\" to receive until the end of the turn:\n* Divine Shield: Roll a die when a model in this unit loses a wound. On a value of 1 or 2 that wound is not lost.\n* Righteous Fury: When this unit fights, hit rolls of 1 or 2 generate an additional attack.\n* Healing Word: One model in the unit immediately heals D3 wounds.",
+                    "points": [15]
+                },
+                "curse": {
+                    "name": "Curse",
+                    "description": "When this unit is activated, choose a Curse for an enemy _Infantry_ unit within 6\" to receive until the end of the turn:\n* Weakness: This unit has -1 Strength and Accuracy when fighting or making a shooting attack.\n* Brittle Bones: When this unit is targeted by an attack, hit rolls of 1 or 2 generate an additional attack.\n* Soul Siphon: One model in the unit immediately takes 2 hits with AP2.",
+                    "points": [15]
+                },
+                "ethereal": {"name": "Ethereal", "description": "This model may ignore other models and any terrain when moving.", "points": 2},
+                "knockback": {
+                    "name": "Knockback",
+                    "inputs": ["x"],
+                    "description": "When an enemy model takes any unsaved hit by this weapon, you can push that model X“ directly away from this model.",
+                    "points": [2, {"multiply": "rule.x"}]
+                },
+                "parry": {"name": "Parry", "description": "This model has +1 Save against melee attacks.", "points": 1}
             },
             "weapons": {
                 "unarmed": {"name": "Unarmed (Melee)", "attacks": 1, "short": "Melee"},
