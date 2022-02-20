@@ -130,14 +130,14 @@
                         "map": "/data/missions/defense.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "corner_defense": {
                         "name": "Corner Defense",
                         "map": "/data/missions/corner_defense.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     }
                 },
                 "missions": {
@@ -146,70 +146,70 @@
                         "map": "/data/missions/battle/frontline.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "dual_fronts": {
                         "name": "Dual Fronts",
                         "map": "/data/missions/battle/dual_fronts.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "wide": {
                         "name": "Frontline Wide",
                         "map": "/data/missions/battle/wide.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "push": {
                         "name": "Push",
                         "map": "/data/missions/battle/push.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "corner_push": {
                         "name": "Corner Push",
                         "map": "/data/missions/battle/corner_push.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "flanking_frontlines": {
                         "name": "Flanking Frontlines",
                         "map": "/data/missions/battle/flanking_frontlines.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "corner_frontlines": {
                         "name": "Corner Frontlines",
                         "map": "/data/missions/battle/corner_frontlines.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "diagonal_frontlines": {
                         "name": "Diagonal Frontlines",
                         "map": "/data/missions/battle/diagonal_frontlines.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "sectors": {
                         "name": "Sectors",
                         "map": "/data/missions/battle/sectors.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "wide_push": {
                         "name": "Push Wide",
                         "map": "/data/missions/battle/wide_push.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     }
                 },
                 "weather": {
@@ -367,14 +367,14 @@
                         "map": "/data/missions/defense.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "corner_defense": {
                         "name": "Corner Defense",
                         "map": "/data/missions/corner_defense.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge to defend. Their opponent will get the opposite table edges to attack. The defender may additionally deploy any units inside the red marked area during deployment.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     }
                 },
                 "missions": {
@@ -383,70 +383,70 @@
                         "map": "/data/missions/skirmish/frontline.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "dual_fronts": {
                         "name": "Dual Fronts",
                         "map": "/data/missions/skirmish/dual_fronts.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "wide": {
                         "name": "Frontline Wide",
                         "map": "/data/missions/skirmish/wide.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "push": {
                         "name": "Push",
                         "map": "/data/missions/skirmish/push.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "corner_push": {
                         "name": "Corner Push",
                         "map": "/data/missions/skirmish/corner_push.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "flanking_frontlines": {
                         "name": "Flanking Frontlines",
                         "map": "/data/missions/skirmish/flanking_frontlines.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "corner_frontlines": {
                         "name": "Corner Frontlines",
                         "map": "/data/missions/skirmish/corner_frontlines.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "diagonal_frontlines": {
                         "name": "Diagonal Frontlines",
                         "map": "/data/missions/skirmish/diagonal_frontlines.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "sectors": {
                         "name": "Sectors",
                         "map": "/data/missions/skirmish/sectors.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     },
                     "wide_push": {
                         "name": "Push Wide",
                         "map": "/data/missions/skirmish/wide_push.png",
                         "setup": "You and your opponent must set up objective markers as shown in the mission map.",
                         "deployment": "Roll off and the winner chooses a table edge for their reinforcements. Their opponent will get the opposite table edge.",
-                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling more objectives than their opponent"
+                        "victory_conditions": "Players score 5 VP at the end of the round for each of the following: \n * Controlling one objective \n * Controlling two or more objectives \n * Controlling three or more objectives"
                     }
                 },
                 "weather": {
