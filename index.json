@@ -748,7 +748,7 @@
                     "points": [2]
                 },
                 "shocking": {"name": "Shocking", "inputs": ["x"], "description": "A unit hit by this weapon gains X additional Shock.", "points": ["rule.x", {"multiply": 2}]},
-                "distracting": {"name": "Distracting", "description": "Enemy units within engaged with this unit suffer -1 Strength.", "points": 2},
+                "distracting": {"name": "Distracting", "description": "Enemy units engaged with this unit suffer -1 Strength.", "points": 2},
                 "ward": {
                     "name": "Ward",
                     "inputs": ["x"],
