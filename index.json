@@ -977,7 +977,13 @@
                     "description": "When an enemy model takes any unsaved hit by this weapon, you can push that model X“ directly away from this model.",
                     "points": [2, {"multiply": "rule.x"}]
                 },
-                "parry": {"name": "Parry", "description": "This model has +1 Save against melee attacks.", "points": 1}
+                "parry": {"name": "Parry", "description": "This model has +1 Save against melee attacks.", "points": 1},
+                "heavy_impact": {
+                    "name": "Heavy Impact",
+                    "inputs": ["x"],
+                    "description": "This model causes X Melee hits with AP(1) when it successfully charges an enemy unit.",
+                    "points": [4, {"multiply": "rule.x"}]
+                }
             },
             "weapons": {
                 "unarmed": {"name": "Unarmed (Melee)", "attacks": 1, "short": "Melee"},
