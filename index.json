@@ -350,7 +350,7 @@
                 },
                 "engineer": {
                     "name": "Engineer",
-                    "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On a 5 or less the vehicle may remove one critical damage. This unit gains +2 to any skill tests when performing actions for objectives.",
+                    "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ or _Artillery_ unit, roll one die. On a 5 or less that unit may remove one critical damage. This unit gains +2 to any skill tests when performing actions for objectives.",
                     "points": [10]
                 },
                 "medic": {
