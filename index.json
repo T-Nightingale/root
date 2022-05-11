@@ -294,7 +294,7 @@
                     "caches": {
                         "name": "Caches",
                         "description": "Important caches are scattered throughout the battlefield which can be secured.",
-                        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 3\" of any objective marker and more than 3\" away from other cache markers. No objective may have more than 2 cache markers placed near it. Units may perform the Recover action to collect the caches. To do so, take an Initiative test and if passed, remove it from the field and gain 3 VP."
+                        "rules": "* Players roll off and alternate placing 6 cache markers on the field within 3\" of any objective marker and more than 3\" away from other cache markers. \n * No objective may have more than 2 cache markers placed near it.  \n * Units may perform the Recover action to collect the caches. To do so, take an Initiative test and if passed, remove it from the field and gain 3 VP."
                     },
                     "attrition": {
                         "name": "Attrition",
@@ -320,6 +320,16 @@
                         "name": "Bounty",
                         "description": "It is sometimes necessary to eliminate a key target during the battle for operational purposes.",
                         "rules": "* Choose one enemy unit at the start of the game. If that unit is fully destroyed, gain 5 VP."
+                    },
+                    "conquest": {
+                        "name": "Conquest",
+                        "description": "Taking ground from the enemy can be even more satisfying than holding your own.",
+                        "rules": "* At the end of the round, each objective captured which was previously controlled by an enemy grants an additional 3 VP."
+                    },
+                    "deploy": {
+                        "name": "Deploy",
+                        "description": "Setting up critical battlefield objectives can prove valuable in the coming battles.",
+                        "rules": "* Choose up to 3 units at the start of the game to have deploy tokens. \n * During a unit's activation, they may perform an initiative test to setup a deploy token in base contact with a model. \n * A player with more models within 3\" of that token may perform an Initiative test to destroy a deploy token. \n * At the end of the game, players earn 3 VP for each deploy token still active on the table."
                     }
                 }
             }
@@ -557,6 +567,16 @@
                         "name": "Bounty",
                         "description": "It is sometimes necessary to eliminate a key target during the battle for operational purposes.",
                         "rules": "* Choose one enemy unit at the start of the game. If that unit is fully destroyed, gain 5 VP."
+                    },
+                    "conquest": {
+                        "name": "Conquest",
+                        "description": "Taking ground from the enemy can be even more satisfying than holding your own.",
+                        "rules": "* At the end of the round, each objective captured which was previously controlled by an enemy grants an additional 3 VP."
+                    },
+                    "deploy": {
+                        "name": "Deploy",
+                        "description": "Setting up critical battlefield objectives can prove valuable in the coming battles.",
+                        "rules": "* Choose up to 3 units at the start of the game to have deploy tokens. \n * During a unit's activation, they may perform an initiative test to setup a deploy token in base contact with a model. \n * A player with more models within 3\" of that token may perform an Initiative test to destroy a deploy token. \n * At the end of the game, players earn 3 VP for each deploy token still active on the table."
                     }
                 }
             }
