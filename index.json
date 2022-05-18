@@ -342,7 +342,7 @@
                 "blast": {
                     "name": "Blast",
                     "inputs": ["x"],
-                    "description": "Multiply hits from this weapon by X. A unit may not take more hits than the number of models in the unit. Split extra hits among units within 3\"",
+                    "description": "Multiply hits from this weapon by X. A unit may not take more hits than the number of models in the unit. Split extra hits among units within 3\".",
                     "notes": "Small RNG discount to account for single shot randomness",
                     "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.8}]
                 },
