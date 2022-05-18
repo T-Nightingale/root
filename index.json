@@ -339,6 +339,13 @@
                 "grenade": {"name": "Grenade", "description": "One model per round may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
                 "musician": {"name": "Musician", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Initiative test when rushing.", "points": 5},
                 "banner": {"name": "Banner", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Courage test when removing Shock.", "points": 5},
+                "blast": {
+                    "name": "Blast",
+                    "inputs": ["x"],
+                    "description": "Multiply hits from this weapon by X. A unit may not take more hits than the number of models in the unit. Split extra hits among units within 3\"",
+                    "notes": "Small RNG discount to account for single shot randomness",
+                    "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.8}]
+                },
                 "champion": {"name": "Champion", "description": "Once per round a friendly unit within 3\" may re-roll a single failed Accuracy or Strength test when attacking.", "points": 5},
                 "leader": {
                     "name": "Leader(Infantry)",
